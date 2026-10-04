@@ -7,35 +7,42 @@ document.querySelectorAll('.reveal').forEach(function(el){if(io)io.observe(el);e
    muted autoplay + pulsing "tap to hear" pill; one tap on the pill plays with sound. */
 function awakenFigure(f,auto){
 var v=f.querySelector('video'),a=f.querySelector('audio'),pill=f.querySelector('.hear-pill'),awake=false;
+f._hearLabel=pill?pill.innerHTML:'&#9836; tap to hear';
 function withSound(){
 if(awake)return[];
 awake=true;
-if(pill)pill.hidden=true;
 f.classList.add('playing');
 var ps=[];
 if(v){v.muted=false;try{ps.push(v.play());}catch(e){}}
 if(a){try{ps.push(a.play());}catch(e){}}
 var wait=ps.filter(function(p){return p&&p.then;});
 if(wait.length){Promise.all(wait).then(function(){},function(){mutedFallback();});}
+if(pill){pill.innerHTML='&#9836; tap to silence';pill.hidden=false;}
+silenceOthers(f);
 return ps;
 }
 function mutedFallback(){
 awake=false;
 if(v){v.muted=true;try{var p=v.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}
 f.classList.add('playing');
-if(pill)pill.hidden=false;
+if(pill){pill.innerHTML=f._hearLabel;pill.hidden=false;}
 }
 function toggleFigure(){
 if(awake){
-if(v&&v.paused){v.muted=false;try{var p=v.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}
-if(a&&a.paused){try{var q=a.play();if(q&&q.catch)q.catch(function(){});}catch(e){}}
+var playing=(v&&!v.paused)||(a&&!a.paused);
+if(playing){quietFigure(f);return;}
+if(v){v.muted=false;try{var p=v.play();if(p&&p.catch)p.catch(function(){});}catch(e){}}
+if(a){try{var q=a.play();if(q&&q.catch)q.catch(function(){});}catch(e){}}
+f.classList.add('playing');
+if(pill){pill.innerHTML='&#9836; tap to silence';pill.hidden=false;}
+silenceOthers(f);
 return;
 }
 withSound();
 }
-if(auto){withSound();
-/* Mobile stall guard: if the unmuted play() promise hangs (slow load, no
-   resolve/reject), the poster sits forever. Force the muted fallback. */
+/* Never auto-play WITH sound on load: browsers block it, and where they do not,
+   unsolicited voices are a poor welcome. First figure gets the muted fallback. */
+if(auto){mutedFallback();
 setTimeout(function(){if(v&&v.paused&&!v.seeking){mutedFallback();}},1800);}else{
 if(pill)pill.hidden=false;
 }
@@ -43,14 +50,25 @@ f.addEventListener('click',function(){toggleFigure();});
 if(pill)pill.addEventListener('click',function(ev){ev.stopPropagation();toggleFigure();});
 f.addEventListener('click',function(){if(v&&f.classList.contains('playing'))v.setAttribute('controls','');});
 }
-/* Scroll-pause: a film scrolled fully out of view stops, so only the one being touched makes sound. */
+/* Scroll-pause: a figure scrolled fully out of view is quieted, so only the one
+   being touched makes sound. */
+/* quietFigure: pause media AND reset the UI, so the pill never lies about state. */
+function quietFigure(f){
+var qv=f.querySelector('video'),qa=f.querySelector('audio'),qp=f.querySelector('.hear-pill');
+if(qv&&!qv.paused){try{qv.pause();}catch(_){}}
+if(qa&&!qa.paused){try{qa.pause();}catch(_){}}
+f.classList.remove('playing');
+if(qp){qp.innerHTML=f._hearLabel||'&#9836; tap to hear';qp.hidden=false;}
+}
+/* Exclusive sound: starting one figure quiets the others, so voices never compete. */
+function silenceOthers(except){
+var all=document.querySelectorAll('[data-living-room]');
+for(var i=0;i<all.length;i++){var g=all[i];if(g===except)continue;quietFigure(g);}
+}
 var __sp=('IntersectionObserver' in window)?new IntersectionObserver(function(es){
 es.forEach(function(e){
 if(e.isIntersecting)return;
-var t=e.target,vv=t.querySelector('video'),aa=t.querySelector('audio');
-if(vv&&!vv.paused){try{vv.pause();}catch(_){}}
-if(aa&&!aa.paused){try{aa.pause();}catch(_){}}
-
+quietFigure(e.target);
 });
 },{threshold:0}):null;
 var __lr=document.querySelectorAll('[data-living-room]');

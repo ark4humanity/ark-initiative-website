@@ -1,10 +1,10 @@
 {
-  "generated_at_utc": "2026-10-04T21:47:14.049043+00:00",
+  "generated_at_utc": "2026-10-04T22:26:31.617310+00:00",
   "site": "https://thearkinitiative.ark4humanity.workers.dev/",
   "worker_name": "thearkinitiative",
   "essays": 141,
   "generators_sha12": {
-    "build_site.py": "ce230f2a4bcd",
+    "build_site.py": "5d25794d3bbf",
     "build_pillars.py": "5a2742c14e73",
     "pillar_archives.py": "6766d6e87648",
     "DEPLOY-STATE.md": "c8b9e58aa38d"
