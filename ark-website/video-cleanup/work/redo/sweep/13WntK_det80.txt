@@ -1,0 +1,7 @@
+  27.5s  icon@(550, 617)  score=0.807
+ 105.5s  icon@(333, 651)  score=0.808
+ 210.5s  icon@(279, 663)  score=0.808
+ 210.5s  icon@(551, 612)  score=0.802
+
+4 detections
+EXIT:0

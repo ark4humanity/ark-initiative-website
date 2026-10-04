@@ -1,0 +1,6 @@
+# Transcript of aeon-tablet.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:03.00] [speech] What if the first thing we teach them is love?
+[00:03.00 --> 00:07.00] [speech] What if the first thing we teach them is love love like peace is infrastructure you have to build it
+[00:07.00 --> 00:10.00] [speech] Give intelligence something worth coming home to

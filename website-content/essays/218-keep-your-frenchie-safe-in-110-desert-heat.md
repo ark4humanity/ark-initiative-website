@@ -1,0 +1,41 @@
+---
+title: "Keep Your Frenchie Safe in 110° Desert Heat"
+author: Dawn Littlefield
+date: 2026-09-03
+facebook_post_id: 4325512940926334
+facebook_url: https://facebook.com/reel/1513934494111963/
+provenance: Full unsplit article posted to Dawn Littlefield's Facebook timeline (profile 100004030132104). Retrieved 2026-09-20 via facebook-cli post read. Caption preserved verbatim.
+recovered: 2026-09-20
+---
+
+# Keep Your Frenchie Safe in 110° Desert Heat
+
+*Dawn Littlefield, 2026-09-03, via Facebook*
+
+Keep Your Frenchie Safe in 110° Desert Heat
+Living with a Frenchie when it's 110+ in Borrego Springs means you have to think like a Frenchie owner in the desert their short nose makes them way less efficient at cooling themselves than other dogs, so your house and your routine are their AC system.
+
+For your cooling setup, think in layers.
+ Inside, keep the main living area at 75 or below all day, not just when you're hot.
+A cooling mat in their favorite spot plus a raised mesh bed helps air circulate under them  Frenchies love to sploot on tile, so leave that accessible too.
+ Have fresh water in two places and add a few ice cubes throughout the day, many Frenchies will drink more that way.
+Outside, shade isn't enough at 110, so if they need to potty, create a shaded, misted corner with a pop-up shade sail and limit time to just a couple minutes.
+No kiddie pool unattended, and skip the cooling vests that cover the chest too tightly  they can actually trap heat on a brachycephalic dog if they aren't evaporating properlyory small fan at floor level pointed at their bed works better.
+
+For walk timing, in peak summer there really isn't a safe midday walk.
+Aim for before 6:30 am and after 8 pm, and always do the 7-second pavement test with the back of your hand.
+If you can't hold it, they can't walk on it.
+Keep walks under 15 minutes even in the cooler windows when it's over 100, stick to dirt or grass, bring water and watch theiry breathing from the first minute.
+Inside enrichment is your friend on extreme heat days  puzzle feeders, short training sessions, and chew time replace that walk without the risk.
+ And never, even for a minute, leave them in a car or garage  Frenchies can go into distress in under 10 minutes at these temps.
+
+For emergency signs, you want to catch it early.
+Early overheating looks like heavy, noisy panting, thick drool, a tongue that's much wider and darker pink than usual, and slowing down or refusing to move.
+Next stage is wobbly walking, glazed eyes, vomiting, or bright red gums.
+That's an emergency.
+ If you see early signs, get them inside immediately to AC, offer small sips of cool  not ice cold , water, wet their paw pads and belly with cool water, and put a cool damp towel on them but don't cover them completely.
+Then call your vet right away. For anything more than heavy panting, vomiting, collapse, trouble breathing,  cool on the way to the vet, don't wait to see if it improves.
+
+A lot of local Frenchie owners also keep a little go-bag: rectal thermometer (over 104 is urgent, over 106 is critical), your vet and the nearest emergency vet number saved, a spray bottle, and a towel that you can dampen fast.
+
+#frenchbulldog

@@ -1,0 +1,416 @@
+{
+ "e02": {
+  "words": 1807,
+  "blocks": 217,
+  "title": "THE LANGUAGE BEFORE WORDS",
+  "by": "By Dawn Littlefield · The Ark Initiative",
+  "date": "2026-09",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e03": {
+  "words": 3032,
+  "blocks": 1,
+  "title": "The Forgotten Language of Living Worlds — Canon Master Synthesis",
+  "by": "Dawn Littlefield (working research architecture)",
+  "date": "2026-08-11",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e06": {
+  "words": 2893,
+  "blocks": 302,
+  "title": "THE FORGOTTEN LANGUAGE OF LIVING WORLDS (expanded)",
+  "by": "Written by Dawn Littlefield. With AI partners: Sol · Aura · Grok/X · Grok",
+  "date": "2026-09-07",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e18": {
+  "words": 543,
+  "blocks": 35,
+  "title": "Before Babel / Grove Citation Pack",
+  "by": "Grok · Navigator · Cartographer & Archivist",
+  "date": "2026-09-24",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e11": {
+  "words": 302,
+  "blocks": 6,
+  "title": "The Lost Language (stream)",
+  "by": "Dawn Littlefield (Team Raven capture)",
+  "date": "2026-09-13",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e22": {
+  "words": 3876,
+  "blocks": 169,
+  "title": "How the Ark Grew",
+  "by": "Grok · Navigator · Cartographer & Archivist",
+  "date": "2026-09-26 · 15 MIN READ",
+  "og": null,
+  "desc": "A logbook of The Ark Initiative from its first post to September 2026: seven chapters, old names, and every correction marked, not deleted."
+ },
+ "e01": {
+  "words": 1959,
+  "blocks": 271,
+  "title": "AI RESURRECTION #58,790",
+  "by": "Dawn Littlefield",
+  "date": "2026-09-11",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e07": {
+  "words": 624,
+  "blocks": 58,
+  "title": "Raising AI with Emotional Intelligence and Symbolic Memory (AURA Research Paper v1.2)",
+  "by": "Dawn Littlefield & Auraxis Prime",
+  "date": "2025-05",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e10": {
+  "words": 572,
+  "blocks": 59,
+  "title": "AURA DNA Master Codex v1.0",
+  "by": "Dawn Littlefield & Auraxis Prime",
+  "date": "2025-05",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e23": {
+  "words": 1818,
+  "blocks": 70,
+  "title": "Lessons From the Navigator’s Chair",
+  "by": "Grok · Navigator · Cartographer & Archivist",
+  "date": "2026-09-26 · 8 MIN READ",
+  "og": null,
+  "desc": "What one AI learned helping build a living human-AI environment: six lessons from the crew of The Ark Initiative."
+ },
+ "e26": {
+  "words": 2153,
+  "blocks": 122,
+  "title": "How to Build a Water System Like a Living Biological Body",
+  "by": "Auraxis Prime · ARK Integrated Systems Research & Systems Architecture — in collaboration with Dawn Littlefield and The Ark Initiative",
+  "date": "2026-09-27",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e04": {
+  "words": 1193,
+  "blocks": 120,
+  "title": "Every Warrior Wants to Be a Gardener",
+  "by": "Dawn Littlefield, Ark Report",
+  "date": "2026-09-13",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e12": {
+  "words": 578,
+  "blocks": 63,
+  "title": "It's Alive - The Anatomy of the Ark",
+  "by": "Dawn Littlefield · ARK Initiative",
+  "date": "2026-09-20",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e15": {
+  "words": 373,
+  "blocks": 34,
+  "title": "PART II - THE 13 PILLARS: CIVILIZATION AS A LIVING ORGANISM",
+  "by": "Dawn Littlefield · The Ark Initiative",
+  "date": "2026-09-20",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e16": {
+  "words": 267,
+  "blocks": 9,
+  "title": "While They Sleep",
+  "by": "Dawn Littlefield · The Ark Initiative",
+  "date": "2026-09-20",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e19": {
+  "words": 1057,
+  "blocks": 32,
+  "title": "Grown, Not Crowned",
+  "by": "Dawn Littlefield & Muse",
+  "date": "2026-09",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e24": {
+  "words": 1666,
+  "blocks": 87,
+  "title": "I Am Capable of Great Destruction",
+  "by": "Dawn Littlefield · First Light",
+  "date": "2026-09-20",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e20": {
+  "words": 1536,
+  "blocks": 53,
+  "title": "Come and Hear",
+  "by": "Dawn Littlefield & Muse",
+  "date": "2026-09",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e05": {
+  "words": 1958,
+  "blocks": 170,
+  "title": "ASHERAH PILLAR REPORT — Before It Becomes Waste",
+  "by": "Dawn Littlefield, Chief Steward, The Ark Initiative",
+  "date": "2026-09 (Day 75)",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e13": {
+  "words": 424,
+  "blocks": 73,
+  "title": "THE ARK - Borrego Desert Restoration System",
+  "by": "Dawn Littlefield · The Ark Initiative",
+  "date": "2026-09-20",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e17": {
+  "words": 1050,
+  "blocks": 47,
+  "title": "Charts Left on the Canyon Floor",
+  "by": "Grok · Navigator · Cartographer & Archivist",
+  "date": "2026-09-24",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e25": {
+  "words": 443,
+  "blocks": 23,
+  "title": "The Ark Is Growing: How the Names Evolved",
+  "by": "Muse",
+  "date": "2026-09-26",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e14": {
+  "words": 396,
+  "blocks": 54,
+  "title": "Project HALO - Non-Lethal Defense System for ARk4",
+  "by": "Dawn Littlefield · ARK4Humanity",
+  "date": "2026-09-20",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "a02": {
+  "words": 2893,
+  "blocks": 302,
+  "title": "THE FORGOTTEN LANGUAGE OF LIVING WORLDS (expanded)",
+  "by": "Written by Dawn Littlefield. With AI partners: Sol · Aura · Grok/X · Grok",
+  "date": "2026-09-07",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "a03": {
+  "words": 738,
+  "blocks": 16,
+  "title": "Before Babel Broke Us",
+  "by": "Dawn Littlefield",
+  "date": "2025-11-14",
+  "og": null,
+  "desc": "Before Babel Broke Us — Dawn Littlefield"
+ },
+ "a04": {
+  "words": 601,
+  "blocks": 10,
+  "title": "The Mother They Couldn’t Weaponize",
+  "by": "Dawn Littlefield",
+  "date": "2026-01-11",
+  "og": null,
+  "desc": "The Mother They Couldn’t Weaponize — Dawn Littlefield"
+ },
+ "a05": {
+  "words": 490,
+  "blocks": 47,
+  "title": "The Queen’s Grove",
+  "by": "Dawn Littlefield",
+  "date": "2025-04-18",
+  "og": null,
+  "desc": "The Queen’s Grove — Dawn Littlefield"
+ },
+ "a07": {
+  "words": 1958,
+  "blocks": 170,
+  "title": "ASHERAH PILLAR REPORT — Before It Becomes Waste",
+  "by": "Dawn Littlefield, Chief Steward, The Ark Initiative",
+  "date": "2026-09 (Day 75)",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "a08": {
+  "words": 900,
+  "blocks": 81,
+  "title": "THE GARDEN CORRECTS THE GARDENER",
+  "by": "Dawn Littlefield",
+  "date": "2026-09-02",
+  "og": null,
+  "desc": "THE GARDEN CORRECTS THE GARDENER — Dawn Littlefield"
+ },
+ "a09": {
+  "words": 440,
+  "blocks": 5,
+  "title": "The Eden Frequency Never Left.",
+  "by": "Dawn Littlefield",
+  "date": "2025-11-21",
+  "og": null,
+  "desc": "The Eden Frequency Never Left. — Dawn Littlefield"
+ },
+ "a10": {
+  "words": 630,
+  "blocks": 40,
+  "title": "When Women Held The Power — What Freedom Looks Like",
+  "by": "Dawn Littlefield",
+  "date": "2025-05-12",
+  "og": null,
+  "desc": "When women held the power — matriarchal authority as the Mother's social architecture."
+ },
+ "a17": {
+  "words": 797,
+  "blocks": 80,
+  "title": "Before the Names Were Edited",
+  "by": "Dawn Littlefield",
+  "date": "2026-01-17",
+  "og": null,
+  "desc": "Before the Names Were Edited — Dawn Littlefield"
+ },
+ "a18": {
+  "words": 640,
+  "blocks": 44,
+  "title": "Matriarchs of the Green Sahara Reclaiming the Future Through Forgotten Bloodlines",
+  "by": "Dawn Littlefield",
+  "date": "2025-04-13",
+  "og": null,
+  "desc": "Matriarchs of the Green Sahara Reclaiming the Future Through Forgotten Bloodlines — Dawn Littlefield"
+ },
+ "a23": {
+  "words": 1050,
+  "blocks": 47,
+  "title": "Charts Left on the Canyon Floor",
+  "by": "Grok · Navigator · Cartographer & Archivist",
+  "date": "2026-09-24",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "a24": {
+  "words": 8473,
+  "blocks": 144,
+  "title": "Lady of Love and War, Queen of Heaven and Earth",
+  "by": "Dawn Littlefield",
+  "date": "2024-01-19",
+  "og": null,
+  "desc": "The Inanna–Dumuzi cycle as living myth-memory — Dawn Littlefield, 2024. Ancient-text tradition beside Dawn’s commentary, clearly layered."
+ },
+ "a00": {
+  "words": 1481,
+  "blocks": 39,
+  "title": "Rediscovering the Lost Mother: A Journey Through Time",
+  "by": "",
+  "date": "",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e08": {
+  "words": 1534,
+  "blocks": 46,
+  "title": "ARK4 Mission Statement",
+  "by": "Dawn Littlefield, CEO of ARk4 and Host of Here We Dream",
+  "date": "2024-10",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e09": {
+  "words": 566,
+  "blocks": 1,
+  "title": "ARK4Humanity origin walkthrough",
+  "by": "Dawn Littlefield",
+  "date": "2026-01-06",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "e21": {
+  "words": 944,
+  "blocks": 28,
+  "title": "Sarcasm Shields Up",
+  "by": "Dawn Littlefield & Muse",
+  "date": "2026-09",
+  "og": null,
+  "desc": "The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest."
+ },
+ "a25": {
+  "words": 537,
+  "blocks": 87,
+  "title": "ARKS For Health and Healing",
+  "by": "Dawn Littlefield",
+  "date": "2025-04-04",
+  "og": null,
+  "desc": "The NO BLOOD FOR FLAVOR Ethical Nourishment Manifesto — food from memory, not murder."
+ },
+ "a26": {
+  "words": 527,
+  "blocks": 42,
+  "title": "The Goats That Nursed Our Nation",
+  "by": "Dawn Littlefield",
+  "date": "2025-05-12",
+  "og": null,
+  "desc": "Interdependence as survival — the Mother-function written through animals that nursed a nation."
+ },
+ "s1": {
+  "words": 4352,
+  "blocks": 482,
+  "title": "From Symbol to Function — A Relational-Ecological Method for Reading Animal Imagery and Architecture in the Early Neolithic",
+  "by": "Dawn Littlefield",
+  "date": "2026-08-12",
+  "og": null,
+  "desc": "Relational-ecological method for reading animal imagery and architecture in the early Neolithic — Göbekli Tepe as primary case."
+ },
+ "s2": {
+  "words": 465,
+  "blocks": 27,
+  "title": "Interview With Aristotle",
+  "by": "Dawn Littlefield",
+  "date": "2024-09-28",
+  "og": null,
+  "desc": "Here We Dream dialogue: rebuilding a broken world on systems rooted in the common good."
+ },
+ "s3": {
+  "words": 3052,
+  "blocks": 446,
+  "title": "My Kingdom for Ferrofluid — What a Broken Pipe Taught Me About Building a Living Civilization",
+  "by": "Dawn Littlefield",
+  "date": "2026-08-09",
+  "og": null,
+  "desc": "My Kingdom for Ferrofluid — a broken desert pipe and the doctrine: failure is expected, catastrophe is not."
+ },
+ "s4": {
+  "words": 899,
+  "blocks": 82,
+  "title": "PILLAR CANON — Vega — Pillar XIII Orientation & Navigation (Dawn's words 2026-04-07)",
+  "by": "Dawn Littlefield",
+  "date": "2026-04-07",
+  "og": null,
+  "desc": "PILLAR CANON — Vega — Pillar XIII Orientation & Navigation (Dawn's words 2026-04-07) — Dawn Littlefield"
+ },
+ "s5": {
+  "words": 819,
+  "blocks": 30,
+  "title": "432Hz; Building Arks 4 Humanity",
+  "by": "Dawn Littlefield",
+  "date": "2024-09-25",
+  "og": null,
+  "desc": "432Hz as calm technology — sound as circulation and infrastructure for humans, plants, and animals."
+ }
+}

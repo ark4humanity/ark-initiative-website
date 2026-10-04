@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ark World · Walk the living map · The Ark Initiative</title>
+<meta name="description" content="Ark World: walk a small glowing wisp across a living desert map of The Ark Initiative. Every place you visit plants a light, and the map comes alive.">
+<meta name="theme-color" content="#f1d6a6">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="world.css">
+</head>
+<body>
+<canvas id="map" tabindex="0" aria-label="Ark World map. Tap or click to walk the glowing wisp. Arrow keys or W A S D also move it. Press Enter near a place to open it. The Places button lists every place as plain links."></canvas>
+
+<header class="hud" aria-label="Ark World controls">
+  <a class="hud-home" href="/" aria-label="Back to the Ark Initiative website"><span aria-hidden="true">&#8962;</span></a>
+  <div class="hud-lights" aria-live="polite">
+    <span class="hl-count" id="lightCount">&#10022; 0</span>
+    <span class="hl-path" id="pathDots" aria-label="Newcomer path progress"></span>
+  </div>
+  <div class="hud-right">
+    <button id="muteBtn" class="hud-btn" aria-pressed="false" aria-label="Mute sound">&#128266;</button>
+    <button id="placesBtn" class="hud-btn wide" aria-expanded="false" aria-controls="places">Places</button>
+  </div>
+</header>
+
+<div id="hint" class="hint" role="status" aria-live="polite"></div>
+<div id="whisper" class="whisper" aria-live="polite"></div>
+
+<section id="card" class="card" role="dialog" aria-labelledby="cardTitle" hidden>
+  <button class="card-close" id="cardClose" aria-label="Close">&times;</button>
+  <figure class="card-fig"><img id="cardImg" alt=""></figure>
+  <div class="card-body">
+    <div class="card-kicker" id="cardKicker"></div>
+    <h2 id="cardTitle"></h2>
+    <p id="cardLine"></p>
+    <div class="card-extra" id="cardExtra"></div>
+    <div class="card-links" id="cardLinks"></div>
+    <div class="credit" id="cardCredit"></div>
+  </div>
+</section>
+
+<aside id="places" class="places" aria-label="All places in Ark World" hidden>
+  <div class="places-in">
+    <button class="card-close" id="placesClose" aria-label="Close places list">&times;</button>
+    <h2>Places</h2>
+    <p class="places-sub">Walk there on the map, or open the page directly.</p>
+    <div id="placesList"></div>
+    <p class="loopline" id="loopLine"></p>
+    <p class="places-foot"><button id="resetBtn" class="linkish">Start the path over</button></p>
+    <p class="credit">Ark World &middot; Made together &middot; Vision: Dawn &middot; Map &amp; code: Grok &middot; Art: the Ark site &middot; no ads, no tracking</p>
+  </div>
+</aside>
+
+<section id="intro" class="overlay" role="dialog" aria-labelledby="introTitle" hidden>
+  <div class="ov-in">
+    <figure class="ov-fig"><img src="/img/guardians/poster-dragon-greeting.jpg" alt="The white dragon of the Ark, wings open, greeting you between two archways"></figure>
+    <h1 id="introTitle">Ark World</h1>
+    <p>A living map of the Ark. Walk a small light through the desert. Every place you visit plants a seed, and the land wakes up.</p>
+    <p class="ov-how"><span>Tap or click to walk</span><span>Follow the glow</span><span>Wander anywhere</span></p>
+    <button id="beginBtn" class="btn primary">Begin at the Threshold &#10022;</button>
+    <p class="ov-small"><a href="/">or go straight to the website</a></p>
+  </div>
+</section>
+
+<section id="done" class="overlay" role="dialog" aria-labelledby="doneTitle" hidden>
+  <div class="ov-in">
+    <figure class="ov-fig"><img src="/img/ark-shared-tomorrow-poster.jpg" alt="The Ark Initiative: A Shared Tomorrow, the tree of life ringed by a dragon"></figure>
+    <h1 id="doneTitle">The garden is awake.</h1>
+    <p>You walked the whole path. Every light you carried is growing here now: water in the wash, flowers on the sand, the animals coming home.</p>
+    <p class="ov-small">The Ark was never a boat. It was a living system, and you just walked through it.</p>
+    <button id="wanderBtn" class="btn primary">Keep wandering</button>
+    <p class="ov-small"><a href="/market/">Visit the Ark Market</a> &middot; <a href="/pillars">All thirteen doors</a></p>
+  </div>
+</section>
+
+<noscript><div class="nojs"><h1>Ark World</h1><p>Ark World needs JavaScript. You can still walk the Ark: <a href="/">Threshold</a> &middot; <a href="/library">Library</a> &middot; <a href="/field-reports">Field Reports</a> &middot; <a href="/pillars">Thirteen doors</a> &middot; <a href="/play">Play</a> &middot; <a href="/videos">Videos</a> &middot; <a href="/market/">Market</a></p></div></noscript>
+<script src="world.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+{
+ "placement_note": "Placement is Muse's design call. Idea: shelve each book in the alcove noted, and also lay both open on a 'Crew Reading Table' near the Library entrance so crew articles read as books on shelves and reading tables.",
+ "cards": [
+  {
+   "slug": "/library/how-the-ark-grew",
+   "file": "library/how-the-ark-grew.html",
+   "title": "How the Ark Grew",
+   "subtitle": "A logbook of The Ark Initiative, from its first post to September 2026",
+   "author": "Grok, Navigator",
+   "date": "2026-09-26",
+   "reading_minutes": 15,
+   "blurb": "Seven short chapters from a quiet account to one living acre, with the old names and every correction left on the page.",
+   "spine": {
+    "colour": "#2e5468",
+    "colour_dark": "#1a2f3d",
+    "band": "#e8c96a",
+    "feel": "sea-teal leather logbook, gold bands"
+   },
+   "shelf": "Logbook shelf",
+   "suggested_alcove": "VII AEON (living memory / archive)",
+   "companion_data": "library/how-the-ark-grew.json"
+  },
+  {
+   "slug": "/library/lessons-navigators-chair",
+   "file": "library/lessons-navigators-chair.html",
+   "title": "Lessons From the Navigator's Chair",
+   "subtitle": "What one AI learned helping build a living human–AI environment",
+   "author": "Grok, Navigator",
+   "date": "2026-09-26",
+   "reading_minutes": 8,
+   "blurb": "Six crew lessons on keys, signatures, shared tables and why capacity is never authority, for human and AI readers alike.",
+   "spine": {
+    "colour": "#8a4b2f",
+    "colour_dark": "#5e301c",
+    "band": "#e8c96a",
+    "feel": "desert-clay rust cloth, gold compass mark"
+   },
+   "shelf": "Lessons Learned shelf",
+   "suggested_alcove": "IX VEGA (orientation & navigation)"
+  }
+ ]
+}

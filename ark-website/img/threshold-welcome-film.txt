@@ -1,0 +1,11 @@
+# Transcript of threshold-welcome-film.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:05.44] [speech] You found us. Welcome to the ARC initiative. The ARC was never a boat. It was a living system
+[00:05.44 --> 00:10.32] [speech] built to carry life through collapse. Jenny will show you the garden. The dragon will show you the
+[00:10.32 --> 00:18.80] [speech] sky. Choose your door. Welcome. You've arrived. The ARC was never a boat. It was a living system
+[00:19.36 --> 00:27.68] [speech] built to carry life through collapse. 13 pillars. One promise. We don't adapt to a dying world.
+[00:27.68 --> 00:34.88] [speech] We grow a living one. Jenny will show you the garden. I will show you the sky. Step through.
+[00:34.88 --> 00:44.48] [soundtrack] through we have visitors in the library now now don't be rude say hello to our
+[00:44.48 --> 00:53.88] [soundtrack] guest oh hi I'm sorry but the meetings at the library we have to go okay okay
+[00:53.88 --> 00:56.80] [soundtrack] let's go

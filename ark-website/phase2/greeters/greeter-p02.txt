@@ -1,0 +1,4 @@
+# Transcript of greeter-p02.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:05.00] [speech] Welcome.

@@ -1,0 +1,4 @@
+# Transcript of halo-entrance-v2.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:06.00] [speech] You will walk among the twelve, but only through me.

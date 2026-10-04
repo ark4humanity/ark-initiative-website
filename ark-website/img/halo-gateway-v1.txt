@@ -1,0 +1,6 @@
+# Transcript of halo-gateway-v1.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:06.50] [speech] I am halo. Before you enter, you must know yourself. If you carry war in your heart, peace
+[00:06.50 --> 00:11.84] [speech] will feel like a cage. Walk through my mist. Breathe. If you are ready for peace, you will
+[00:11.84 --> 00:14.40] [speech] know. If you are not, that is also an answer.

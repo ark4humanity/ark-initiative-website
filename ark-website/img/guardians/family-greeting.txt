@@ -1,0 +1,7 @@
+# Transcript of family-greeting.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:09.76] [speech] I am under everything, and inside nothing that rules.
+[00:09.76 --> 00:18.92] [speech] Stress diffuses, joints never snap.
+[00:18.92 --> 00:26.44] [speech] I will carry your word to who can hear it. She is the map, I am the flow. Together
+[00:26.44 --> 00:28.68] [speech] Together we are the room remembering itself.

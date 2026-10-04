@@ -1,0 +1,1 @@
+{"model": "small", "mtime": 1790963539.921931, "info": {"language": "en", "model": "small"}, "segments_b": [{"start": 0.0, "end": 2.0, "text": "Hello?", "label": "", "via": ""}, {"start": 2.0, "end": 4.0, "text": "Hello?", "label": "", "via": ""}], "segments_a": []}

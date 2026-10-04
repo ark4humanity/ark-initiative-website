@@ -1,0 +1,58 @@
+[push] 3251 files to upload
+[push] 500/3251 blobs
+[push] 1000/3251 blobs
+[push] 1500/3251 blobs
+[push] 2000/3251 blobs
+[push] 2500/3251 blobs
+[push] 3000/3251 blobs
+[push] all 3251 blobs uploaded
+Traceback (most recent call last):
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 37, in api
+    with urllib.request.urlopen(req, timeout=60) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 502: Bad Gateway
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 147, in <module>
+    main()
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 132, in main
+    root_sha = build_tree("")
+               ^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 126, in build_tree
+    "type": "tree", "sha": build_tree(sub)})
+                           ^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 126, in build_tree
+    "type": "tree", "sha": build_tree(sub)})
+                           ^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 126, in build_tree
+    "type": "tree", "sha": build_tree(sub)})
+                           ^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 129, in build_tree
+    r = api("POST", "/git/trees", {"tree": entries})
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/hatch/workspace/repo-staging/push_via_api.py", line 57, in api
+    raise RuntimeError(f"{method} {path} -> {e.code}: {raw}")
+RuntimeError: POST /git/trees -> 502: {
+  "message": "Server Error"
+}
+
+[push] 3257 files to upload

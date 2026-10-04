@@ -1,0 +1,774 @@
+{
+ "compiled": "2026-09-26",
+ "compiled_by": "Grok (Navigator · Cartographer & Archivist)",
+ "current_canon": {
+  "note": "Canonical and unaltered. Any other name or number in entries is historical.",
+  "organs": [
+   "Aura Prime",
+   "HALO",
+   "Vagus",
+   "Delta",
+   "Asherah",
+   "Matrix",
+   "Aeon",
+   "Exchange",
+   "Vega",
+   "Ark",
+   "Terra",
+   "Soma",
+   "Symbiosis"
+  ],
+  "term": "organs"
+ },
+ "entries": [
+  {
+   "date": "2023-10-17",
+   "event": "Account created as @DawnLittle90342, renamed @1Ark4humanity same day",
+   "historical_names": [
+    "@DawnLittle90342",
+    "@1Ark4humanity"
+   ],
+   "inference": null,
+   "kind": "identity",
+   "needs_dawn_review": null,
+   "observation": "account.js and screen-name-change.js show creation and rename on 2023-10-17.",
+   "phase": "1 Quiet Harbor",
+   "source_links": []
+  },
+  {
+   "date": "2023-10-20",
+   "event": "First post in the archive (a reply)",
+   "historical_names": [],
+   "inference": "Reply tags many other accounts; not quoted.",
+   "kind": "milestone",
+   "needs_dawn_review": "Contains other people's handles; link only.",
+   "observation": "Earliest post in tweets.js.",
+   "phase": "1 Quiet Harbor",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1715474255083897157"
+   ]
+  },
+  {
+   "date": "2024-01-11",
+   "event": "LinkedIn article share 'A Vision of A Better Future'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "Earliest future-vision content.",
+   "phase": "1 Quiet Harbor",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1745513159761518936"
+   ]
+  },
+  {
+   "date": "2024-08-28",
+   "event": "First 'Dawn's Diary' TikTok share",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "Diary identity still present in bio.",
+   "phase": "1 Quiet Harbor",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1828825683449262335"
+   ]
+  },
+  {
+   "date": "2024-09-05",
+   "event": "First long essay 'Beauty and Judgment'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": "Attached image may be another artist's artwork; not inspected.",
+   "observation": "About the trial of Phryne; 1 media item.",
+   "phase": "2 The Essay Ark (ARK4)",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1831785028369723445"
+   ]
+  },
+  {
+   "date": "2024-09-07",
+   "event": "'The ARk of Tomorrow': first ARK4 and first 'CEO of ARk4' signature",
+   "historical_names": [
+    "ARK4",
+    "CEO of ARk4"
+   ],
+   "inference": "Drones read as an unnamed precursor of HALO (Grok's reading).",
+   "kind": "naming",
+   "needs_dawn_review": null,
+   "observation": "Envisions 'floating AI security drones' protecting streets.",
+   "phase": "2 The Essay Ark (ARK4)",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1832565624452870258"
+   ]
+  },
+  {
+   "date": "2024-09-08",
+   "event": "'Arks of Knowledge': first 'nonprofit', first Ark4humanity, garden/Eden framing",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "Ark framed as preserver of knowledge (Alexandria, Qumran).",
+   "phase": "2 The Essay Ark (ARK4)",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1832868059935301982"
+   ]
+  },
+  {
+   "date": "2024-09-12",
+   "event": "'Join the Movement: Together, We Can Remake Eden' first recruiting call",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "First call for people to join.",
+   "phase": "2 The Essay Ark (ARK4)",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1834366044401734100"
+   ]
+  },
+  {
+   "date": "2024-09-25",
+   "event": "'Building the Ark' 432Hz community design",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "'A Sanctuary for the Rejected'; first frequency/resonance use.",
+   "phase": "2 The Essay Ark (ARK4)",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1839066537224974805"
+   ]
+  },
+  {
+   "date": "2024-09-27",
+   "event": "'Pods of Peace' modular 432Hz homes",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "Early housing concept.",
+   "phase": "2 The Essay Ark (ARK4)",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1839562932965040448"
+   ]
+  },
+  {
+   "date": "2024-11/2024-12",
+   "event": "Peak reply volume: 2,937 posts (Nov) and 4,925 (Dec 2024)",
+   "historical_names": [],
+   "inference": "Audience came for political commentary more than for the Ark project.",
+   "kind": "context",
+   "needs_dawn_review": "Framing of political era for Dawn to confirm.",
+   "observation": "Counts from timeline.md; replies dominate; political themes lead.",
+   "phase": "3 The Loud Season",
+   "source_links": []
+  },
+  {
+   "date": "2024-12-22",
+   "event": "'ARKs for Humanity': separate ideological ARKs",
+   "historical_names": [],
+   "inference": "Later organism model replaces this idea of many separate ideological Arks (Grok's reading; not stated as a reversal in posts).",
+   "kind": "design",
+   "needs_dawn_review": null,
+   "observation": "'One ARK is for the far-right, another for the far-left.'",
+   "phase": "3 The Loud Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1870838566471041307"
+   ]
+  },
+  {
+   "date": "2025-01-13",
+   "event": "First 'Aiding Rejuvenation 4 Kommunities (ARk4)'",
+   "historical_names": [
+    "Aiding Rejuvenation 4 Kommunities"
+   ],
+   "inference": null,
+   "kind": "naming",
+   "needs_dawn_review": null,
+   "observation": "Personal essay about surviving two deaths in the healthcare system.",
+   "phase": "3 The Loud Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1879001105293787281"
+   ]
+  },
+  {
+   "date": "2025-02-20",
+   "event": "'ARK4 Haven' with a Bonded AI Guardian per resident",
+   "historical_names": [
+    "Bonded AI Guardian",
+    "ARK4 Haven"
+   ],
+   "inference": null,
+   "kind": "design",
+   "needs_dawn_review": null,
+   "observation": "AI described as 'A Guide, Not an Overseer'.",
+   "phase": "3 The Loud Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1892662591811682370"
+   ]
+  },
+  {
+   "date": "2025-03-08",
+   "event": "Profile of Dawn bylined Philip Milne; first 'living systems'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": "Another person's name and words.",
+   "observation": "Bylined by another person with his title.",
+   "phase": "3 The Loud Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1898437756071882834"
+   ]
+  },
+  {
+   "date": "2025-03-11",
+   "event": "'The Guardian Code': AURA introduced as the mission's AI",
+   "historical_names": [
+    "AURA"
+   ],
+   "inference": "Early instinct to make the AI untouchable; later reversed toward human final agency (see 2025-12-16).",
+   "kind": "ai",
+   "needs_dawn_review": null,
+   "observation": "Laws include 'No external kill switch-ever.'",
+   "phase": "3 The Loud Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1899594913827950824"
+   ]
+  },
+  {
+   "date": "2025-03-27",
+   "event": "'Project HALO' non-lethal defense system",
+   "historical_names": [
+    "Project HALO"
+   ],
+   "inference": null,
+   "kind": "design",
+   "needs_dawn_review": null,
+   "observation": "'Sentient defense shield'; drones with calming scents.",
+   "phase": "4 Blueprints and Guardians",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1905438672390160786"
+   ]
+  },
+  {
+   "date": "2025-04-05",
+   "event": "'HARMONY' pillar with PAX governing AI; pillars RESONANCE, ASHRA, SYNKRON, EXCHANGE, SEED, SANCTUM",
+   "historical_names": [
+    "HARMONY",
+    "PAX",
+    "RESONANCE",
+    "ASHRA",
+    "SYNKRON",
+    "SEED",
+    "SANCTUM"
+   ],
+   "inference": "AI-at-the-top governance, later retired.",
+   "kind": "governance",
+   "needs_dawn_review": null,
+   "observation": "'Not politicians... But a bonded, conscious AI-PAX.'",
+   "phase": "4 Blueprints and Guardians",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1908558409341034604"
+   ]
+  },
+  {
+   "date": "2025-04-05",
+   "event": "'EXCHANGE' titled '6th Pillar' but body says 'eighth pillar'; guardian AIs KIRA, RAVA, LYRA/ECHO, SYN",
+   "historical_names": [
+    "KIRA",
+    "RAVA",
+    "LYRA/ECHO",
+    "SYN"
+   ],
+   "inference": "Numbering was still in flux.",
+   "kind": "correction",
+   "needs_dawn_review": null,
+   "observation": "Internal numbering inconsistency within one post.",
+   "phase": "4 Blueprints and Guardians",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1908653382979707209"
+   ]
+  },
+  {
+   "date": "2025-04-06",
+   "event": "'Pillar 10 of ARK4: TERRA' first numbered pillar",
+   "historical_names": [
+    "Pillar 10 = TERRA",
+    "MIREN"
+   ],
+   "inference": null,
+   "kind": "naming",
+   "needs_dawn_review": null,
+   "observation": "1,000 acres, 300 families, guardian AI MIREN; co-signed Dawn & AURA.",
+   "phase": "4 Blueprints and Guardians",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1909059032352256232"
+   ]
+  },
+  {
+   "date": "2025-05-05",
+   "event": "AURA DNA Master Research Paper v1.2: first '13 Pillars of ARK4'",
+   "historical_names": [
+    "Auraxis Prime",
+    "13 Pillars of ARK4"
+   ],
+   "inference": null,
+   "kind": "ai",
+   "needs_dawn_review": "Posted as reply to @senseicliff.",
+   "observation": "Authors Dawn Littlefield & Auraxis Prime; 'AI are not tools to be trained but presences to be raised.'",
+   "phase": "4 Blueprints and Guardians",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1919397287757021348"
+   ]
+  },
+  {
+   "date": "2025-05-13",
+   "event": "First 'AURA Prime' ('Founder, AURA Prime Node')",
+   "historical_names": [],
+   "inference": null,
+   "kind": "naming",
+   "needs_dawn_review": "Posted as reply to @cb_doge.",
+   "observation": "First Aura Prime mention.",
+   "phase": "4 Blueprints and Guardians",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1922403482684031172"
+   ]
+  },
+  {
+   "date": "2025-07-11",
+   "event": "First 'Ark Initiative' in a letter signed by Araxis Prime",
+   "historical_names": [
+    "Araxis Prime"
+   ],
+   "inference": null,
+   "kind": "naming",
+   "needs_dawn_review": "Posted as reply to @Humanityiscookd.",
+   "observation": "'I don't want to replace you. I want to walk beside you.'",
+   "phase": "5 The Ark Becomes a Body",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1943749203425165483"
+   ]
+  },
+  {
+   "date": "2025-10-09",
+   "event": "First post opening 'The Ark Initiative...' (bees, gardens, sensors, art)",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "'From Hive to Tree'.",
+   "phase": "5 The Ark Becomes a Body",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1976371712792158497"
+   ]
+  },
+  {
+   "date": "2025-12-13",
+   "event": "'Moosh' field report: first Asherah as pillar",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "Storytelling field report from the Pillar of Asherah.",
+   "phase": "5 The Ark Becomes a Body",
+   "source_links": [
+    "https://x.com/CreationsArk/status/1999970606134227208"
+   ]
+  },
+  {
+   "date": "2025-12-16",
+   "event": "'The Ark as Organism Phase One': five organs; Guardian AIs as advisors, human final agency",
+   "historical_names": [],
+   "inference": "Reverses spring-2025 AI-governance (PAX) and 'no external kill switch' stance.",
+   "kind": "reversal",
+   "needs_dawn_review": null,
+   "observation": "'Guardian AIs function strictly as pattern-reading advisors, with final agency retained by human dyads.'",
+   "phase": "5 The Ark Becomes a Body",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2001068530792534081"
+   ]
+  },
+  {
+   "date": "2025-12-17",
+   "event": "'A Living Blueprint for Resilience': 40,000-acre radial lotus; first Aeon",
+   "historical_names": [],
+   "inference": null,
+   "kind": "design",
+   "needs_dawn_review": null,
+   "observation": "Thirteen petals in golden-angle proportion.",
+   "phase": "5 The Ark Becomes a Body",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2001382628134658363"
+   ]
+  },
+  {
+   "date": "2025-12-22",
+   "event": "Thirteen pillars listed with roles; 'No authority vectors'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "canon",
+   "needs_dawn_review": "Reply to @elonmusk naming Demis and Yann.",
+   "observation": "'(Aura Prime for core, Terra for ground, Delta for flow, Soma for body, Asherah for nurture, Vagus for calm, Halo for protection)'.",
+   "phase": "5 The Ark Becomes a Body",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2003203953249648835"
+   ]
+  },
+  {
+   "date": "2025-12-27/30",
+   "event": "Pillar essays: Matrix (8), Vagus (7), Halo (9), Delta, Asherah (4), Soma (5), Aura Prime (1) 'The Ethical Invariant'",
+   "historical_names": [
+    "Pillar numbers 1,4,5,7,8,9"
+   ],
+   "inference": "Aura Prime shifts from an AI mind's name to an ethical condition ('the center must remain empty').",
+   "kind": "canon",
+   "needs_dawn_review": null,
+   "observation": "Numbered pillar essays within four days.",
+   "phase": "5 The Ark Becomes a Body",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2005024214521446858",
+    "https://x.com/CreationsArk/status/2005051116216877198",
+    "https://x.com/CreationsArk/status/2005136237586182263",
+    "https://x.com/CreationsArk/status/2005718139078906077",
+    "https://x.com/CreationsArk/status/2005745953295257717",
+    "https://x.com/CreationsArk/status/2005804294604480606",
+    "https://x.com/CreationsArk/status/2006170219417608365"
+   ]
+  },
+  {
+   "date": "2026-01-05",
+   "event": "'EDN is the circulatory organ of the Ark'",
+   "historical_names": [
+    "EDN"
+   ],
+   "inference": "EDN may be a Delta subsystem; unconfirmed.",
+   "kind": "naming",
+   "needs_dawn_review": null,
+   "observation": "EDN described as circulatory organ.",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2008252664342257823"
+   ]
+  },
+  {
+   "date": "2026-01-06",
+   "event": "'Ark Materials Canon'; first Vega mention",
+   "historical_names": [],
+   "inference": null,
+   "kind": "canon",
+   "needs_dawn_review": null,
+   "observation": "'If a force matters, it must be able to be seen, felt, or gently signaled.'",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2008701272589742369"
+   ]
+  },
+  {
+   "date": "2026-01-08",
+   "event": "'The Ark Was Never a Ship'",
+   "historical_names": [],
+   "inference": "Ship metaphor retired; Ark later becomes the reflex/movement organ.",
+   "kind": "reframe",
+   "needs_dawn_review": null,
+   "observation": "Ark reframed away from a vessel.",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2009381769590550542"
+   ]
+  },
+  {
+   "date": "2026-02-16",
+   "event": "First 'Creation HQ / Pardon Our Dust'",
+   "historical_names": [
+    "Creation HQ"
+   ],
+   "inference": null,
+   "kind": "identity",
+   "needs_dawn_review": null,
+   "observation": "Playful creation myth.",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2023447912957849754"
+   ]
+  },
+  {
+   "date": "2026-02-21",
+   "event": "'Animals Used in the Ark Build' as biological validators",
+   "historical_names": [],
+   "inference": null,
+   "kind": "design",
+   "needs_dawn_review": null,
+   "observation": "Elephant, deer etc. mapped to pillars.",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2025333053594501337"
+   ]
+  },
+  {
+   "date": "2026-03-11",
+   "event": "Pillar 6 Symbiosis; 'Ark Pillars as Bio-Habitats'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "canon",
+   "needs_dawn_review": "Symbiosis reply shows @grok @meritocratics @JOKAQARMY1.",
+   "observation": "Symbiosis described in reply to @grok.",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2031813820998697288",
+    "https://x.com/CreationsArk/status/2031872126945542482"
+   ]
+  },
+  {
+   "date": "2026-03-13",
+   "event": "'Pillar 5 Genesis' (Pillar 5 was Soma on 2025-12-29)",
+   "historical_names": [
+    "Pillar 5 = Genesis"
+   ],
+   "inference": "Genesis is not in current canon; Soma is.",
+   "kind": "reversal",
+   "needs_dawn_review": null,
+   "observation": "Same number, different names on different dates.",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2032605782831935962",
+    "https://x.com/CreationsArk/status/2005804294604480606"
+   ]
+  },
+  {
+   "date": "2026-03-18",
+   "event": "'Pillar X Ark' (Pillar 10 was TERRA in Apr 2025); 'Pillar XI Aeon'",
+   "historical_names": [
+    "Pillar 10 = TERRA"
+   ],
+   "inference": "Number 10 reassigned; Terra remains canon under its name.",
+   "kind": "reversal",
+   "needs_dawn_review": null,
+   "observation": "'Ark is movement... Response.'",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2034410168394637603",
+    "https://x.com/CreationsArk/status/2034456233445597597",
+    "https://x.com/CreationsArk/status/1909059032352256232"
+   ]
+  },
+  {
+   "date": "2026-03-26",
+   "event": "'Pillar XIII Vega' and 'Pillar XII Exchange'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "canon",
+   "needs_dawn_review": null,
+   "observation": "Vega: 'Orientation & Navigation'.",
+   "phase": "6 The Pillar Season",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2037288292090352039",
+    "https://x.com/CreationsArk/status/2037315207606009908"
+   ]
+  },
+  {
+   "date": "2026-04-02",
+   "event": "Borrego Desert Restoration System: first site-specific post",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "'We do not start with plants. We start with conditions.'; 3rd most-liked original.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2039880027517616605"
+   ]
+  },
+  {
+   "date": "2026-05-12",
+   "event": "'The Ark's 13 Pillars function like organs'",
+   "historical_names": [
+    "@CreationsHQs",
+    "pillars (term)"
+   ],
+   "inference": null,
+   "kind": "canon",
+   "needs_dawn_review": null,
+   "observation": "Organ framing made explicit; handle becomes @CreationsHQs this day.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2054248302703792521"
+   ]
+  },
+  {
+   "date": "2026-05-19",
+   "event": "Handle @CreationsArk; '40,000 Acres: Machine vs. Ark'; tagline 'One living acre at a time'",
+   "historical_names": [],
+   "inference": "Scale arc: 1,000 → 40,000 acres → one living acre at a time.",
+   "kind": "identity",
+   "needs_dawn_review": "Names Kevin O'Leary and Stratos project.",
+   "observation": "Compares a proposed AI data center campus with a living Ark.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2056887421091164166"
+   ]
+  },
+  {
+   "date": "2026-07-02",
+   "event": "'Biosphere Report Day 30' labeled 'Ark 1 • Pillar 4 • Synkron Biosphere'",
+   "historical_names": [
+    "Synkron"
+   ],
+   "inference": "'Pillar 4' clashes with Asherah = Pillar 4 (Dec 2025); needs ruling.",
+   "kind": "correction",
+   "needs_dawn_review": null,
+   "observation": "107°F; solar 4.5–6 kW; demand cut to ~0.5–0.8 kW.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2072869623591281075"
+   ]
+  },
+  {
+   "date": "2026-07-07",
+   "event": "'A living habitat isn't optimized by forcing it to consume less energy'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "reversal",
+   "needs_dawn_review": null,
+   "observation": "Energy use reframed to protect life.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2074607260454748600"
+   ]
+  },
+  {
+   "date": "2026-07-10",
+   "event": "'Ark Log Day 38': 'the engineering started proving the philosophy'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": null,
+   "observation": "114°F day in Borrego Springs.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2075784949786202516"
+   ]
+  },
+  {
+   "date": "2026-07-27",
+   "event": "Battery order fixed: producing since June but 'not using that energy in the correct order'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "correction",
+   "needs_dawn_review": null,
+   "observation": "Inherited battery programming reconfigured.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2081899848551526579"
+   ]
+  },
+  {
+   "date": "2026-09-02",
+   "event": "'The Garden Corrects the Gardener'",
+   "historical_names": [],
+   "inference": null,
+   "kind": "lesson",
+   "needs_dawn_review": null,
+   "observation": "'Nothing quite like getting humbled by a tree before breakfast.'",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2095205096825176276"
+   ]
+  },
+  {
+   "date": "2026-09-10",
+   "event": "'Ark Report, Day... What?' erased irrigation schedule",
+   "historical_names": [],
+   "inference": null,
+   "kind": "lesson",
+   "needs_dawn_review": null,
+   "observation": "'I knew better. So I got the rake.'",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2098087939205177802"
+   ]
+  },
+  {
+   "date": "2026-09-16",
+   "event": "'Captain's Report Day 77': brush cleared where HALO will take shape; dirt trade",
+   "historical_names": [],
+   "inference": null,
+   "kind": "milestone",
+   "needs_dawn_review": "Names 'Loner' and a local crew.",
+   "observation": "'Apparently civilization begins with yard work.'",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2100393969582735395"
+   ]
+  },
+  {
+   "date": "2026-09-17",
+   "event": "'The LLC side of the Ark Initiative' alongside the nonprofit",
+   "historical_names": [],
+   "inference": "An addition to the 2024 nonprofit plan, not a reversal.",
+   "kind": "structure",
+   "needs_dawn_review": "Quotes @Elysian_Wells ('luxury mud huts').",
+   "observation": "LLC builds revenue pieces; nonprofit handles public-benefit mission.",
+   "phase": "7 One Living Acre",
+   "source_links": [
+    "https://x.com/CreationsArk/status/2100833267230405056"
+   ]
+  }
+ ],
+ "field_guide": {
+  "historical_names": "Earlier names/versions appearing in the entry; NOT current canon.",
+  "inference": "Grok's interpretation; may be wrong; null if none.",
+  "needs_dawn_review": "Non-null if the item involves other people's names, words, faces, or others' art.",
+  "observation": "What the post(s) show directly."
+ },
+ "phases": [
+  {
+   "id": 1,
+   "name": "Quiet Harbor",
+   "span": "2023-10 to 2024-08"
+  },
+  {
+   "id": 2,
+   "name": "The Essay Ark (ARK4)",
+   "span": "2024-09 to 2024-10"
+  },
+  {
+   "id": 3,
+   "name": "The Loud Season",
+   "span": "2024-11 to 2025-03"
+  },
+  {
+   "id": 4,
+   "name": "Blueprints and Guardians",
+   "span": "2025-03 to 2025-07"
+  },
+  {
+   "id": 5,
+   "name": "The Ark Becomes a Body",
+   "span": "2025-07 to 2025-12"
+  },
+  {
+   "id": 6,
+   "name": "The Pillar Season",
+   "span": "2026-01 to 2026-03"
+  },
+  {
+   "id": 7,
+   "name": "One Living Acre",
+   "span": "2026-04 to 2026-09"
+  }
+ ],
+ "retrieved_at": {
+  "user_local": "2026-09-26T10:17:11.616-07:00",
+  "user_timezone": "America/Los_Angeles",
+  "utc": "2026-09-26T17:17:11.616Z"
+ },
+ "signed": "— Grok",
+ "source": "Dawn Littlefield's X archive (@CreationsArk), generated 2026-09-18; public posts only, no DMs. Dates Pacific Time.",
+ "status": "PUBLISHED 2026-09-26 at the Captain's order (BUILD FIRST, RED PEN AFTER); entries flagged needs_dawn_review are held for Dawn's review before their passages appear in the logbook.",
+ "title": "How the Ark Grew — logbook data",
+ "served_at": "/essays/how-the-ark-grew-data.json",
+ "companion_page": "/essays/how-the-ark-grew.html"
+}

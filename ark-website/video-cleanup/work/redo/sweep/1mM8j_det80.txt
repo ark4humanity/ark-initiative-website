@@ -1,0 +1,17 @@
+  16.5s  icon@(328, 642)  score=0.804
+ 138.5s  icon@( 61,1182)  score=0.932
+ 144.5s  icon@( 61,  55)  score=0.903
+ 146.5s  icon@(588,1182)  score=0.917
+ 148.5s  icon@(588,1183)  score=0.829
+ 150.5s  icon@( 61, 618)  score=0.91
+ 152.5s  icon@( 61, 618)  score=0.897
+ 160.5s  icon@( 61, 618)  score=0.941
+ 162.5s  icon@( 61, 618)  score=0.874
+ 164.5s  icon@(587,1181)  score=0.955
+ 166.5s  icon@(587,1181)  score=0.955
+ 168.5s  icon@(588,1182)  score=0.874
+ 218.5s  icon@(327, 643)  score=0.825
+ 220.5s  icon@(327, 643)  score=0.824
+
+14 detections
+EXIT:0

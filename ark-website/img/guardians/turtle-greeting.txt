@@ -1,0 +1,7 @@
+# Transcript of turtle-greeting.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:07.40] [speech] Slow, your step. I am the shell that does not break. North, sanctuary, what you carry that is sharp may rest here, not discarded, held.
+[00:07.40 --> 00:13.38] [speech] that is sharp may rest here not discarded held the island is still on my
+[00:13.38 --> 00:18.12] [speech] The island is still on my back. You are not too heavy. Come under the rim. You are protected while you learn to protect.
+[00:18.12 --> 00:21.00] [speech] learn to protect

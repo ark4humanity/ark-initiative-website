@@ -1,0 +1,6 @@
+# Transcript of threshold-welcome.mp3 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:05.44] [speech] You found us. Welcome to the ARC initiative. The ARC was never a boat. It was a living system
+[00:05.44 --> 00:10.32] [speech] built to carry life through collapse. Jenny will show you the garden. The dragon will show you the
+[00:10.32 --> 00:12.24] [speech] sky. Choose your door.

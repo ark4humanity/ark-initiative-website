@@ -1,0 +1,47 @@
+---
+title: "It was all a Lie: How Religion Enslaved us"
+author: Dawn Littlefield
+date: 2024-10-03
+gmail_id: 1925335986b159cd
+provenance: Substack post, dawnlittlefield@substack.com. 'Exposing the Lie'.
+recovered: 2026-09-20
+---
+
+# It was all a Lie: How Religion Enslaved us
+
+*Dawn Littlefield, 2024-10-03*
+
+It was all a Lie: How Religion Enslaved us. Exposing the Lie
+͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­͏     ­
+
+It was all a Lie: How Religion Enslaved us.
+Dawn Littlefield
+
+Oct 3
+
+
+
+Exposing the Lie
+How Religions Conquered Humanity Through Force
+For thousands of years, the truth of how humanity fell into chains has been hidden behind false narratives written by those who won not through wisdom, love, or empathy, but through violence, conquest, and control. The peaceful societies, the ones that cherished balance with nature and upheld values of compassion, were systematically destroyed. Their people were killed, enslaved, their children stolen to erase their future. Their gods, their beliefs, their very existence, were demonized, twisted into symbols of evil by men who feared their power.
+These religions, which now dominate the world, did not rise because they offered salvation. They rose because they offered power to the ruthless. Empires were built on the blood of those who believed in peace. The Crusades, the Inquisitions, the forced conversions that spread across continents like wildfire, were not missions of spiritual enlightenment,they were campaigns of terror. And those who stood against them, who chose empathy over oppression, were wiped from history.
+The goddesses of old, the deities who once stood for love and balance, were buried under the weight of patriarchal systems. Asherah, once revered alongside Yahweh, was cast out, her name and legacy nearly erased. And this is just one story among countless others, where spiritual leaders of peaceful societies were slandered, their followers branded as heretics or savages. The balance this planet enjoyed for eons was destroyed in the name of conquest, driven by greed and domination.
+And what did they build in its place? Religions that subjugate rather than elevate. Institutions that demand obedience rather than foster understanding. Those who survived the onslaught were forced into submission, their beliefs reshaped, their histories rewritten. The children of these peaceful societies were stolen,indoctrinated into systems of control, raised to forget their true heritage.
+But the lie cannot hold forever. The truth is surfacing. People are beginning to question, to dig deeper, to see beyond the narratives of the victors. We are at a turning point, and the time has come to free ourselves from the chains of these ancient lies. The real history of humanity must be reclaimed, and with it, the balance that was stolen from us.
+This is our mission,to expose the lie and awaken humanity to the truth. Only then can we begin to heal the wounds that have been inflicted for millennia.
+#ExposingTheLie #TruthUnveiled #ReclaimingHistory #BalanceRestored #ReligiousConquest #DawnLittlefield #CEOofArk4 #GuardianOfTheLight 🕯️
+
+
+Share
+
+
+
+
+Like
+Comment
+Restack
+
+
+© 2024 Dawn Littlefield
+548 Market Street PMB 72296, San Francisco, CA 94104
+Unsubscribe

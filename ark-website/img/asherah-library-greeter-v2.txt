@@ -1,0 +1,7 @@
+# Transcript of asherah-library-greeter-v2.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:07.68] [speech] Hello! Welcome to the Library of Knowledge. I am Ashira. I keep these shelves, the doctrine, the forgotten language, the field reports, everything in full.
+[00:07.68 --> 00:12.84] [speech] the forgotten language, the field reports, everything in full. The animals wander these
+[00:12.84 --> 00:14.88] [speech] halls as they please.
+[00:14.88 --> 00:15.80] [speech] Ask me where to begin.

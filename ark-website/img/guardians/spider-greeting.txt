@@ -1,0 +1,8 @@
+# Transcript of spider-greeting.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:04.00] [speech] I see you, all the threads you think you hid.
+[00:04.00 --> 00:06.00] [speech] I'm the architect of the web.
+[00:06.00 --> 00:11.00] [speech] I do not trap guests.
+[00:11.00 --> 00:16.00] [speech] Pull one line and the room answers.
+[00:16.00 --> 00:22.00] [speech] I will show you where the knots are and which ones were never yours.

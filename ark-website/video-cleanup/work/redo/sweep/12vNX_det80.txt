@@ -1,0 +1,22 @@
+   3.5s  icon@(595,1170)  score=0.921
+   4.5s  icon@(595,1170)  score=0.952
+   5.5s  icon@(595,1170)  score=0.892
+   6.5s  icon@(595,1170)  score=0.874
+   7.5s  icon@( 70, 620)  score=0.869
+   8.5s  icon@( 69, 620)  score=0.893
+   9.5s  icon@( 70, 620)  score=0.834
+  10.5s  icon@( 69, 620)  score=0.88
+  11.5s  icon@(595,  69)  score=0.947
+  12.5s  icon@(595,  69)  score=0.908
+  13.5s  icon@( 69,1170)  score=0.914
+  14.5s  icon@( 69,1170)  score=0.838
+  15.5s  icon@( 70,1171)  score=0.85
+  16.5s  icon@( 69,1170)  score=0.871
+  17.5s  icon@(595, 618)  score=0.933
+  17.5s  icon@(607,1100)  score=0.812
+  18.5s  icon@(595, 619)  score=0.831
+  21.5s  icon@( 69,  67)  score=0.94
+  22.5s  icon@( 69,  67)  score=0.928
+
+19 detections
+EXIT:0

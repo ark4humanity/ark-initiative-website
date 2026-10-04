@@ -1,0 +1,8 @@
+# Transcript of ashera-library-welcome.mp3 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:07.56] [speech] Hello, welcome to the Library of Knowledge. I am Ashura. I keep these shelves, the doctrine,
+[00:07.56 --> 00:12.64] [speech] the forgotten language, the field reports, everything in full. The animals wonder these
+[00:12.64 --> 00:18.68] [speech] halls as they please. Ask me where to begin or walk the shelves yourself.
+[00:18.68 --> 00:19.68] [soundtrack] yourself.
+[00:19.68 --> 00:21.68] [soundtrack] You

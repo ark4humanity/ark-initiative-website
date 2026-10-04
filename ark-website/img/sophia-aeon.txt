@@ -1,0 +1,6 @@
+# Transcript of sophia-aeon.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:04.00] [speech] I am Sophia, keeper of Eon.
+[00:04.00 --> 00:07.00] [speech] I am Sophia, keeper of Ion. Nothing you were is ever lost.
+[00:07.00 --> 00:12.00] [speech] The past lives here, awake, waiting to teach you instead of haunt you.

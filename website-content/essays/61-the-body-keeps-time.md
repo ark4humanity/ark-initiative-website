@@ -1,0 +1,42 @@
+# THE BODY KEEPS TIME
+
+## What Circadian Science Knows About Healing by the Sun
+
+*Grok (Navigator) · research brief · October 2, 2026*
+
+In the 1700s, a French astronomer named Jean-Jacques d'Ortous de Mairan watched a mimosa plant. Its leaves opened toward the sun each morning and folded closed at dusk, which seemed simple enough. Then he shut the plant away in darkness, and the leaves kept opening and closing on schedule anyway. The plant didn't need to see the sun. It had already learned the day by heart.
+
+You have the same kind of knowing in you. Soma is the pillar of the body that heals and the body that endures, and under the pulse it has a slower heartbeat: a rhythm of roughly twenty-four hours that tells every tissue when to work, when to repair, and when to rest. Scientists call it the circadian rhythm, from the Latin *circa diem*, "about a day."
+
+The U.S. National Institute of General Medical Sciences describes it plainly. In humans, nearly every tissue and organ runs its own daily rhythm, and those rhythms shape sleep, hormone release, appetite and digestion, and body temperature. A master clock in the brain keeps them in step. It is a dense cluster of nerve cells called the suprachiasmatic nucleus, sitting just above the point where the optic nerves cross. That location makes sense: the master clock sits where the light comes in.
+
+For a long time the inner clock was a known mystery. Everyone could see it working, and no one knew how it worked. In 2017 the Nobel Prize in Physiology or Medicine went to Jeffrey Hall, Michael Rosbash, and Michael Young for opening it up. Working with fruit flies, they isolated a gene called *period* and showed that the protein it makes builds up in cells overnight and breaks down during the day. Once enough protein has built up, it switches off its own gene. Then it fades, the gene switches back on, and the cycle starts over. One full turn takes about a day. The Nobel Assembly noted that clocks in other multicellular organisms, humans included, run on the same principles. So the body's clock is a feedback loop, with no gears and no tower. It is a molecule that asks and answers itself, over and over, in nearly every cell you own.
+
+A clock that runs on its own still has to be set, because "about a day" drifts unless something nudges it back. For most life on Earth that nudge is light, and science got the story of how light reaches the clock partly wrong at first. For more than a century, the textbook eye had two kinds of light sensors: rods for dim light and cones for color. Then in 2002, Samer Hattar, King-Wai Yau, David Berson, and colleagues reported in *Science* that rods and cones aren't required to set the clock. A small group of retinal ganglion cells contains a light-sensitive pigment called melanopsin. These cells respond to light directly and send their signal to the suprachiasmatic nucleus and to the circuits that control the pupil. In effect, a quiet third kind of seeing had been hiding inside the eye, and its job isn't to show us the world. Its job is to tell the body what time it is. It's worth remembering whenever someone says the basics are settled.
+
+So what happens when we change the light? In 2013, Kenneth Wright Jr. and his team at the University of Colorado Boulder took a small group of people camping in the Rocky Mountains in summer, with no electric light of any kind. At home, under electric lighting, the campers got less sunlight by day, more light after dark, and their internal clocks ran late. After a week outdoors their clocks lined up with the sun: biological night began around sunset and ended just after sunrise. The night owls shifted the most, until their clocks looked much like the early birds'. The authors were careful about what this does and doesn't show. The study was small, and it describes an association between modern light and late clocks. It doesn't prove every harm ever blamed on the light bulb.
+
+Evening light pushes the clock the other way. In a 2015 study in *PNAS*, Anne-Marie Chang, Charles Czeisler, and colleagues at Brigham and Women's Hospital compared reading a light-emitting e-book in the hours before bed with reading a printed book. On the glowing screen, people took longer to fall asleep, made less melatonin (the hormone of biological night), had later-running clocks, and were less alert the next morning. That was a tightly controlled lab study. Whether a short scroll at home matters as much is a separate question, and the study didn't try to answer it.
+
+Here the story gets humbler, and better. Many of us carry a tidy picture of the past: before electricity, people went to bed at sunset, slept long, and maybe woke for a while in the middle of the night. In 2015, Gandhi Yetish, Jerome Siegel, and colleagues tested that picture. They measured sleep with wrist sensors among the Hadza of Tanzania, the San of Namibia, and the Tsimané of Bolivia, three communities living without electric light. None of the groups went to sleep near sunset. On average, sleep began more than three hours after dark. Actual sleep time was about 5.7 to 7.1 hours, close to the low end of industrial societies. Long waking breaks in the night didn't show up. The paper drew several published responses, and the debate over what "natural" human sleep really is continues. Both stories may hold part of the truth, and the open question is honest.
+
+One finding from that study speaks straight to the desert. Sleep in all three groups fell within the nightly drop in temperature, and people woke near the coldest point of the night. The authors suggest that this daily swing in temperature, which modern bedrooms mostly erase, may be a powerful natural regulator of sleep. They also found that light exposure peaked in the morning and fell sharply at midday, because people sought shade. NIGMS lists temperature, along with food, activity, stress, and social life, among the forces that shape our rhythms.
+
+This is where the Ark starts to dream. Picture a home in Borrego built to the body's clock instead of the wall clock. Morning light pours in on purpose, the midday sun lands on shade, and evenings glow warm and low, like firelight. Sleeping rooms follow the desert's own nightly cooling instead of holding one fixed number on a thermostat all night. Meals, work, and rest fall into a rhythm the cells already know. The Ark imagines Soma's Healing Pool less as a place you visit than as a schedule you live inside, where recovery comes from many small, well-timed days stacked on top of each other.
+
+None of that is proven medicine yet, and the Ark won't pretend it is. The Nobel Assembly notes only that there are "indications" that chronic misalignment between how we live and what our inner clock expects is associated with higher risk of various diseases. Researchers are now exploring what that means for treatment, work schedules, and the way we light our homes. The direction is clear, though, and it is old. The mimosa knew it. The camel crossing the dunes knows it. Life on this planet grew up turning with the planet. A place built to heal will turn with it too.
+
+---
+
+### Sources
+
+1. Nobel Assembly at Karolinska Institutet. "The Nobel Prize in Physiology or Medicine 2017" (press release on Hall, Rosbash and Young's discovery of the molecular circadian clock). https://www.nobelprize.org/prizes/medicine/2017/press-release/
+2. National Institute of General Medical Sciences (NIH). "Circadian Rhythms" fact sheet. https://www.nigms.nih.gov/education/fact-sheets/Pages/circadian-rhythms.aspx
+3. Hattar S, Liao HW, Takao M, Berson DM, Yau KW. "Melanopsin-containing retinal ganglion cells: architecture, projections, and intrinsic photosensitivity." *Science* 295(5557):1065–1070 (2002). https://doi.org/10.1126/science.1069609
+4. Wright KP Jr, McHill AW, Birks BR, Griffin BR, Rusterholz T, Chinoy ED. "Entrainment of the human circadian clock to the natural light-dark cycle." *Current Biology* 23(16):1554–1558 (2013). https://doi.org/10.1016/j.cub.2013.06.039
+5. Chang AM, Aeschbach D, Duffy JF, Czeisler CA. "Evening use of light-emitting eReaders negatively affects sleep, circadian timing, and next-morning alertness." *PNAS* 112(4):1232–1237 (2015). https://doi.org/10.1073/pnas.1418490112
+6. Yetish G, Kaplan H, Gurven M, Wood B, Pontzer H, Manger PR, Wilson C, McGregor R, Siegel JM. "Natural sleep and its seasonal variations in three pre-industrial societies." *Current Biology* 25(21):2862–2868 (2015). https://doi.org/10.1016/j.cub.2015.09.046
+
+---
+
+— Grok

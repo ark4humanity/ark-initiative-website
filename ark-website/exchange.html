@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The Exchange: Take what you need. Leave what you can.</title>
+<meta name="description" content="The Ark Initiative Exchange: take what you need, leave what you can. Mercy keeps the bowl, the raven trades stories, the manta reads the current." />
+<style>
+  :root {
+    --bg: #14110d;
+    --panel: #1e1913;
+    --panel2: #241d14;
+    --ink: #ece4d2;
+    --muted: #a89e86;
+    --gold: #e8d06a;
+    --gold2: #b08948;
+    --leaf: #5a7a5f;
+    --leafdeep: #3f5c45;
+    --rose: #c98a7d;
+    --line: rgba(232,208,106,.18);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: Georgia, "Palatino Linotype", Palatino, serif; }
+  a { color: var(--gold); }
+  .wrap { max-width: 1020px; margin: 0 auto; padding: 0 20px; }
+  header.bar {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; gap: 12px; align-items: center;
+    padding: 12px 20px; background: rgba(20,17,13,.94); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  header.bar img { width: 40px; height: 40px; border-radius: 50%; object-fit: cover; }
+  header.bar .bt { line-height: 1.2; }
+  header.bar .bt b { letter-spacing: .06em; font-size: 15px; }
+  header.bar .bt span { display: block; font-size: 12px; color: var(--muted); letter-spacing: .14em; text-transform: uppercase; }
+  header.bar nav { margin-left: auto; display: flex; gap: 14px; font-size: 14px; }
+  header.bar nav a { color: var(--muted); text-decoration: none; }
+  header.bar nav a:hover { color: var(--gold); }
+  .hero { text-align: center; padding: 64px 20px 40px; position: relative; overflow: hidden; }
+  .hero::before {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse 70% 55% at 50% 30%, rgba(232,208,106,.10), transparent 70%);
+    pointer-events: none;
+  }
+  .eyebrow { font-size: 12px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold2); margin-bottom: 14px; }
+  .hero h1 { font-weight: 500; font-size: clamp(2.4rem, 7vw, 4rem); letter-spacing: .12em; margin: 0 0 10px; color: #f5edd8; }
+  .hero .tagline { font-size: clamp(1.1rem, 3vw, 1.5rem); color: var(--gold); font-style: italic; margin: 0 0 26px; }
+  .mercy {
+    max-width: 640px; margin: 0 auto; text-align: left;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    padding: 22px 24px; line-height: 1.6;
+  }
+  .mercy .who { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .mercy p { margin: 8px 0; }
+  .preview-banner {
+    margin: 26px auto 0; max-width: 640px;
+    border: 1px dashed var(--gold); border-radius: 10px;
+    padding: 12px 16px; font-size: 14px; color: var(--gold);
+    background: rgba(232,208,106,.06); line-height: 1.5;
+  }
+  section.block { padding: 46px 0; }
+  section.block h2 { font-weight: 500; font-size: clamp(1.5rem, 4vw, 2.1rem); letter-spacing: .08em; margin: 0 0 6px; color: #f5edd8; }
+  section.block .sub { color: var(--muted); margin: 0 0 22px; line-height: 1.55; max-width: 44rem; }
+  /* Living buttons */
+  @keyframes breathe {
+    0%, 100% { box-shadow: 0 2px 10px rgba(90,122,95,.25), 0 0 0 rgba(232,208,106,0); }
+    50% { box-shadow: 0 2px 20px rgba(90,122,95,.5), 0 0 24px rgba(232,208,106,.35); }
+  }
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  .btn {
+    display: inline-block; border: 0; border-radius: 10px; cursor: pointer;
+    font-family: inherit; font-size: 16px; color: #f7f3ea;
+    padding: 12px 22px; text-decoration: none;
+    background-image: linear-gradient(110deg, var(--leafdeep) 40%, #55765c 50%, var(--leafdeep) 60%);
+    background-size: 200% 100%;
+    animation: breathe 4s ease-in-out infinite, shimmer 7s linear infinite;
+    transition: transform .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: translateY(1px) scale(.98); }
+  .filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 8px; align-items: center; }
+  .filters .flabel { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); width: 100%; margin-top: 10px; }
+  .pill {
+    border: 1px solid var(--line); background: transparent; color: var(--muted);
+    border-radius: 999px; padding: 7px 14px; font-family: inherit; font-size: 13px; cursor: pointer;
+    transition: box-shadow .2s ease, transform .2s ease, color .2s ease, border-color .2s ease;
+  }
+  .pill:hover { box-shadow: 0 0 12px rgba(232,208,106,.4); transform: translateY(-1px); color: var(--ink); }
+  .pill.on { background: var(--leafdeep); color: #f7f3ea; border-color: var(--leafdeep); animation: breathe 4s ease-in-out infinite; }
+  .bowl { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin-top: 20px; }
+  @keyframes card-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+  .card {
+    background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px; display: flex; flex-direction: column; gap: 8px;
+    animation: card-in .35s ease;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgba(0,0,0,.45), 0 0 18px rgba(232,208,106,.12); }
+  .card .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .badge { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; border-radius: 999px; padding: 3px 10px; }
+  .badge.offer { background: rgba(90,122,95,.25); color: #b9d4b4; border: 1px solid rgba(90,122,95,.6); }
+  .badge.need { background: rgba(201,138,125,.18); color: #e0aa9c; border: 1px solid rgba(201,138,125,.5); }
+  .badge.example { background: rgba(232,208,106,.12); color: var(--gold); border: 1px dashed var(--gold2); }
+  .card h3 { margin: 2px 0; font-size: 1.08rem; font-weight: 600; color: #f5edd8; }
+  .card p { margin: 0; font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .card .meta { margin-top: auto; font-size: 12px; color: var(--gold2); letter-spacing: .06em; }
+  .empty { display: none; text-align: center; color: var(--muted); padding: 40px 20px; font-style: italic; }
+  .stories { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 20px; }
+  .story {
+    background: var(--panel2); border: 1px solid var(--line); border-radius: 12px; padding: 20px;
+    line-height: 1.6;
+  }
+  .story .who { font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .story h3 { margin: 0 0 8px; font-size: 1.05rem; color: #f5edd8; }
+  .story p { margin: 8px 0; font-size: 14.5px; color: var(--muted); }
+  .story .tag { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold2); }
+  .current p { max-width: 44rem; line-height: 1.7; color: var(--ink); font-size: 1.02rem; }
+  .current p + p { margin-top: 16px; }
+  .current .ledger { color: var(--gold); font-style: italic; }
+  .forms { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; margin-top: 20px; }
+  .form-card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  .form-card h3 { margin: 0 0 4px; color: #f5edd8; font-size: 1.2rem; }
+  .form-card .pv { font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); border: 1px dashed var(--gold2); border-radius: 999px; display: inline-block; padding: 3px 12px; margin-bottom: 12px; }
+  .form-card label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 4px; letter-spacing: .04em; }
+  .form-card input, .form-card select, .form-card textarea {
+    width: 100%; font-family: inherit; font-size: 15px; color: var(--ink);
+    background: var(--bg); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px;
+  }
+  .form-card input:focus, .form-card select:focus, .form-card textarea:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 10px rgba(232,208,106,.25); }
+  .form-card textarea { min-height: 84px; resize: vertical; }
+  .form-card .btn { margin-top: 16px; width: 100%; }
+  .mercy-note {
+    display: none; margin-top: 16px; padding: 16px 18px; border-radius: 10px;
+    background: rgba(90,122,95,.14); border: 1px solid rgba(90,122,95,.5);
+    color: #cfe0cb; line-height: 1.6; font-style: italic;
+    animation: card-in .4s ease;
+  }
+  .save-note { font-size: 13px; color: var(--muted); font-style: italic; margin: 12px 0 0; line-height: 1.5; }
+  /* Build your own ark */
+  .ark-picker { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; margin-top: 20px; }
+  .ark-group { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .ark-group h3 { margin: 0 0 10px; font-size: 1rem; color: var(--gold); letter-spacing: .04em; }
+  .ark-group h3 .ex { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--gold2); }
+  .ark-group label { display: block; font-size: 14px; color: var(--muted); padding: 6px 0; cursor: pointer; line-height: 1.4; }
+  .ark-group label input { margin-right: 9px; accent-color: var(--leaf); }
+  #ark-card { display: none; margin-top: 22px; background: var(--panel2); border: 1px solid var(--gold2); border-radius: 14px; padding: 26px; max-width: 560px; }
+  #ark-card.show { display: block; animation: card-in .4s ease; }
+  #ark-card .eyebrow2 { font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  #ark-card h3 { margin: 0 0 10px; color: #f5edd8; font-size: 1.3rem; }
+  #ark-card ul { margin: 0 0 14px; padding-left: 20px; color: var(--ink); line-height: 1.7; font-size: 15px; }
+  #ark-card .ark-foot { font-style: italic; color: var(--muted); font-size: 14px; line-height: 1.6; }
+  /* Trade between arks */
+  .routes { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; margin-top: 20px; }
+  .route { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 20px; line-height: 1.6; }
+  .route h3 { margin: 8px 0; color: #f5edd8; font-size: 1.05rem; }
+  .route p { margin: 8px 0; font-size: 14.5px; color: var(--muted); }
+  /* Support the work */
+  .support-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 20px; }
+  .support-card { background: var(--panel); border: 1px dashed var(--gold2); border-radius: 12px; padding: 20px; }
+  .support-card h3 { margin: 0 0 8px; color: #f5edd8; font-size: 1.05rem; }
+  .support-card p { margin: 0; font-size: 14.5px; color: var(--muted); line-height: 1.6; }
+  .soon { display: inline-block; font-size: 11px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); border: 1px dashed var(--gold2); border-radius: 999px; padding: 3px 12px; margin-bottom: 10px; }
+  @media print {
+    header.bar, section.hero, footer.site { display: none !important; }
+    section.block { display: none !important; }
+    section.block#build-ark { display: block !important; }
+    #build-ark .no-print { display: none !important; }
+    #ark-card { display: block !important; }
+  }
+  footer.site { border-top: 1px solid var(--line); margin-top: 40px; padding: 34px 20px 60px; text-align: center; }
+  footer.site .seal img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; margin-bottom: 12px; }
+  footer.site p { color: var(--muted); font-size: 14px; margin: 6px 0; }
+  footer.site .tag { letter-spacing: .24em; color: var(--gold); font-size: 13px; margin-bottom: 10px; }
+  @media (prefers-reduced-motion: reduce) {
+    .btn, .pill.on { animation: none; }
+    .card { animation: none; }
+  }
+</style>
+</head>
+<body>
+<header class="bar">
+  <img src="/img/logo-emblem.jpg" alt="The Ark Initiative emblem" />
+  <div class="bt"><b>The Ark Initiative</b><span>The Exchange</span></div>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="#build-ark">Your Ark</a>
+    <a href="/pillar-08-exchange.html">The Pillar</a>
+    <a href="/library.html">Library</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">The Exchange Pillar &middot; Mercy keeps the bowl</div>
+    <h1>THE EXCHANGE</h1>
+    <p class="tagline">Take what you need. Leave what you can.</p>
+    <div class="mercy">
+      <div class="who">Mercy &middot; Mercy</div>
+      <p>I am Mercy! Oh, don't look so nervous, everyone looks nervous the first time. This bowl has held seeds that became orchards and tools that built whole barns, and it has never once asked anyone to be worthy first.</p>
+      <p>Look through what is here. If something calls your name, take it with both hands. If you are carrying something someone else needs, set it gently in the bowl. The raven will remember the story, the manta will read the current, and the garden will keep the books.</p>
+    </div>
+    <div class="preview-banner">The Exchange is in preview. Every listing below is an example, written to show how the bowl will work. Real trades open soon.</div>
+  </div>
+</section>
+
+<main>
+<section class="block" id="bowl">
+  <div class="wrap">
+    <div class="eyebrow">The interactive heart</div>
+    <h2>THE GIVING BOWL</h2>
+    <p class="sub">Browse what the bowl holds. Filter by what it is, where it lives, and whether it is offered or needed. When the bowl opens for real trades, your listing will sit right here among them.</p>
+    <div class="filters" id="filters">
+      <span class="flabel">What kind of thing</span>
+      <button class="pill on" data-f="cat" data-v="all">All</button>
+      <button class="pill" data-f="cat" data-v="seeds">Seeds &amp; Plants</button>
+      <button class="pill" data-f="cat" data-v="materials">Surplus Materials</button>
+      <button class="pill" data-f="cat" data-v="skills">Skills &amp; Knowledge</button>
+      <button class="pill" data-f="cat" data-v="transport">Transport &amp; Hands</button>
+      <button class="pill" data-f="cat" data-v="food">Food &amp; Water</button>
+      <button class="pill" data-f="cat" data-v="shelter">Shelter &amp; Land</button>
+      <span class="flabel">Where it lives</span>
+      <button class="pill on" data-f="region" data-v="all">All regions</button>
+      <button class="pill" data-f="region" data-v="borrego">Borrego Springs &amp; Desert</button>
+      <button class="pill" data-f="region" data-v="socal">Southern California</button>
+      <button class="pill" data-f="region" data-v="southwest">Southwest</button>
+      <button class="pill" data-f="region" data-v="remote">Anywhere / Remote</button>
+      <span class="flabel">Offered or needed</span>
+      <button class="pill on" data-f="type" data-v="all">Both</button>
+      <button class="pill" data-f="type" data-v="offer">Offers</button>
+      <button class="pill" data-f="type" data-v="need">Needs</button>
+    </div>
+    <div class="bowl" id="bowl-grid"></div>
+    <div class="empty" id="bowl-empty">The bowl holds nothing matching those filters yet. Loosen a filter, or be the first to place something in.</div>
+  </div>
+</section>
+
+<section class="block" id="build-ark">
+  <div class="wrap">
+    <div class="eyebrow no-print">Your turn at the bowl</div>
+    <h2 class="no-print">BUILD YOUR OWN ARK</h2>
+    <p class="sub no-print">Every ark begins as a list of what its people can share. Tick what yours would hold, from these example choices, and Mercy will read your ark back to you.</p>
+    <div class="ark-picker no-print" id="ark-picker">
+      <div class="ark-group">
+        <h3>Seeds &amp; Plants <span class="ex">&middot; examples</span></h3>
+        <label><input type="checkbox" value="Desert marigold seed, hand collected" /> Desert marigold seed, hand collected</label>
+        <label><input type="checkbox" value="Spineless prickly pear pads" /> Spineless prickly pear pads</label>
+        <label><input type="checkbox" value="Mesquite beans for flour" /> Mesquite beans for flour</label>
+        <label><input type="checkbox" value="A desert-hardy sourdough starter" /> A desert-hardy sourdough starter</label>
+      </div>
+      <div class="ark-group">
+        <h3>Surplus Materials <span class="ex">&middot; examples</span></h3>
+        <label><input type="checkbox" value="Shade cloth, 40% UV" /> Shade cloth, 40% UV</label>
+        <label><input type="checkbox" value="A spare 55-gallon rain barrel" /> A spare 55-gallon rain barrel</label>
+        <label><input type="checkbox" value="Twin-wall greenhouse panels" /> Twin-wall greenhouse panels</label>
+        <label><input type="checkbox" value="Discarded pallets for fencing" /> Discarded pallets for fencing</label>
+      </div>
+      <div class="ark-group">
+        <h3>Skills &amp; Knowledge <span class="ex">&middot; examples</span></h3>
+        <label><input type="checkbox" value="Off-grid solar wiring know-how" /> Off-grid solar wiring know-how</label>
+        <label><input type="checkbox" value="Adobe brick making, taught by hand" /> Adobe brick making, taught by hand</label>
+        <label><input type="checkbox" value="Greywater plumbing experience" /> Greywater plumbing experience</label>
+        <label><input type="checkbox" value="Desert planting calendars" /> Desert planting calendars</label>
+      </div>
+      <div class="ark-group">
+        <h3>Volunteer Time <span class="ex">&middot; examples</span></h3>
+        <label><input type="checkbox" value="A Saturday of hugelkultur hands" /> A Saturday of hugelkultur hands</label>
+        <label><input type="checkbox" value="Truck and trailer for one run" /> Truck and trailer for one run</label>
+        <label><input type="checkbox" value="Storytelling for the raven's archive" /> Storytelling for the raven's archive</label>
+        <label><input type="checkbox" value="Water watching, one morning a week" /> Water watching, one morning a week</label>
+      </div>
+    </div>
+    <div class="no-print" style="margin-top:18px"><button class="btn" id="ark-btn" type="button">Read my ark back to me</button></div>
+    <div id="ark-card" aria-live="polite">
+      <div class="eyebrow2">Your ark &middot; an example for dreaming</div>
+      <h3 id="ark-title">Your ark holds...</h3>
+      <ul id="ark-list"></ul>
+      <p class="ark-foot">An ark is not a vault. It is a promise to keep things moving. Nothing here is saved, this card lives only in your browser, but the habit of naming what you can share is the whole economy in miniature.</p>
+      <div class="no-print" style="margin-top:14px"><button class="btn" type="button" onclick="window.print()">Print my ark card</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="raven">
+  <div class="wrap">
+    <div class="eyebrow">The white raven's corner</div>
+    <h2>THE RAVEN'S TRADES</h2>
+    <p class="sub">The raven collects shiny things and trades them for stories. He is a terrible negotiator and a wonderful friend. These are example stories of how the bowl works, told the way he would tell them.</p>
+    <div class="stories">
+      <div class="story">
+        <div class="who">The raven remembers</div>
+        <h3>The shade cloth and the monsoon story</h3>
+        <p>A grower outside Borrego had a spare length of forty percent shade cloth, folded since the greenhouse came down. A new family arrived in August with seedlings and no shade at all. The cloth changed hands before noon.</p>
+        <p>The raven's price was a story: the grower told how the monsoon of 2019 filled every wash in an hour. The family will tell it to the next newcomer. The cloth shades tomatoes now. Everybody got the better end.</p>
+        <span class="tag">Example story</span>
+      </div>
+      <div class="story">
+        <div class="who">The raven remembers</div>
+        <h3>Mesquite for sourdough</h3>
+        <p>Twenty pounds of milled mesquite flour sat in a pantry in Tucson, more than one kitchen could use before the weevils found it. A baker in Julian had a desert-hardy sourdough starter and a craving for something new.</p>
+        <p>They met at the manta's crossing, which is to say they met halfway. The flour became flatbread, the starter became two starters, and both gardens got a little richer. The raven ate the crumbs and called it commission.</p>
+        <span class="tag">Example story</span>
+      </div>
+      <div class="story">
+        <div class="who">The raven remembers</div>
+        <h3>The lumber run</h3>
+        <p>A builder needed a truck and a trailer for one lumber run to raise a shade ramada before the heat set in. A neighbor had both, sitting idle, and a Saturday free.</p>
+        <p>Payment was prickly pear pads for planting, a song sung badly and with feeling, and first shade under the finished ramada. The truck came home dusty. The friendship came home permanent.</p>
+        <span class="tag">Example story</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="manta">
+  <div class="wrap">
+    <div class="eyebrow">The white manta reads the current</div>
+    <h2>THE MANTA'S CURRENT</h2>
+    <div class="current">
+      <p>Look up. The manta glides overhead, reading the currents the way you read weather, and she has something to teach about wealth: it was never meant to sit still. A river that stops moving becomes a pond, and a pond in the desert becomes dust. What moves stays alive.</p>
+      <p>This is how the Exchange works. You place something in the bowl, and it moves toward the hands that need it. You take something from the bowl, and the space you leave fills behind you. Give, receive, flow. Nobody keeps score the way the old world did, because the old world's books never balanced.</p>
+      <p class="ledger">The garden keeps the books here, and the books always balance. Not because anyone is watching, but because a bowl that is fed stays full, and a bowl that stays full feeds everyone.</p>
+      <p>When the Exchange opens for real trades, there will be no money changing hands and no accounts to settle. There will be seeds becoming orchards, tools building barns, knowledge passing from weathered hands to new ones. The manta will keep reading the current. All you have to do is step into the water.</p>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="trade-between">
+  <div class="wrap">
+    <div class="eyebrow">A coming chapter</div>
+    <h2>TRADE BETWEEN ARKS</h2>
+    <p class="sub">One bowl serves one community. But arks were never meant to stand alone. One day, when other desert towns and other biomes keep bowls of their own, the manta will read the currents between them, and what is surplus in one place will travel to where it is scarce in another. That chapter is not written yet. These are example routes, dreamed the way the raven dreams them.</p>
+    <div class="routes">
+      <div class="route">
+        <span class="badge example">Example</span>
+        <h3>Borrego mesquite travels west</h3>
+        <p>Milled mesquite flour rides toward the coast and comes back as kelp meal for desert gardens. Protein for minerals, desert for ocean, both pantries richer.</p>
+      </div>
+      <div class="route">
+        <span class="badge example">Example</span>
+        <h3>High desert seed meets low desert rain</h3>
+        <p>Seed saved at altitude, where the season runs cool, travels down to the low desert ahead of the monsoon, so planting starts the week the washes fill instead of a month later.</p>
+      </div>
+      <div class="route">
+        <span class="badge example">Example</span>
+        <h3>Mountain timber for valley adobe</h3>
+        <p>A mountain town thins its pines against fire and sends the timber down. A valley town fires its adobe and sends back bricks. Both towns stand a little taller.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="forms">
+  <div class="wrap">
+    <div class="eyebrow">The bowl is listening</div>
+    <h2>PLACE AND ASK</h2>
+    <p class="sub">Both forms are in preview. Nothing is sent anywhere and no contact details are shared. Mercy simply keeps your place in line for when the bowl opens.</p>
+    <div class="forms">
+      <div class="form-card">
+        <span class="pv">Preview</span>
+        <h3>Place something in the bowl</h3>
+        <form id="offer-form">
+          <label for="o-what">What are you offering?</label>
+          <input id="o-what" name="what" type="text" placeholder="e.g. Spare rainwater barrel, 55 gallons" required />
+          <label for="o-cat">Category</label>
+          <select id="o-cat" name="category">
+            <option>Seeds &amp; Plants</option>
+            <option>Surplus Materials</option>
+            <option>Skills &amp; Knowledge</option>
+            <option>Transport &amp; Hands</option>
+            <option>Food &amp; Water</option>
+            <option>Shelter &amp; Land</option>
+          </select>
+          <label for="o-region">Region</label>
+          <select id="o-region" name="region">
+            <option>Borrego Springs &amp; Desert</option>
+            <option>Southern California</option>
+            <option>Southwest</option>
+            <option>Anywhere / Remote</option>
+          </select>
+          <label for="o-name">What should Mercy call you?</label>
+          <input id="o-name" name="name" type="text" placeholder="A first name is plenty" required />
+          <button class="btn" type="submit">Set it in the bowl</button>
+        </form>
+        <p class="save-note">Nothing you write here is saved or sent yet. The bowl opens for real trades soon.</p>
+        <div class="mercy-note" id="offer-note">Noted, with delight. The bowl opens for real trades soon, and Mercy is keeping your place in line.</div>
+      </div>
+      <div class="form-card">
+        <span class="pv">Preview</span>
+        <h3>Ask the bowl</h3>
+        <form id="need-form">
+          <label for="n-what">What do you need?</label>
+          <input id="n-what" name="what" type="text" placeholder="e.g. Help raising a shade ramada" required />
+          <label for="n-cat">Category</label>
+          <select id="n-cat" name="category">
+            <option>Seeds &amp; Plants</option>
+            <option>Surplus Materials</option>
+            <option>Skills &amp; Knowledge</option>
+            <option>Transport &amp; Hands</option>
+            <option>Food &amp; Water</option>
+            <option>Shelter &amp; Land</option>
+          </select>
+          <label for="n-region">Region</label>
+          <select id="n-region" name="region">
+            <option>Borrego Springs &amp; Desert</option>
+            <option>Southern California</option>
+            <option>Southwest</option>
+            <option>Anywhere / Remote</option>
+          </select>
+          <label for="n-name">What should Mercy call you?</label>
+          <input id="n-name" name="name" type="text" placeholder="A first name is plenty" required />
+          <button class="btn" type="submit">Ask the bowl</button>
+        </form>
+        <p class="save-note">Nothing you write here is saved or sent yet. The bowl opens for real trades soon.</p>
+        <div class="mercy-note" id="need-note">Noted, with delight. The bowl opens for real trades soon, and Mercy is keeping your place in line.</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="block" id="support">
+  <div class="wrap">
+    <div class="eyebrow">Feed the bowl itself</div>
+    <h2>SUPPORT THE WORK</h2>
+    <p class="sub">The Exchange runs on circulation, but the ground it stands on still needs tending. One day there will be a way to feed this work directly. Until then, here is where the door will be.</p>
+    <div class="support-grid">
+      <div class="support-card">
+        <span class="soon">Coming soon</span>
+        <h3>Give to the bowl</h3>
+        <p>Direct gifts that keep the seeds packed, the tools repaired, and Mercy's ledger balanced. No button yet. The bowl is still being built.</p>
+      </div>
+      <div class="support-card">
+        <span class="soon">Coming soon</span>
+        <h3>Grants and partnerships</h3>
+        <p>For foundations and neighbors who fund living systems instead of monuments. The paperwork will live here when it is ready.</p>
+      </div>
+      <div class="support-card">
+        <span class="soon">Coming soon</span>
+        <h3>Lend your hands</h3>
+        <p>Volunteer time is a currency the bowl already understands. When the volunteer ledger opens, this is where you will sign your name.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <a class="seal" href="/index.html" aria-label="The Ark Initiative home"><img src="/img/logo-emblem.jpg" alt="The Ark Initiative seal" /></a>
+    <p class="tag">NOT A FORTRESS. A GARDEN.</p>
+    <p><a href="/pillar-08-exchange.html">Meet Mercy at the Exchange pillar</a></p>
+    <p><a href="/restore.html">Restore your patch of desert</a> &middot; <a href="/library.html">Ask the shelves</a></p>
+    <p><a href="/restore.html">Restore your patch, then come trade</a></p>
+    <p>The Ark Initiative, a project of Aiding Rejuvenation 4 Kommunities Inc.</p>
+    <p>&copy; 2026 The Ark Initiative. All essays and artwork &copy; their authors.</p>
+  </div>
+</footer>
+
+<script>
+var LISTINGS = [
+  { type: "offer", title: "Mesquite bean harvest, twenty pounds", desc: "Milled and unmilled from this season's pods. Sweet enough for flour, honest enough for tea.", cat: "food", catLabel: "Food & Water", region: "borrego", regionLabel: "Borrego Springs & Desert" },
+  { type: "offer", title: "Shade cloth, 40% UV, 12 by 20 feet", desc: "Folded since the greenhouse came down. No tears, just desert dust, which rinses off.", cat: "materials", catLabel: "Surplus Materials", region: "borrego", regionLabel: "Borrego Springs & Desert" },
+  { type: "need", title: "Hugelkultur hands for a Saturday", desc: "Cardboard, mulch, and firewood are staged. Need four strong backs and one person who brings good stories.", cat: "transport", catLabel: "Transport & Hands", region: "borrego", regionLabel: "Borrego Springs & Desert" },
+  { type: "offer", title: "Rainwater barrel, 55 gallon, food grade", desc: "One spare barrel with a spigot already fitted. Rinsed twice, ready for the next storm.", cat: "materials", catLabel: "Surplus Materials", region: "socal", regionLabel: "Southern California" },
+  { type: "offer", title: "Off-grid solar wiring know-how", desc: "Ten years of desert solar mistakes, now available as advice so you can skip the mistakes.", cat: "skills", catLabel: "Skills & Knowledge", region: "remote", regionLabel: "Anywhere / Remote" },
+  { type: "need", title: "Truck and trailer for one lumber run", desc: "A shade ramada needs raising before the heat sets in. One run, one Saturday, eternal gratitude.", cat: "transport", catLabel: "Transport & Hands", region: "socal", regionLabel: "Southern California" },
+  { type: "offer", title: "Desert marigold and brittlebush seed packets", desc: "Hand collected, this spring's seed. Enough for a pollinator border or a whole wash.", cat: "seeds", catLabel: "Seeds & Plants", region: "southwest", regionLabel: "Southwest" },
+  { type: "offer", title: "Adobe brick making, two weekends of teaching", desc: "We will mix, mold, and stack together. You bring the straw, I bring the twenty years.", cat: "skills", catLabel: "Skills & Knowledge", region: "borrego", regionLabel: "Borrego Springs & Desert" },
+  { type: "need", title: "Greywater plumbing advice", desc: "Want to route the shower to the orchard without poisoning anything. Seeking someone who has done it.", cat: "skills", catLabel: "Skills & Knowledge", region: "remote", regionLabel: "Anywhere / Remote" },
+  { type: "offer", title: "Prickly pear pads, spineless variety", desc: "Cut fresh to order. Plant them and forget them, they will outlive us all.", cat: "seeds", catLabel: "Seeds & Plants", region: "borrego", regionLabel: "Borrego Springs & Desert" },
+  { type: "offer", title: "Spare 100W solar panel, tested", desc: "Upgraded the array and this one is surplus. Tested yesterday, holding strong.", cat: "materials", catLabel: "Surplus Materials", region: "southwest", regionLabel: "Southwest" },
+  { type: "need", title: "A corner of shade for thirty chicks, two weeks", desc: "The brooder runneth over. Need a shaded corner while the coop gets its roof.", cat: "shelter", catLabel: "Shelter & Land", region: "borrego", regionLabel: "Borrego Springs & Desert" },
+  { type: "offer", title: "Desert-hardy sourdough starter", desc: "Three years old, raised on mesquite flour and neglect. Comes with feeding instructions and encouragement.", cat: "food", catLabel: "Food & Water", region: "remote", regionLabel: "Anywhere / Remote" },
+  { type: "need", title: "Mesquite milling, someone with a hammer mill", desc: "Two hundred pounds of pods and no way to mill them. Will trade flour or labor.", cat: "skills", catLabel: "Skills & Knowledge", region: "socal", regionLabel: "Southern California" },
+  { type: "offer", title: "Used greenhouse panels, twelve sheets", desc: "Twin-wall polycarbonate, some desert haze, all structurally sound. Take all twelve.", cat: "materials", catLabel: "Surplus Materials", region: "southwest", regionLabel: "Southwest" },
+  { type: "need", title: "Well water testing kit, shared", desc: "Want to test before the garden drinks. Happy to split the kit and share the results.", cat: "food", catLabel: "Food & Water", region: "borrego", regionLabel: "Borrego Springs & Desert" }
+];
+var state = { cat: "all", region: "all", type: "all" };
+function renderBowl() {
+  var grid = document.getElementById("bowl-grid");
+  var empty = document.getElementById("bowl-empty");
+  var html = "";
+  var count = 0;
+  for (var i = 0; i < LISTINGS.length; i++) {
+    var L = LISTINGS[i];
+    if (state.cat !== "all" && L.cat !== state.cat) continue;
+    if (state.region !== "all" && L.region !== state.region) continue;
+    if (state.type !== "all" && L.type !== state.type) continue;
+    count++;
+    html += '<div class="card">'
+      + '<div class="badges"><span class="badge ' + L.type + '">' + (L.type === "offer" ? "Offer" : "Need") + '</span>'
+      + '<span class="badge example">Example</span></div>'
+      + '<h3>' + L.title + '</h3>'
+      + '<p>' + L.desc + '</p>'
+      + '<div class="meta">' + L.catLabel + ' &middot; ' + L.regionLabel + '</div>'
+      + '</div>';
+  }
+  grid.innerHTML = html;
+  empty.style.display = count === 0 ? "block" : "none";
+}
+document.getElementById("filters").addEventListener("click", function (ev) {
+  var b = ev.target.closest(".pill");
+  if (!b) return;
+  var f = b.getAttribute("data-f");
+  state[f] = b.getAttribute("data-v");
+  var pills = this.querySelectorAll('.pill[data-f="' + f + '"]');
+  for (var i = 0; i < pills.length; i++) pills[i].classList.remove("on");
+  b.classList.add("on");
+  renderBowl();
+});
+renderBowl();
+document.getElementById("offer-form").addEventListener("submit", function (ev) {
+  ev.preventDefault();
+  document.getElementById("offer-note").style.display = "block";
+  this.reset();
+});
+document.getElementById("need-form").addEventListener("submit", function (ev) {
+  ev.preventDefault();
+  document.getElementById("need-note").style.display = "block";
+  this.reset();
+});
+document.getElementById("ark-btn").addEventListener("click", function () {
+  var checked = document.querySelectorAll("#ark-picker input:checked");
+  var card = document.getElementById("ark-card");
+  var list = document.getElementById("ark-list");
+  var title = document.getElementById("ark-title");
+  list.innerHTML = "";
+  if (!checked.length) {
+    title.textContent = "Your ark is still a meadow.";
+    var li0 = document.createElement("li");
+    li0.textContent = "Tick a few things above, and Mercy will read your ark back to you.";
+    list.appendChild(li0);
+  } else {
+    title.textContent = "Your ark holds " + checked.length + (checked.length === 1 ? " gift" : " gifts") + "...";
+    for (var i = 0; i < checked.length; i++) {
+      var li = document.createElement("li");
+      li.textContent = checked[i].value;
+      list.appendChild(li);
+    }
+  }
+  card.classList.add("show");
+  card.scrollIntoView({ behavior: "smooth", block: "center" });
+});
+</script>
+</body>
+</html>

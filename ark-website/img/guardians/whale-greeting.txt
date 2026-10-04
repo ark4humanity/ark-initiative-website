@@ -1,0 +1,9 @@
+# Transcript of whale-greeting.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:04.66] [speech] I am the water that lifts or a prime, west, depth, return.
+[00:04.66 --> 00:07.76] [speech] West, depth, return.
+[00:07.76 --> 00:14.56] [speech] What sank in you is not lost, it waits under pressure, until the door opens.
+[00:14.56 --> 00:19.52] [speech] I remember in two languages, tide, and signal.
+[00:19.52 --> 00:23.44] [speech] Lay your weight on the water, I will lift what is ready, the rest may stay deep until
+[00:23.44 --> 00:27.20] [speech] The rest may stay deep until it is.

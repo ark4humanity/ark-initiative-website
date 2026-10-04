@@ -1,0 +1,14 @@
+# Transcript of library-deep-DRAFT.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:13.00] [speech] This is the library. Nothing here is dead. The shelves breathe, and the books choose their readers.
+[00:13.00 --> 00:21.00] [speech] The lion keeps the door. He was here before you arrived. He belongs the way the walls belong.
+[00:21.00 --> 00:29.00] [speech] The owl brings the book of life. Its cover carries the tree, the mark of everything we keep.
+[00:29.00 --> 00:33.00] [speech] Watch! No hands. The book opens itself.
+[00:33.00 --> 00:37.00] [speech] Watch. No hands. The book opens itself. In a living library, the book wants to be read.
+[00:37.00 --> 00:42.00] [speech] The bee takes his proud little place on the open page. The dragon browses, chooses, and carries.
+[00:42.00 --> 00:47.00] [speech] The dragon browses, chooses and carries.
+[00:47.00 --> 00:52.00] [speech] Every intelligence in this house tends the shelves.
+[00:52.00 --> 00:55.00] [speech] Welcome, not ceremony.
+[00:55.00 --> 00:58.00] [speech] Welcome. Not ceremony. The library has been waiting for you.
+[00:59.00 --> 01:01.06] [speech] you

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#f3c9a0">
+<title>The Living Garden · The Ark Initiative</title>
+<meta name="description" content="A 4-minute desert garden game from The Ark Initiative. Grow, water, and defend a Borrego garden with friends, not fights.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='30' fill='%23f3c9a0'/%3E%3Cpath d='M32 52V28' stroke='%23557a35' stroke-width='5' stroke-linecap='round'/%3E%3Cellipse cx='22' cy='28' rx='10' ry='6' fill='%237fae4f'/%3E%3Cellipse cx='42' cy='24' rx='10' ry='6' fill='%237fae4f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c" aria-label="Garden play field"></canvas>
+
+<header id="hud" class="hidden">
+  <div class="hud-left"><div id="dayName">Day 1</div><div id="goal">Harvest 3</div></div>
+  <div class="hud-right">
+    <span class="pill" id="pWater" title="Water in the cistern">💧 <b id="water">6</b></span>
+    <span class="pill" id="pSeeds" title="Seeds">🌱 <b id="seeds">3</b></span>
+    <span class="pill" title="Harvest">🧺 <b id="harvest">0</b></span>
+    <button id="mute" class="icon" aria-label="Toggle sound">🔊</button>
+    <button id="rest" class="hidden" aria-label="Rest: end the day early">Rest ▶</button>
+  </div>
+  <div id="timebar"><i id="timefill"></i></div>
+</header>
+
+<div id="hint" class="hidden"></div>
+<div id="toasts"></div>
+
+<nav id="tray" class="hidden" aria-label="Seeds"></nav>
+
+<section id="title" class="overlay">
+  <div class="card title-card">
+    <div class="kicker">The Ark Initiative · a garden game</div>
+    <h1>The Living Garden</h1>
+    <p class="sub">Grow a desert garden.<br>Defend it with friends, not fights.</p>
+    <button id="start" class="big">Plant the first seed ▶</button>
+    <div class="meta">About 4 minutes · best with sound</div>
+  </div>
+</section>
+
+<section id="daycard" class="overlay hidden">
+  <div class="card">
+    <div id="dcDone"></div>
+    <div class="kicker" id="dcKicker">Day 2</div>
+    <h2 id="dcTitle">Heat Wave</h2>
+    <p id="dcLine" class="line"></p>
+    <p id="dcBy" class="by"></p>
+    <div id="dcNew" class="newseed"></div>
+    <button id="dcGo" class="big">Go ▶</button>
+  </div>
+</section>
+
+<section id="end" class="overlay hidden">
+  <div class="card end-card">
+    <div class="kicker">The monsoon passes</div>
+    <h2>Your garden is alive</h2>
+    <div id="stars" class="stars"></div>
+    <div id="endStats" class="stats"></div>
+    <div id="endVisitors" class="visitors"></div>
+    <details id="teach">
+      <summary>What this garden teaches</summary>
+      <ul>
+        <li><b>Soil is a sponge.</b> Beans feed it; squash leaves shade it, so less water is lost to the sun.</li>
+        <li><b>Pests are signals, not villains.</b> Ladybugs eat aphids. Flowers like the desert marigold (a real Anza-Borrego native) invite them in.</li>
+        <li><b>Companions beat rows of one crop.</b> The Three Sisters (corn, bean, squash) is a planting system developed by Indigenous farmers of the Americas.</li>
+        <li><b>Catch the rain.</b> In the desert, the summer monsoon is the year's big water. Every drop saved counts.</li>
+      </ul>
+      <p class="loopline">You just ran the Ark's living loop: <span>Sense · Interpret · Regulate · Circulate · Repair · Adapt · Remember</span></p>
+    </details>
+    <div class="row">
+      <button id="again" class="big">Play again</button>
+      <a class="ghost" href="/play/">Back to the Ark</a>
+    </div>
+    <p class="meta" style="margin:10px 0 0">Ranks: Seedling · Gardener (80) · Steward (160) · Ark Keeper (260)</p>
+    <p class="credit">Made for The Ark Initiative · no ads, no tracking</p>
+  </div>
+</section>
+
+<script src="game.js"></script>
+</body>
+</html>

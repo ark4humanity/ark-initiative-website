@@ -1,0 +1,4 @@
+# Transcript of whale-alt-greeting.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:04.00] [speech] West, I lift. Give me what is ready to rise.

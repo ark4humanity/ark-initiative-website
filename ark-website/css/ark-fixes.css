@@ -1,0 +1,44 @@
+/* ark-fixes-2026-09-26 (Grok): newcomer-path fixes. Additive only; remove this file + marked blocks to revert. */
+.ark-begin{display:flex;flex-direction:column;align-items:flex-start;gap:12px;margin:18px 0 8px}
+.ark-begin-btn{display:inline-flex;align-items:center;gap:8px;min-height:54px;padding:0 28px;border-radius:28px;background:linear-gradient(180deg,#f6c25a,#dd8a2a);color:#2a1604!important;font:700 1.15rem/1 -apple-system,'Segoe UI',Inter,sans-serif;letter-spacing:.04em;text-decoration:none;box-shadow:0 6px 24px rgba(240,170,60,.45)}
+.ark-begin-btn:hover,.ark-begin-btn:focus-visible{filter:brightness(1.06);outline:3px solid #ffe3a6;outline-offset:3px}
+.ark-doors{display:flex;flex-wrap:wrap;gap:8px}
+.ark-doors a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:22px;border:1.5px solid rgba(245,237,216,.6);color:#f5edd8!important;text-decoration:none;font:600 .95rem -apple-system,'Segoe UI',Inter,sans-serif;background:rgba(10,12,18,.35)}
+.ark-doors a:hover{border-color:#f6c25a}
+.chamber-hero.ark-compact{min-height:46vh}
+.chamber-hero.ark-compact .wrap{padding-bottom:28px}
+.ark-start3 h2{margin:0 0 12px}
+.ark-start3-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.ark-s3{display:flex;flex-direction:column;gap:6px;padding:16px;border-radius:14px;border:1px solid rgba(232,201,106,.35);background:rgba(232,201,106,.07);color:inherit!important;text-decoration:none}
+.ark-s3:hover{border-color:#e8c96a}
+.ark-s3 b{font-size:1.05rem;color:#f5edd8}
+.ark-s3 span{opacity:.85;font-size:.93rem}
+.ark-s3 small{opacity:.7}
+.ark-min{display:inline-block;align-self:flex-start;padding:2px 10px;border-radius:10px;background:#e8c96a;color:#2a1c04!important;font:700 .75rem -apple-system,'Segoe UI',Inter,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+.ark-shelves{max-width:1180px;margin:10px auto 20px;padding:0 16px}
+.ark-shelves>summary{cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:center;min-height:52px;padding:0 20px;border-radius:26px;border:1.5px solid rgba(232,201,106,.5);color:#e8c96a;font:600 1rem -apple-system,'Segoe UI',Inter,sans-serif;text-align:center}
+.ark-shelves>summary::-webkit-details-marker{display:none}
+.ark-shelves>summary::after{content:" \25BE";margin-left:6px}
+.ark-shelves[open]>summary::after{content:" \25B4"}
+.ark-essay-top{max-width:720px;margin:0 auto 18px;padding:14px 16px;border-radius:12px;background:rgba(168,127,28,.08);border:1px solid rgba(168,127,28,.25)}
+.ark-sum{margin:8px 0 0;font-size:1.02rem;line-height:1.5}
+.ark-toc{display:flex;flex-wrap:wrap;gap:6px 12px;margin-top:10px;font:.88rem -apple-system,'Segoe UI',Inter,sans-serif}
+.ark-toc b{width:100%;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:#8a6d1f}
+.ark-toc a{color:#8a6d1f}
+.ark-next{display:flex;justify-content:center;padding:26px 16px 36px}
+.ark-next a{display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:26px;background:linear-gradient(180deg,#f6c25a,#dd8a2a);color:#2a1604!important;font:700 1.02rem -apple-system,'Segoe UI',Inter,sans-serif;text-decoration:none;box-shadow:0 4px 18px rgba(200,120,30,.35);text-align:center}
+.ark-play2-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:12px}
+.ark-pg{display:flex;flex-direction:column;gap:8px;border-radius:16px;overflow:hidden;border:1px solid rgba(232,201,106,.35);background:rgba(232,201,106,.06);color:inherit!important;text-decoration:none;padding-bottom:14px}
+.ark-pg>b,.ark-pg>span:not(.ark-pg-art),.ark-pg>small{padding:0 16px}
+.ark-pg>b{font-size:1.15rem;color:#f5edd8}
+.ark-pg>small{opacity:.7}
+.ark-pg-art{display:block;height:160px}
+.ark-pg-garden{background:radial-gradient(circle at 78% 26%,#ffd66b 0 22px,transparent 23px),linear-gradient(180deg,#cfe7ea 0 46%,#e9c48f 46% 100%)}
+.ark-pg-garden::after{content:"";display:block;height:100%;background:radial-gradient(circle at 25% 70%,#6e9a4c 0 16px,transparent 17px),radial-gradient(circle at 45% 76%,#8fb865 0 12px,transparent 13px),radial-gradient(circle at 62% 68%,#6e9a4c 0 18px,transparent 19px),radial-gradient(circle at 36% 62%,#f2c230 0 5px,transparent 6px),radial-gradient(circle at 70% 58%,#e8644a 0 5px,transparent 6px)}
+.ark-pg-defense{background:url(../img/jenny-guardian.jpg) center 30%/cover no-repeat}
+
+/* 2026-09-28 fresh-eyes: the FOR THE NEW TRAVELER note had no styling — now renders
+   in the site's eyebrow language on all 13 pillar pages. */
+.welcome-note{max-width:680px;border-left:3px solid var(--gold,#c9a24b);padding:14px 18px;background:rgba(201,162,75,.06);border-radius:0 12px 12px 0}
+.wn-eyebrow{font-family:-apple-system,'Segoe UI',Inter,sans-serif;letter-spacing:.34em;color:var(--gold2,#e8c96a);font-size:.8rem;margin-bottom:10px}
+.welcome-note p{color:#d8dce4;line-height:1.6;margin:0}

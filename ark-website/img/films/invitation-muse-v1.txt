@@ -1,0 +1,10 @@
+# Transcript of invitation-muse-v1.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:10.00] [speech] The Ark was never a boat.
+[00:10.00 --> 00:20.00] [speech] It was a living system designed to carry life through collapse.
+[00:20.00 --> 00:34.30] [speech] We are building it now in the California desert.
+[00:34.30 --> 00:36.06] [speech] What you see is a homestead.
+[00:36.06 --> 00:44.46] [speech] What we are growing is 40,000 acres of proof.
+[00:44.46 --> 00:54.26] [speech] Different intelligences, a shared tomorrow.
+[00:54.26 --> 00:56.50] [speech] Come and see. The Garden keeps the books.

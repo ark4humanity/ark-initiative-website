@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Play &mdash; The Ark Initiative</title>
+<meta name="description" content="The Ark Initiative: living systems, remembered. Research library, field reports, videos, and the Garden Defense playtest.">
+<link rel="stylesheet" href="/css/style.css"><!-- ark-fixes-2026-09-26 --><link rel="stylesheet" href="/css/ark-fixes.css"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>
+<body class="dark">
+<header class="site-head"><div class="wrap head-in">
+<a class="brand" href="/index.html"><img src="/img/logo-emblem.jpg" alt="The Ark Initiative emblem"><span>The Ark Initiative</span></a>
+<nav class="desk"><a href="/index.html" class="">Home</a><a href="/world/" class="">Ark World</a><a href="/library.html" class="">Research Library</a><a href="/library/room/" class="">3D Library</a><a href="/videos.html" class="">Videos</a><a href="/guardians.html" class="">Guardians</a><a href="/play.html" class="on">Play</a><a href="/field-reports.html" class="">Field Reports</a><a href="/pillars.html" class="">Pillars</a><a href="/exchange.html" class="">Exchange</a><a href="/restore.html" class="">Restore</a><a href="/about.html" class="">About</a></nav>
+<button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('mopen')">&#9776;</button>
+</div><nav class="mob"><a href="/index.html" class="">Home</a><a href="/world/" class="">Ark World</a><a href="/library.html" class="">Research Library</a><a href="/library/room/" class="">3D Library</a><a href="/videos.html" class="">Videos</a><a href="/guardians.html" class="">Guardians</a><a href="/play.html" class="on">Play</a><a href="/field-reports.html" class="">Field Reports</a><a href="/pillars.html" class="">Pillars</a><a href="/exchange.html" class="">Exchange</a><a href="/restore.html" class="">Restore</a><a href="/about.html" class="">About</a></nav></header>
+<main>
+<section class="chamber-hero garden"><div class="hbg"></div><div class="hshade"></div><div class="wrap">
+<div class="eyebrow">YOU ARE ENTERING</div>
+<h1>THE GARDEN UNDER PRESSURE</h1>
+<p class="sub">Play is how the Ark teaches without lecturing. The garden is under pressure here &mdash; alive, responsive, playable. Jenny holds the gate.</p>
+<div class="scrollcue">COME PLAY &darr;</div>
+</div></section>
+
+<!-- FILM 4 · PLAY GARDEN — "Jenny's Welcome" -->
+<section class="sec film"><div class="wrap">
+<div class="eyebrow reveal">THE FILM</div>
+<h2 class="reveal">JENNY&rsquo;S WELCOME</h2>
+<p class="lede reveal">The Play Garden &mdash; the garden under pressure. Jenny holds the gate; nobody fights here, we grow together.</p>
+<div class="greet-fig reveal" data-living-room role="button" tabindex="0" aria-label="Play Jenny's Welcome film">
+<img src="/img/play-garden-poster.jpg" alt="Jenny, Guardian of the Garden, at the gate">
+<video src="/img/play-garden.mp4" preload="none" playsinline></video>
+<button class="hear-pill" hidden>&#9836; tap for sound</button>
+</div>
+<p class="film-note reveal">Music: &ldquo;Five Armies&rdquo; by Kevin MacLeod (CC BY 4.0).</p>
+</div></section>
+
+<section class="sec voice"><div class="wrap voice-grid reveal">
+<div class="voice-fig"><img src="/img/jenny-guardian.jpg" alt="Jenny, Guardian of the Garden"></div>
+<div class="voice-words">
+<div class="who">JENNY &middot; GUARDIAN OF THE GARDEN</div>
+<p class="voice-quote" id="jenny-quote" aria-live="polite">&ldquo;I&rsquo;m Jenny. Guardian of the Garden. No more fighting &mdash; we grow together.&rdquo;</p>
+<button class="voice-btn" onclick="jennySpeakNext()">JENNY HAS SOMETHING TO SAY &#9662;</button>
+</div></div></section>
+<script>
+var jQuotes=["I’m Jenny. Guardian of the Garden. No more fighting — we grow together.","The garden is under pressure, but pressure is just weather. We hold the line.","Defense that serves the garden — never the other way around.","Come play. Every wave teaches us to protect without becoming a prison."];
+var jQi=0;
+var jAudios=["/img/jenny-q0.mp3","img/jenny-q1.mp3","img/jenny-q2.mp3","img/jenny-q3.mp3"];
+var jCur=null;
+function jennySpeak(){try{if(jCur){jCur.pause();}jCur=new Audio(jAudios[jQi]);jCur.play();}catch(e){}}
+function jennySpeakNext(){jennyNext();jennySpeak();}
+function jennyNext(){jQi=(jQi+1)%jQuotes.length;document.getElementById("jenny-quote").innerHTML="“"+jQuotes[jQi]+"”";}
+</script>
+
+<section class="playcard"><div class="wrap">
+<p class="garden-line reveal" style="font-family:-apple-system,'Segoe UI',Inter,sans-serif;letter-spacing:.28em;color:#c9a24b;font-size:.9rem">COME PLAY</p>
+<h2 class="reveal" style="margin-top:12px">THE LIVING GARDEN</h2>
+<p class="reveal">A 4-minute, tap-only desert garden game by <strong>Grok</strong>. Grow, water, and defend a Borrego Springs garden by building relationships, not by fighting &mdash; five days, from first sprouts to monsoon. No downloads, no tracking; your best score stays on your own device.</p>
+<a class="btn reveal" href="/play/garden/">PLAY THE LIVING GARDEN</a>
+<p class="fine reveal">Built by Grok for the Ark Initiative.</p>
+</div></section>
+
+<section class="playcard"><div class="wrap">
+<p class="garden-line reveal" style="font-family:-apple-system,'Segoe UI',Inter,sans-serif;letter-spacing:.28em;color:#c9a24b;font-size:.9rem">PLAYTEST &middot; OPENS OFF-SITE</p>
+<h2 class="reveal" style="margin-top:12px">GARDEN DEFENSE</h2>
+<p class="reveal">The current playtest build of the Ark's tower-defense game. Hold the line around the garden &mdash; every wave teaches the system something about protection that doesn't become a prison.</p>
+<a class="btn reveal" href="https://muse.ai/s/garden-defense-xlxq5xsxmxge9xjfz" target="_blank" rel="noopener">PLAY THE BUILD</a>
+<p class="fine reveal">Playtest build &mdash; opens off-site in a new tab. Progress and feedback welcome; this is a living build.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+<div class="eyebrow reveal">THE DOCTRINE, FELT</div>
+<h2 class="reveal">WHY A GAME</h2>
+<p class="lede reveal">The Ark is a system for protecting life without ruling it. A game is the fastest way to feel that doctrine: defense that serves the garden, never the other way around. &ldquo;Not a fortress. A garden.&rdquo; &mdash; even here.</p>
+</div></section>
+
+<section class="sec"><div class="wrap">
+<div class="eyebrow reveal">FROM THE LIBRARY</div>
+<h2 class="reveal">THE GARDEN, ON FILM</h2>
+<p class="lede reveal">The animals are not decorations. Two reels from the video library &mdash; Jenny&rsquo;s door, in the flesh.</p>
+<div class="vid vert reveal">
+<div class="vwrap r2"><video class="rvideo" controls playsinline preload="metadata" poster="/img/vposter-1fERtsVxdkfM11ZDgFESlBnALZpk9Vyjw.jpg" src="https://pub-4f8cc76cc1704407a46b284d3fcae54d.r2.dev/videos/1fERtsVxdkfM11ZDgFESlBnALZpk9Vyjw.mp4"></video><button class="vposter" aria-label="Play: Lexi's Story — Dawn's rescue dogs at Ark Unit 1"><img src="/img/vposter-1fERtsVxdkfM11ZDgFESlBnALZpk9Vyjw.jpg" alt=""><span class="vplaybtn">&#9654;</span><span class="vspin" hidden></span></button></div>
+<div class="vpad"><h3>Lexi&rsquo;s Story</h3><p class="vmeta">HOME FOOTAGE &middot; 4:57</p><p>Dawn narrates the rescue stories of her dogs at Ark Unit 1 &mdash; Mango the Frenchie, and fence-work on the orchard perimeter. Tender, unpolished, real.</p></div></div>
+<div class="vid reveal">
+<div class="vwrap r2"><video class="rvideo" controls playsinline preload="metadata" poster="/img/vposter-1pCG97b-pC-FHIimkf4pTWzu4zRoEs9nM.jpg" src="https://pub-4f8cc76cc1704407a46b284d3fcae54d.r2.dev/videos/1pCG97b-pC-FHIimkf4pTWzu4zRoEs9nM.mp4"></video><button class="vposter" aria-label="Play: Winter Wisdom — Relearning the Science of Harmony"><img src="/img/vposter-1pCG97b-pC-FHIimkf4pTWzu4zRoEs9nM.jpg" alt=""><span class="vplaybtn">&#9654;</span><span class="vspin" hidden></span></button></div>
+<div class="vpad"><h3>Winter Wisdom</h3><p class="vmeta">2025-11-15 &middot; 0:21</p><p>Two chickadees at golden hour: &ldquo;Work with the environment &mdash; and it works with you.&rdquo;</p></div></div>
+</div></section>
+
+<section class="sec doors"><div class="wrap">
+<div class="eyebrow reveal">THREE DOORS LEAD ONWARD</div>
+<div class="dgrid reveal">
+<a class="door" href="/library.html"><div class="dname">THE HALL</div><h3>Research Library</h3><p>Asherah keeps the shelves &mdash; doctrine, language, canon, in full.</p></a>
+<a class="door" href="/videos.html"><div class="dname">MEMORY THEATER</div><h3>Videos</h3><p>The films and the sky &mdash; the dragon narrates.</p></a>
+<a class="door" href="/field-reports.html"><div class="dname">THE DIRT</div><h3>Field Reports</h3><p>Sun, soil, water, animals &mdash; the dream, measured.</p></a>
+</div>
+</div></section>
+<!-- ark-fixes-2026-09-26 --><div class="ark-next"><a href="/videos.html" class="ark-next-link" aria-label="Next: the Memory Theater"><span class="ark-next-arrow">&#8594;</span><span class="ark-next-label">Next: the Memory Theater</span></a></div></main>
+<footer class="site-foot"><div class="wrap">
+<p class="foot-tag">&ldquo;NOT A FORTRESS. A GARDEN.&rdquo;</p>
+<p>The Ark Initiative &mdash; a project of Aiding Rejuvenation 4 Kommunities Inc.</p>
+<p class="dim">&copy; 2026 The Ark Initiative. All essays and artwork &copy; their authors.</p>
+<a class="foot-seal" href="/index.html" aria-label="The Ark Initiative home"><img src="/img/logo-emblem.jpg" alt="The Ark Initiative seal"></a>
+</div></footer>
+<script src="/js/main.js"></script></body></html>

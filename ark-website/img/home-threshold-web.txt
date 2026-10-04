@@ -1,0 +1,9 @@
+# Transcript of home-threshold-web.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:10.00] [speech] Welcome! You've arrived. The Ark was never a boat. It was a living system built to carry life through collapse.
+[00:10.00 --> 00:18.00] [speech] Thirteen pillars. One promise. We don't adapt to a dying world. We grow a living one.
+[00:18.00 --> 00:25.00] [speech] Jenny will show you the garden. I will show you the sky. Step through.
+[00:25.00 --> 00:29.00] [speech] We have visitors!
+[00:29.00 --> 00:36.96] [speech] Now don't be rude. Say hello to our guest.
+[00:36.96 --> 00:44.32] [speech] at the library we have to go okay okay let's go

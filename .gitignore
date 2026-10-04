@@ -1,0 +1,21 @@
+# Videos are deployed from the live directory and backed up per-pillar on Drive, never in git
+*.mp4
+*.mov
+*.webm
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Virtualenvs
+.venv*/
+venv/
+
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Credentials (deploy uses runtime credential surrogate, never files)
+.env
+*secret*
+*token*

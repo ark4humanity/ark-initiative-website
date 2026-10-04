@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Restore Your Patch, The Ark Initiative</title>
+<meta name="description" content="A Borrego-first restoration planner: measured field results from Ark Unit 1, kept separate from ideas still under testing." />
+<style>
+  :root {
+    --ink: #f4efe4;
+    --paper: #1c1712;
+    --deep: #14100b;
+    --sand: #2a2118;
+    --clay: #c98a5b;
+    --rose: #d08a7e;
+    --leaf: #7ba05b;
+    --leaf-deep: #3f5c45;
+    --gold: #e8c96a;
+    --gold-dim: #b08948;
+    --amber: #e0a458;
+    --line: rgba(244,239,228,.14);
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: Georgia, "Palatino Linotype", Palatino, serif; }
+  a { color: var(--gold); }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 18px; }
+  header.bar {
+    position: sticky; top: 0; z-index: 5;
+    display: flex; gap: 10px; align-items: center; justify-content: space-between;
+    padding: 12px 18px; background: rgba(20,16,11,.94); backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  header.bar a.brand { color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 10px; }
+  header.bar a.brand img { width: 34px; height: 34px; border-radius: 50%; }
+  header.bar nav a { color: var(--ink); text-decoration: none; margin-left: 14px; font-size: 14px; opacity: .85; }
+  header.bar nav a:hover { color: var(--gold); }
+  .hero { padding: 64px 0 40px; text-align: center; }
+  .hero .eyebrow { color: var(--gold); letter-spacing: .18em; font-size: 13px; text-transform: uppercase; }
+  .hero h1 { font-weight: 500; font-size: 2.6rem; margin: 12px 0 10px; }
+  .hero .lede { font-size: 1.15rem; line-height: 1.6; max-width: 44rem; margin: 0 auto; opacity: .92; }
+  section.block { padding: 34px 0; border-top: 1px solid var(--line); }
+  h2.stitle { font-weight: 500; font-size: 1.7rem; margin: 0 0 6px; }
+  p.slede { font-size: 1.05rem; line-height: 1.6; max-width: 44rem; opacity: .88; margin: 0 0 20px; }
+  .cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card {
+    background: var(--sand); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px; position: relative;
+  }
+  .card h3 { margin: 10px 0 8px; font-size: 1.15rem; font-weight: 600; }
+  .card p { margin: 0 0 10px; line-height: 1.55; font-size: .98rem; opacity: .9; }
+  .card .src { font-size: .85rem; opacity: .75; }
+  .badge {
+    display: inline-block; font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+    padding: 5px 10px; border-radius: 999px; font-family: inherit;
+  }
+  .badge.measured { background: rgba(123,160,91,.18); color: var(--leaf); border: 1px solid var(--leaf); }
+  .badge.testing { background: rgba(224,164,88,.14); color: var(--amber); border: 1px solid var(--amber); }
+  .badge.guidance { background: rgba(138,168,200,.14); color: #9db8d6; border: 1px solid #8aa8c8; }
+  .honesty {
+    border: 1px dashed var(--gold-dim); border-radius: 10px; padding: 14px 16px;
+    margin-bottom: 22px; font-size: .98rem; line-height: 1.6; background: rgba(232,201,106,.05);
+  }
+  .honesty b { color: var(--gold); }
+  /* Living buttons */
+  @keyframes breathe {
+    0%, 100% { box-shadow: 0 2px 10px rgba(63,92,69,.25), 0 0 0 rgba(232,201,106,0); }
+    50% { box-shadow: 0 2px 18px rgba(63,92,69,.5), 0 0 22px rgba(232,201,106,.35); }
+  }
+  .btn {
+    display: inline-block; background: var(--leaf-deep); color: #f7f3ea; border: 0; border-radius: 8px;
+    padding: 12px 20px; font-family: inherit; font-size: 16px; cursor: pointer; text-decoration: none;
+    animation: breathe 4s ease-in-out infinite; transition: transform .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn:active { transform: translateY(1px) scale(.98); }
+  /* Planner */
+  .planner { background: var(--deep); border: 1px solid var(--line); border-radius: 14px; padding: 22px; }
+  .planner fieldset { border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; margin: 0 0 14px; }
+  .planner legend { color: var(--gold); padding: 0 8px; font-size: .95rem; letter-spacing: .04em; }
+  .planner label.opt { display: block; padding: 7px 4px; cursor: pointer; font-size: 1rem; }
+  .planner label.opt input { margin-right: 10px; accent-color: var(--gold); }
+  #plan-results { margin-top: 18px; display: grid; gap: 10px; }
+  .start-here { border: 1px solid var(--gold); border-radius: 12px; padding: 20px; background: rgba(232,201,106,.07); margin-bottom: 4px; }
+  .start-here .kicker { font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+  .start-here h3 { margin: 8px 0; font-size: 1.25rem; }
+  .start-here p { margin: 8px 0 0; line-height: 1.6; font-size: .98rem; }
+  .start-here .why { opacity: .88; }
+  .result-card { background: var(--sand); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .result-card h4 { margin: 8px 0 6px; font-size: 1.05rem; }
+  .result-card p { margin: 0; font-size: .95rem; line-height: 1.55; opacity: .9; }
+  .disclaimer { font-size: .88rem; opacity: .7; margin-top: 16px; line-height: 1.5; }
+  footer.site { border-top: 1px solid var(--line); padding: 30px 0 60px; text-align: center; }
+  footer.site img.seal { width: 64px; border-radius: 50%; margin-bottom: 10px; }
+  footer.site nav a { margin: 0 12px; font-size: 15px; }
+  @media (prefers-reduced-motion: reduce) { .btn { animation: none; } }
+</style>
+</head>
+<body>
+<header class="bar">
+  <a class="brand" href="/index.html"><img src="/img/logo-emblem.jpg" alt="The Ark Initiative emblem" /><span>The Ark Initiative</span></a>
+  <nav><a href="/library.html">Research Library</a><a href="/pillar-11-terra.html">Terra</a><a href="/exchange.html">Exchange</a></nav>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <div class="eyebrow">Ark Unit 1 &middot; Borrego Springs, California</div>
+    <h1>Restore Your Patch</h1>
+    <p class="lede">The desert is not broken. It is a living system running on a different clock, and it answers when you learn its hours. This planner holds what Dawn has measured with her own hands at Ark Unit 1, kept strictly apart from what is still being tested. Read both. Trust the difference.</p>
+  </section>
+
+  <section class="block">
+    <h2 class="stitle">Start With Water</h2>
+    <p class="slede">Every restoration here begins the same way, because the desert punishes anyone who starts with plants. First, learn how water moves across your ground. Cool the refuge, not the whole sky. Shade before machines. Let the shape of each watering point follow its relationship to the life drinking from it. A chicken, a horse, and a human do not drink the same way, and the system should not pretend they do.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="badge measured">Measured</span>
+        <h3>Watch where water goes first</h3>
+        <p>Before anything was built at Unit 1, Dawn watched. Roof to barrels to swales to basins to soil. Water that leaves one use should arrive at another, never treated as waste the moment it is done being drunk.</p>
+        <p class="src"><a href="/essays/water-system-living-biological-body.html">How to Build a Water System Like a Living Biological Body</a></p>
+      </div>
+      <div class="card">
+        <span class="badge measured">Measured</span>
+        <h3>Build the artery, then the capillaries</h3>
+        <p>One protected clean-water spine, shared by everything. Then smaller branches shaped for each drinker. The expensive work, collection and treatment, happens once upstream instead of five times over.</p>
+        <p class="src"><a href="/essays/water-system-living-biological-body.html">How to Build a Water System Like a Living Biological Body</a></p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Catch water from the sky itself</h3>
+        <p>The atmospheric water vessel is a prototype on paper: night-sky radiative cooling, a hygroscopic sorbent, daytime solar regeneration. It has not been built yet. When it is, competing shapes get tested side by side, and the measurements decide.</p>
+        <p class="src"><a href="/essays/water-system-living-biological-body.html">How to Build a Water System Like a Living Biological Body</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="stitle">Measured at Ark Unit 1</h2>
+    <p class="slede">These are things Dawn has done and watched with her own eyes. Each one carries exactly what was observed, including the limits of the observation. Nothing here is a promise. It is a record.</p>
+    <div class="cards">
+      <div class="card">
+        <span class="badge measured">Measured</span>
+        <h3>The middle tree</h3>
+        <p>Three trees, same water, one morning. The two she gave attention and energy to thrived. The one she neglected wilted, leaves drooping. When she put intention into the water hitting it, the leaves came back up. One morning, three trees, no laboratory, no control group. She wrote down exactly what she saw.</p>
+        <p class="src"><a href="/essays/the-middle-tree.html">The Middle Tree</a> &middot; October 2, 2026</p>
+      </div>
+      <div class="card">
+        <span class="badge measured">Measured</span>
+        <h3>The poultry water node</h3>
+        <p>Built and running: a raised circular drinking ring for chickens, with a protected center, gentle circulation, an ice well for extreme heat, automatic refill, filtration, and a low-point purge that sends old water to plants instead of the dirt. It started with three chickens and taught her how to build an artery.</p>
+        <p class="src"><a href="/essays/water-system-living-biological-body.html">How to Build a Water System Like a Living Biological Body</a></p>
+      </div>
+      <div class="card">
+        <span class="badge measured">Measured</span>
+        <h3>Daily orchard watering, watched closely</h3>
+        <p>The orchard and trees get watered by hand, every day, and watched the same way. That steady attention is how she caught the middle tree wilting in the first place. Observation is the first instrument, and it is free.</p>
+        <p class="src"><a href="/essays/the-middle-tree.html">The Middle Tree</a> &middot; October 2, 2026</p>
+      </div>
+      <div class="card">
+        <span class="badge measured">Measured</span>
+        <h3>The desert restoration system, as designed</h3>
+        <p>The full Borrego system on paper: living fence as wind filter, layered corridors, swales and basins on floodplain logic, shade and airflow before machines, light surfaces that refuse heat. The design is measured thinking. The ground is now catching up to it.</p>
+        <p class="src"><a href="/essays/borrego-desert-restoration-part1.html">Borrego Desert Restoration, Part 1</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="stitle">Now Testing</h2>
+    <div class="honesty"><b>The honest line:</b> everything below is under trial at Ark Unit 1, or planned for trial. None of it is a result yet. Hypotheses live here until the dirt confirms or corrects them, and if something does not work, that gets written down too.</div>
+    <div class="cards">
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Hugelkultur beds</h3>
+        <p>Under construction since October 2026: cardboard, then mulch, then dried firewood, then dirt on top, then planting. Buried wood as a slow sponge, holding water and feeding fungi for years. No results yet. The beds are young.</p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Magnetics on irrigation water</h3>
+        <p>Planned with controls and measured growth: magnets on the water path, against untreated water, same source, same plants. Peer-reviewed studies suggest it helps germination and yield. Unit 1 will find out for itself.</p>
+        <p class="src"><a href="/essays/the-middle-tree.html">The Middle Tree</a> (sources cited)</p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Crystal, glass, color, and light in water</h3>
+        <p>Planned: crystal and glass in the water path, different colors of light on water quality, for healing, drinking, and growing. Structured-water research gives reason to look. Looking is the whole method.</p>
+        <p class="src"><a href="/essays/the-middle-tree.html">The Middle Tree</a> (sources cited)</p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Intention-treated water, trialed honestly</h3>
+        <p>Planned: water given deliberate attention against untreated water, same plants, watched closely and recorded exactly. The middle tree was the first observation. The trial is the second.</p>
+        <p class="src"><a href="/essays/the-middle-tree.html">The Middle Tree</a></p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Swales and basins</h3>
+        <p>Designed, not yet dug: swales to slow and sink water, basins to spread and feed it, floodplain logic for a desert that gets its rain all at once. Part of the restoration system now moving from paper to ground.</p>
+        <p class="src"><a href="/essays/borrego-desert-restoration-part1.html">Borrego Desert Restoration, Part 1</a></p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Pallet fencing from the hardware store</h3>
+        <p>Planned: the local hardware store sets aside free and discarded pallets, cut in half, built into fencing around the gardens. Wind filter and shade edge from what was headed for the dumpster.</p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Radiative-cooling fabrics</h3>
+        <p>On watch, not yet ordered: new fabrics that reflect sunlight and shed heat to the sky with no power, tested on a desert greenhouse in Kashgar. Heat is the binding constraint here. Worth pricing the moment it can be bought.</p>
+        <p class="src"><a href="/essays/cooling-without-power.html">Cooling Without Power</a></p>
+      </div>
+      <div class="card">
+        <span class="badge testing">Testing</span>
+        <h3>Biochar and the black-earth lesson</h3>
+        <p>Research stage: Amazonian terra preta holds fertility for two thousand years on charcoal and refuse. The chemistry is established. Whether Unit 1 can build its own slow sponge from char is an open trial, not a claim.</p>
+        <p class="src"><a href="/essays/the-soil-that-remembers.html">The Soil That Remembers</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <h2 class="stitle">Your Patch Planner</h2>
+    <p class="slede">Tell the planner about your ground: shade, soil, water, space, and what you want from it. It will hand you one small first action and explain why, then point at the practices that fit. Every practice carries its honest badge: measured at Ark Unit 1, under testing there, or general desert guidance. This is guidance from one desert garden, not a prescription. Your patch will have its own opinions.</p>
+    <div class="planner">
+      <fieldset>
+        <legend>Shade on your patch</legend>
+        <label class="opt"><input type="radio" name="shade" value="full" checked /> Full sun, all day</label>
+        <label class="opt"><input type="radio" name="shade" value="partial" /> Partial shade, part of the day</label>
+        <label class="opt"><input type="radio" name="shade" value="shaded" /> Mostly shaded already</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your soil</legend>
+        <label class="opt"><input type="radio" name="soil" value="sand" checked /> Sand, loose and fast draining</label>
+        <label class="opt"><input type="radio" name="soil" value="caliche" /> Caliche or hardpan, water runs off</label>
+        <label class="opt"><input type="radio" name="soil" value="loam" /> Loam, holds together and drains</label>
+        <label class="opt"><input type="radio" name="soil" value="unknown" /> Unknown, I have not dug in yet</label>
+      </fieldset>
+      <fieldset>
+        <legend>Water availability</legend>
+        <label class="opt"><input type="radio" name="water" value="none" checked /> None yet, rain only</label>
+        <label class="opt"><input type="radio" name="water" value="hauled" /> Hauled, every drop is precious</label>
+        <label class="opt"><input type="radio" name="water" value="well" /> Well on the property</label>
+        <label class="opt"><input type="radio" name="water" value="municipal" /> Municipal tap water</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your space</legend>
+        <label class="opt"><input type="radio" name="space" value="patio" checked /> Patio or balcony, containers only</label>
+        <label class="opt"><input type="radio" name="space" value="yard" /> Small yard</label>
+        <label class="opt"><input type="radio" name="space" value="acreage" /> Acreage, room to roam</label>
+      </fieldset>
+      <fieldset>
+        <legend>What you want from it</legend>
+        <label class="opt"><input type="radio" name="goal" value="food" checked /> Food, feed us from the ground</label>
+        <label class="opt"><input type="radio" name="goal" value="shade" /> Shade, cool the refuge</label>
+        <label class="opt"><input type="radio" name="goal" value="habitat" /> Habitat, room for wild things</label>
+        <label class="opt"><input type="radio" name="goal" value="harvest" /> Water harvesting, catch every drop</label>
+      </fieldset>
+      <button class="btn" onclick="planPatch()">Plan my patch</button>
+      <div id="plan-results"></div>
+      <p class="disclaimer">Guidance, not prescription. Start small, watch closely, write down what happens. That is the whole method, and it is free.</p>
+    </div>
+  </section>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <a href="/index.html"><img class="seal" src="/img/logo-emblem.jpg" alt="The Ark Initiative seal" /></a>
+    <nav><a href="/pillar-11-terra.html">Terra</a><a href="/exchange.html">The Exchange</a><a href="/library.html">Research Library</a><a href="/index.html">Home</a></nav>
+    <p style="opacity:.7;font-size:.9rem;margin-top:12px;">The Ark Initiative &middot; a project of Aiding Rejuvenation 4 Kommunities Inc.</p>
+  </div>
+</footer>
+
+<script>
+var PRACTICES = [
+  { id:"watch-water", title:"Watch where water goes first", badge:"measured", badgeLabel:"Measured",
+    text:"Before anything is built, walk your ground in the rain, or run the hose and watch. Water tells you where it wants to go. Design with it, never against it.",
+    shade:["full","partial","shaded"], soil:["sand","caliche","loam","unknown"], water:["none","hauled","well","municipal"], space:["patio","yard","acreage"], goal:["food","shade","habitat","harvest"] },
+  { id:"artery", title:"One artery, many capillaries", badge:"measured", badgeLabel:"Measured",
+    text:"A single protected clean-water line, then branches shaped for each drinker. Share the expensive upstream work instead of repeating it.",
+    shade:["full","partial","shaded"], soil:["sand","caliche","loam","unknown"], water:["well","municipal"], space:["yard","acreage"], goal:["food","shade","habitat","harvest"] },
+  { id:"middle-tree", title:"Water with attention", badge:"measured", badgeLabel:"Measured",
+    text:"The middle tree taught this: water keeps things alive, attention makes them live. Walk your patch daily. Notice which plant is asking.",
+    shade:["full","partial","shaded"], soil:["sand","caliche","loam","unknown"], water:["hauled","well","municipal"], space:["patio","yard","acreage"], goal:["food","shade","habitat","harvest"] },
+  { id:"shade-first", title:"Shade before machines", badge:"testing", badgeLabel:"Testing",
+    text:"In full desert sun, shade cloth, nurse plants, or a living fence edge come before any powered cooling. Cool the refuge, not the sky.",
+    shade:["full"], soil:["sand","caliche","loam","unknown"], water:["none","hauled","well","municipal"], space:["yard","acreage"], goal:["food","shade","habitat","harvest"] },
+  { id:"swales", title:"Swales and basins", badge:"testing", badgeLabel:"Testing",
+    text:"On caliche or slope, shallow swales slow water down and sink it where roots can reach. Floodplain logic for rain that arrives all at once.",
+    shade:["full","partial","shaded"], soil:["caliche","sand","unknown"], water:["none","hauled","well","municipal"], space:["yard","acreage"], goal:["food","shade","habitat","harvest"] },
+  { id:"hugel", title:"Hugelkultur beds", badge:"testing", badgeLabel:"Testing",
+    text:"For food: cardboard, mulch, dried wood, dirt, planting. A slow sponge under the bed that holds water for years.",
+    shade:["full","partial"], soil:["sand","loam","unknown"], water:["hauled","well","municipal"], space:["yard","acreage"], goal:["food"] },
+  { id:"pallet", title:"Pallet fencing", badge:"testing", badgeLabel:"Testing",
+    text:"Free discarded pallets, cut in half, become wind filter and shade edge around the garden. Ask your local hardware store what they throw away.",
+    shade:["full","partial"], soil:["sand","caliche","loam","unknown"], water:["none","hauled","well","municipal"], space:["yard","acreage"], goal:["food","shade","habitat"] },
+  { id:"biochar", title:"Char in the soil", badge:"testing", badgeLabel:"Testing",
+    text:"Low-temperature charcoal, charged with nutrients first, adds lasting structure to poor ground. The Amazon kept soil alive for two thousand years on it.",
+    shade:["full","partial","shaded"], soil:["sand","caliche","unknown"], water:["hauled","well","municipal"], space:["yard","acreage"], goal:["food","habitat"] },
+  { id:"mulch", title:"Mulch against sun-cooked soil", badge:"testing", badgeLabel:"Testing",
+    text:"Bare desert soil bakes and dies on top. Mulch keeps the sun from cooking it and gives the biology underneath a chance.",
+    shade:["full","partial"], soil:["sand","caliche","loam","unknown"], water:["hauled","well","municipal"], space:["patio","yard","acreage"], goal:["food","shade","habitat"] },
+  { id:"nurse", title:"Nurse plants for natives", badge:"testing", badgeLabel:"Testing",
+    text:"In the desert, young plants survive under older ones. Plant natives in the shade of a nurse shrub, the way the wild does it.",
+    shade:["full","partial"], soil:["sand","unknown"], water:["none","hauled","well"], space:["yard","acreage"], goal:["habitat","shade"] },
+  { id:"cool-fabric", title:"Radiative-cooling covers", badge:"testing", badgeLabel:"Testing",
+    text:"Still on watch: fabrics that throw heat back to the sky with no power. For the hottest patches, worth pricing when available.",
+    shade:["full"], soil:["sand","caliche","loam","unknown"], water:["hauled","well","municipal"], space:["yard","acreage"], goal:["food","shade"] },
+  { id:"sky-water", title:"Catch water from the sky", badge:"testing", badgeLabel:"Testing",
+    text:"For rain-only and hauled patches: the atmospheric vessel is still a prototype. Rain barrels and shade buy time until it exists.",
+    shade:["full","partial","shaded"], soil:["sand","caliche","loam","unknown"], water:["none","hauled"], space:["yard","acreage"], goal:["food","shade","habitat","harvest"] },
+  { id:"containers", title:"Start in containers", badge:"guidance", badgeLabel:"Guidance",
+    text:"On a patio, pots are the whole farm. Large, light-colored containers refuse heat. One deep watering beats daily sips. Old desert nursery wisdom, not a Unit 1 trial.",
+    shade:["full","partial","shaded"], soil:["sand","caliche","loam","unknown"], water:["hauled","well","municipal"], space:["patio"], goal:["food","shade","habitat"] },
+  { id:"hydrozone", title:"Group plants by thirst", badge:"guidance", badgeLabel:"Guidance",
+    text:"Put the thirsty together and the spare apart, so no plant drowns while another dies of thirst. General desert practice, not measured at Unit 1.",
+    shade:["full","partial","shaded"], soil:["sand","caliche","loam","unknown"], water:["well","municipal"], space:["yard","acreage"], goal:["food","shade","habitat"] },
+  { id:"deep-water", title:"Water trees deep and seldom", badge:"guidance", badgeLabel:"Guidance",
+    text:"A tree watered deep once a week grows roots that hunt downward. A tree sipped daily grows roots that wait at the surface, where the sun kills them.",
+    shade:["full","partial"], soil:["sand","loam","unknown"], water:["well","municipal"], space:["yard","acreage"], goal:["food","shade"] },
+  { id:"contour", title:"Plant on contour", badge:"guidance", badgeLabel:"Guidance",
+    text:"On any slope, plant and mulch along the contour, never up and down. Each row becomes a tiny dam that holds the rain where it fell.",
+    shade:["full","partial","shaded"], soil:["caliche","sand","unknown"], water:["none","hauled","well","municipal"], space:["yard","acreage"], goal:["harvest","habitat"] },
+  { id:"greywater-guide", title:"Shower water for the landscape", badge:"guidance", badgeLabel:"Guidance",
+    text:"Laundry-to-landscape is the simplest greywater: one diverter valve, no tank, mulch basins around trees. Check local rules first, then let the shower feed the orchard.",
+    shade:["full","partial","shaded"], soil:["sand","loam","unknown"], water:["well","municipal"], space:["yard","acreage"], goal:["food","shade","habitat","harvest"] },
+  { id:"sail", title:"A sail for the patio", badge:"guidance", badgeLabel:"Guidance",
+    text:"One shade sail turns a baking patio into a room. Hang it high enough for airflow, low enough to matter. General desert practice.",
+    shade:["full"], soil:["sand","caliche","loam","unknown"], water:["hauled","well","municipal"], space:["patio"], goal:["shade","food"] }
+];
+function badgeWord(b) { return b === "measured" ? "Measured" : (b === "testing" ? "Testing" : "Guidance"); }
+function firstAction(a) {
+  if (a.water === "none") return { id:"watch-water",
+    why:"You told the planner there is no water source yet, only rain. When water is the binding constraint, the first move costs nothing: watch where water already goes on your ground, because the next rain is your first irrigation. This one is measured, Dawn has done it at Ark Unit 1." };
+  if (a.space === "patio") return { id:"containers",
+    why:"A patio means containers are the whole farm, so the first action fits in a pot. Light-colored containers refuse heat, and one deep watering beats daily sips. This is general desert guidance, not a Unit 1 field result." };
+  if (a.shade === "full") return { id:"shade-first",
+    why:"You told the planner your patch sits in full desert sun. Here, heat kills faster than thirst, so shade comes before planting, before machines, before everything. This practice is under testing at Ark Unit 1, so treat it as a trial, not a result." };
+  if (a.soil === "caliche" || a.soil === "unknown") return { id:"watch-water",
+    why:"Caliche sheds water and unknown ground hides surprises, so the honest first step is observation, not construction. Walk it in the rain, or run the hose and watch. Measured at Ark Unit 1." };
+  return { id:"middle-tree",
+    why:"Your answers describe workable ground, so the first instrument is free: daily attention. Walk the patch every day and notice which plant is asking. Measured at Ark Unit 1, where watching caught the middle tree wilting in time." };
+}
+function planPatch() {
+  var a = {
+    shade: document.querySelector('input[name="shade"]:checked').value,
+    soil: document.querySelector('input[name="soil"]:checked').value,
+    water: document.querySelector('input[name="water"]:checked').value,
+    space: document.querySelector('input[name="space"]:checked').value,
+    goal: document.querySelector('input[name="goal"]:checked').value
+  };
+  var box = document.getElementById("plan-results");
+  box.innerHTML = "";
+  var fa = firstAction(a);
+  var first = null;
+  for (var i = 0; i < PRACTICES.length; i++) { if (PRACTICES[i].id === fa.id) { first = PRACTICES[i]; break; } }
+  var s = document.createElement("div");
+  s.className = "start-here";
+  s.innerHTML = '<div class="kicker">Start here</div>'
+    + '<span class="badge ' + first.badge + '">' + badgeWord(first.badge) + '</span>'
+    + '<h3>' + first.title + '</h3>'
+    + '<p>' + first.text + '</p>'
+    + '<p class="why"><b>Why this one:</b> ' + fa.why + '</p>';
+  box.appendChild(s);
+  var hits = PRACTICES.filter(function(p) {
+    if (p.id === fa.id) return false;
+    return p.shade.indexOf(a.shade) > -1 && p.soil.indexOf(a.soil) > -1 &&
+           p.water.indexOf(a.water) > -1 && p.space.indexOf(a.space) > -1 &&
+           p.goal.indexOf(a.goal) > -1;
+  });
+  hits.forEach(function(p) {
+    var d = document.createElement("div");
+    d.className = "result-card";
+    d.innerHTML = '<span class="badge ' + p.badge + '">' + badgeWord(p.badge) + '</span><h4>' +
+      p.title + '</h4><p>' + p.text + '</p>';
+    box.appendChild(d);
+  });
+}
+</script>
+</body>
+</html>

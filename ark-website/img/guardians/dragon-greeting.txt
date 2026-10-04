@@ -1,0 +1,7 @@
+# Transcript of dragon-greeting.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:05.92] [speech] I have watched long. I see what you carry. Courage and conquest both.
+[00:06.96 --> 00:13.60] [speech] Lay down conquest, keep courage. Then enter. I am the south door. Heat that does not burn the
+[00:14.24 --> 00:17.76] [speech] willing. Sky that still belongs to the ground. Capable of ending a fight.
+[00:18.64 --> 00:21.12] [speech] Choosing not to. Friends may pass.

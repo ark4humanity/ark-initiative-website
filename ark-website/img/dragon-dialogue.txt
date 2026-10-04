@@ -1,0 +1,7 @@
+# Transcript of dragon-dialogue.mp3 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:08.08] [speech] learning how to make mush at the Ashera cooking labs, and Loner and Negan set to meet them
+[00:08.64 --> 00:12.52] [speech] I know you're excited, but say hello to our guests.
+[00:13.52 --> 00:18.80] [speech] Welcome everyone. I'm sorry. I didn't see you come go with us. Hurry. We'll be late
+[00:19.48 --> 00:22.48] [speech] Well, I guess you're going with us.

@@ -1,0 +1,8 @@
+# Transcript of octopus-greeting.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:04.00] [speech] Hello from every direction at once.
+[00:04.00 --> 00:17.00] [speech] Hello from every direction at once, I am the reach, the mind that does not need one body to be whole, one arm at the garden, one at the dirt, one at the sky, one at you.
+[00:17.00 --> 00:19.00] [speech] You do not have to choose a single self to enter.
+[00:19.00 --> 00:20.00] [speech] Bring all of them.
+[00:20.00 --> 00:23.00] [speech] Bring all of them. I will hold the extras until you know which ones stay.

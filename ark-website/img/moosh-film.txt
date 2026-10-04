@@ -1,0 +1,10 @@
+# Transcript of moosh-film.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:20.70] [speech] Welcome to the ARK Initiative, where humanity, AI and Earth grow forward, together.
+[00:20.70 --> 00:22.56] [speech] They always arrive first.
+[00:22.56 --> 00:29.96] [speech] The baby dragon's pad in quiet, wings folded, tails flicking.
+[00:29.96 --> 00:30.46] [speech] Good morning.
+[00:38.46 --> 00:40.46] [speech] Let's do some magic.
+[00:59.96 --> 01:08.96] [soundtrack] You know dark well, when you cast your spell You get your way, when you hit those eyes
+[01:08.96 --> 01:11.96] [soundtrack] With your eyes, a heart of stone

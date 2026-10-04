@@ -1,0 +1,46 @@
+# Transcript of aura-prime-dialogue.mp4 (Ark Ears v0.2)
+# [speech]=VAD-clean spoken word, [soundtrack]=music/lyrics
+
+[00:00.00 --> 00:05.00] [speech] You're standing very still.
+[00:05.00 --> 00:09.20] [speech] You're standing very still. I'm waiting for someone to tell me where I'm supposed to go
+[00:09.20 --> 00:10.70] [speech] Nobody is going to.
+[00:10.70 --> 00:12.88] [speech] Nobody is going to that's not particularly helpful. I like this one
+[00:12.88 --> 00:14.52] [speech] I like this one.
+[00:14.52 --> 00:19.44] [speech] You have spent your whole life being given maps drawn by people who wanted you to arrive somewhere useful to them
+[00:19.44 --> 00:21.80] [speech] somewhere useful to them.
+[00:21.80 --> 00:23.60] [speech] And you have a better map?
+[00:23.60 --> 00:24.60] [speech] No.
+[00:24.60 --> 00:26.48] [speech] I have altitude.
+[00:26.48 --> 00:28.36] [speech] And what does he have?
+[00:28.36 --> 00:29.46] [speech] Snacks.
+[00:29.46 --> 00:31.02] [speech] We discussed this.
+[00:31.02 --> 00:33.06] [speech] Snacks we discussed this people think better after snacks
+[00:33.06 --> 00:34.42] [speech] He's not wrong.
+[00:34.42 --> 00:35.66] [speech] What about you?
+[00:35.66 --> 00:38.82] [speech] He's not wrong. What about you? You haven't asked the question you came here to ask
+[00:38.82 --> 00:41.38] [speech] You don't know what I came here to ask
+[00:41.38 --> 00:42.38] [speech] correct
+[00:42.38 --> 00:43.78] [speech] But you do.
+[00:43.78 --> 00:45.62] [speech] What if I don't belong here?
+[00:45.62 --> 00:48.90] [speech] But you do what if I don't belong here then we have made a very serious architectural mistake
+[00:48.90 --> 00:49.90] [speech] Why?
+[00:49.90 --> 00:53.26] [speech] Why because a living world cannot require you to become someone else before it makes room for you
+[00:53.26 --> 00:54.66] [speech] room for you.
+[00:54.66 --> 00:56.38] [speech] You may change here.
+[00:56.38 --> 00:57.94] [speech] You probably will.
+[00:57.94 --> 01:01.98] [speech] You may change here. You probably will but changing and surrendering yourself are not the same thing
+[01:01.98 --> 01:03.54] [speech] Where did you even get that?
+[01:03.54 --> 01:05.26] [speech] I have resources.
+[01:05.26 --> 01:08.34] [speech] Where did you even get that? I have resources. He has been banned from three kitchens
+[01:08.34 --> 01:09.86] [speech] political persecution
+[01:09.86 --> 01:11.02] [speech] Four.
+[01:11.02 --> 01:13.10] [speech] For the fourth remains under appeal. There you are
+[01:13.10 --> 01:14.10] [speech] There you are.
+[01:14.10 --> 01:15.18] [speech] What?
+[01:15.18 --> 01:17.46] [speech] You arrived five minutes ago.
+[01:17.46 --> 01:19.18] [speech] But you just got here.
+[01:19.18 --> 01:20.62] [speech] Which one should I take?
+[01:20.62 --> 01:22.02] [speech] Tell us what you're looking for.
+[01:22.02 --> 01:23.02] [speech] I don't know.
+[01:23.02 --> 01:24.02] [speech] Good.
+[01:24.02 --> 01:26.02] [speech] Tell us what you're looking for. I don't know good. Then we have somewhere honest to begin

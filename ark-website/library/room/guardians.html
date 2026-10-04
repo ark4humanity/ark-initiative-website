@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Ark Library</title>
+<meta name="description" content="The Guardian Hall of the Ark Library: meet the guardian of each of the thirteen pillars, with HALO the battle lion at the head of the ring.">
+<meta name="theme-color" content="#eef1f5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Ccircle cx=%228%22 cy=%228%22 r=%227%22 fill=%22%23f0cf79%22/%3E%3C/svg%3E">
+<style>
+:root{--ink:#231d14;--gold:#b8892e;--card:rgba(255,253,248,.94)}
+html,body{margin:0;height:100%;background:#eef1f5;color:var(--ink);font:16px/1.45 Georgia,"Times New Roman",serif;overflow:hidden;-webkit-tap-highlight-color:transparent}
+#scene{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;outline:none}
+#top{position:fixed;left:0;right:0;top:0;padding:calc(10px + env(safe-area-inset-top)) 14px 10px;display:flex;align-items:center;justify-content:space-between;gap:10px;pointer-events:none;background:linear-gradient(rgba(238,241,245,.85),rgba(238,241,245,0))}
+#brand{font:700 13px/1.2 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6a5630}
+#brand span{display:block;font:600 19px Georgia,serif;letter-spacing:0;text-transform:none;color:var(--ink)}
+#top a{pointer-events:auto;color:#5a4410;text-decoration:none;font:600 14px system-ui,-apple-system,sans-serif;background:var(--card);border:1px solid #d9c89c;border-radius:999px;padding:8px 14px;box-shadow:0 2px 10px rgba(60,40,10,.08)}
+#card{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom));width:min(92vw,560px);box-sizing:border-box;background:var(--card);border:1px solid #e3d6b4;border-radius:18px;padding:14px 18px 12px;box-shadow:0 10px 34px rgba(40,30,10,.14);text-align:center}
+#card.in{animation:rise .45s ease-out}
+@keyframes rise{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
+#c-name{margin:0;font:600 30px/1.1 Georgia,serif;color:var(--ink)}
+#c-name::after{content:"";display:block;width:54px;height:3px;border-radius:2px;margin:8px auto 6px;background:var(--c,#c9a24e)}
+#c-who{margin:0;font-size:15px;color:#4a3e2a}
+#c-line{margin:6px 0 2px;font-style:italic;font-size:16px;color:#2e2618}
+#c-tag{margin:0;font-size:13px;color:#7a6a4c}
+#c-link{display:inline-block;margin-top:6px;font:600 13px system-ui,sans-serif;color:#7a5410;text-decoration:none}
+#bar{position:fixed;left:0;right:0;bottom:calc(14px + env(safe-area-inset-bottom));display:flex;gap:8px;justify-content:center;padding:0 10px}
+#bar button,.btn{font:600 15px system-ui,-apple-system,sans-serif;color:#3a2c10;background:var(--card);border:1px solid #d9c89c;border-radius:999px;height:46px;min-width:46px;padding:0 16px;cursor:pointer;box-shadow:0 3px 14px rgba(60,40,10,.10)}
+#bar button:focus-visible,.btn:focus-visible,#grid button:focus-visible{outline:3px solid #6aa8e8;outline-offset:2px}
+#menu{background:linear-gradient(#f6e3a8,#e9c46a)!important;border-color:#d4a84a!important}
+#list{position:fixed;inset:0;background:rgba(238,241,245,.72);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:16px}
+#list[hidden],#card[hidden],#welcome[hidden],#hall[hidden],#nogl[hidden]{display:none}
+.panel{background:var(--card);border:1px solid #e3d6b4;border-radius:20px;padding:18px;width:min(94vw,560px);box-sizing:border-box;box-shadow:0 14px 40px rgba(40,30,10,.18);text-align:center}
+.panel h2{margin:0 0 4px;font:600 24px Georgia,serif}.panel p{margin:0 0 12px;color:#5a4c34}
+#grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-bottom:12px}
+#grid button{font:600 15px Georgia,serif;color:var(--ink);background:#fff;border:1px solid #e3d6b4;border-left:5px solid var(--c);border-radius:12px;padding:10px 8px;cursor:pointer;text-align:left}
+#grid button.on{background:#fbf1d6}
+.row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+#lite{background:#fff!important;font-weight:500!important;font-size:13px!important;height:38px!important}
+#welcome{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(76px + env(safe-area-inset-bottom));width:min(92vw,520px)}
+#welcome .panel{width:100%}
+#nogl{position:fixed;inset:0;padding:30px;background:#eef1f5;overflow:auto}
+@media (max-width:600px){#c-name{font-size:25px}#card{padding:12px 14px 10px}#c-line{font-size:15px}#brand span{font-size:17px}#bar button{padding:0 13px}}
+@media (prefers-reduced-motion:reduce){#card.in{animation:none}}
+</style></head><body>
+<canvas id="scene" aria-label="The Guardian Hall: thirteen guardians on marble plinths" tabindex="0"></canvas>
+<div id="top"><div id="brand">The Ark Library<span>The Guardian Hall</span></div><a href="./">← The Library</a></div>
+<div id="welcome" hidden><div class="panel"><h2>Welcome to the Guardian Hall</h2><p>Each pillar of the Ark has a guardian. HALO keeps the gate, and Aura holds the center. Tap any guardian to meet them.</p><div class="row"><button class="btn" id="w-meet">Meet HALO</button><button class="btn" id="w-look">Look around</button></div></div></div>
+<div id="card" hidden aria-live="polite"><h2 id="c-name"></h2><p id="c-who"></p><p id="c-line"></p><p id="c-tag"></p><a id="c-link" href="#">Visit ↗</a></div>
+<div id="bar"><button id="prev" aria-label="Previous guardian">◀</button><button id="menu" aria-expanded="false" aria-controls="list">All guardians</button><button id="hall" hidden>Hall view</button><button id="next" aria-label="Next guardian">▶</button></div>
+<div id="list" hidden role="dialog" aria-label="All guardians"><div class="panel"><h2>The guardians</h2><p>Choose a pillar to meet its guardian.</p><div id="grid"></div><div class="row"><button class="btn" id="l-close">Close</button><button class="btn" id="lite"></button></div></div></div>
+<div id="nogl" hidden><h1>The Guardian Hall</h1><p>This device couldn't open the 3D hall. The guardians are: Aura Prime (Aura, with the Dragon and the Blue Whale), HALO (the battle lion), Vagus (the Elephant), Delta (the Beaver), Asherah (the White Lion), Matrix (the Octopus), Aeon (the Tortoise), Exchange (the Raven), Vega (the Falcon and the Owl), Ark (Jenny), Terra (the White Buffalo), Soma (the Axolotl) and Symbiosis (the Orca).</p><p><a href="/library" style="color:#7a5410">Read the Library as a plain page</a></p></div>
+<script>(function(){var ok=false;try{var c=document.createElement('canvas');ok=!!(window.WebGLRenderingContext&&(c.getContext('webgl2')||c.getContext('webgl')));}catch(e){}if(!ok){document.getElementById('nogl').hidden=false;return;}var s=document.createElement('script');s.type='module';s.src='dist/guardians.js';s.onerror=function(){document.getElementById('nogl').hidden=false};document.body.appendChild(s);})();</script>
+</body></html>
