@@ -3636,7 +3636,34 @@ PILLAR_ARCHIVES = {'Ark': {'chamber': 'The Ark pillar is the whole system read a
                                          '2006; Dacke et al. 2013.',
                          'theme': 'Orientation without a central map',
                          'title': 'THE LIVING COMPASS: What Wayfinding Science Knows About Finding the Way '
-                                  'Without a Map'}]),
+                                  'Without a Map'},
+                        {'art': None,
+                         'chapters': None,
+                         'cls': None,
+                         'collection': 'Living Archive',
+                         'era': 'Vega shelf · THE STAR CHART',
+                         'evidence': 'ESTABLISHED EVIDENCE',
+                         'excerpt': 'For three thousand years, every civilization that needed to find its '
+                                    'way built the same answer: a chart of the sky that nobody could own, '
+                                    'and nobody could switch off.',
+                         'kind': 'scroll',
+                         'link': 'essays/the-chart-that-cannot-be-confiscated.html',
+                         'linklabel': 'Read in full',
+                         'media': None,
+                         'notice': 'Research brief by Muse, 2026-10-05. External sources cited in the '
+                                   'piece; Ark-side connections are the author\\u2019s synthesis.',
+                         'pillar': 'Vega',
+                         'shelf': 'THE STAR CHART',
+                         'slot': None,
+                         'source_data_ref': 'essays/the-chart-that-cannot-be-confiscated.html',
+                         'source_label': 'Muse \\u00b7 research brief for Vega, 2026-10-05. MUL.APIN '
+                                         '(c. 1000 BCE); Dunhuang star atlas (649-684 CE); Hipparchus '
+                                         '(c. 129 BCE); al-Sufi, Book of Fixed Stars (964); Ulugh Beg, '
+                                         'Zij-i Sultani (1437); Harrison H4; US Naval Academy celestial '
+                                         'navigation reinstated 2015; Black Sea GPS spoofing 2017.',
+                         'theme': 'The unownable chart',
+                         'title': 'THE CHART THAT CANNOT BE CONFISCATED: The Sky as Humanity\\u2019s '
+                                  'Oldest Open Infrastructure'}]),
                        ('THE COMPASS DRAWER',
                         [{'art': None,
                           'chapters': None,

@@ -896,6 +896,12 @@ ESSAYS = [
       date="2026-10-05",
       desc="The court that has met every Thursday for a thousand years, the Swiss village that outlasted Hardin's theory, Nepal's farmers who beat the government's engineers, the lobstermen's V-notch, the volunteer encyclopedia, the land trust that cannot sell, and the platforms owned by their workers: Ostrom's commons science, the digital commons, and what they mean for a civilization whose center may be occupied, never owned. All claims labeled by evidence class.",
       mode="raw", drop_first=2),
+    dict(slug="the-chart-that-cannot-be-confiscated", file="247-the-chart-that-cannot-be-confiscated.md",
+      title="THE CHART THAT CANNOT BE CONFISCATED: The Sky as Humanity's Oldest Open Infrastructure",
+      byline="Muse \u00b7 research brief for Vega",
+      date="2026-10-05",
+      desc="Three millennia of star charts as open infrastructure: Babylon's clay tablets, the Tang paper sky, Hipparchus's count, al-Sufi's double drawings, Ulugh Beg's building-sized sextant, Harrison's watch, the Navy's return to the stars, and the lie on the screen in the Black Sea. The chart nobody can own, and nobody can switch off. All claims labeled by evidence class.",
+      mode="raw", drop_first=2),
 ]
 
 # R2 video hosting (Cloudflare R2, same account as the Worker site).
