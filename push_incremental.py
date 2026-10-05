@@ -105,7 +105,9 @@ for rel, (full, sha) in local.items():
     if rel not in blob_sha: blob_sha[rel] = sha
 print("[push] blobs ready", flush=True)
 
-# 5. build trees bottom-up
+# 5. build trees bottom-up — but ONLY rebuild subtrees containing changed files.
+# Unchanged subtrees are content-identical, so reuse their remote tree SHAs
+# (avoids hundreds of tree POSTs and timeouts on giant dirs like img/g).
 from collections import defaultdict
 dir_children = defaultdict(lambda: {"files": [], "dirs": []})
 dirs = set()
@@ -119,21 +121,43 @@ for d in dirs:
     if not d: continue
     p = os.path.dirname(d)
     if d not in dir_children[p]["dirs"]: dir_children[p]["dirs"].append(d)
-
+remote_trees = {t["path"]: t["sha"] for t in tree.get("tree", []) if t["type"] == "tree"}
+need_set = set(need)
+deleted = set(remote_blobs) - set(local)
+if deleted:
+    print(f"[push] {len(deleted)} deleted files will be dropped", flush=True)
+# dir_has_change[d] = True if any file at/under d changed or was deleted
+dir_has_change = {}
+def mark(d):
+    if d in dir_has_change: return dir_has_change[d]
+    changed = any(os.path.dirname(rel) == d and (rel in need_set or rel in deleted) for rel in set(local) | set(remote_blobs))
+    for sub in dir_children.get(d, {}).get("dirs", []):
+        if mark(sub): changed = True
+    # a deleted file directly under d:
+    if any(os.path.dirname(rel) == d for rel in deleted): changed = True
+    dir_has_change[d] = changed
+    return changed
+for d in dirs: mark(d)
+n_reused, n_rebuilt = 0, 0
 def build_tree(d):
+    global n_reused, n_rebuilt
+    if not dir_has_change.get(d, True) and d in remote_trees:
+        n_reused += 1
+        return remote_trees[d]
+    n_rebuilt += 1
     entries = []
     for rel in sorted(dir_children.get(d, {}).get("files", [])):
         entries.append({"path": os.path.basename(rel), "mode": "100644", "type": "blob", "sha": blob_sha[rel]})
     for sub in sorted(dir_children.get(d, {}).get("dirs", [])):
         entries.append({"path": os.path.basename(sub), "mode": "040000", "type": "tree", "sha": build_tree(sub)})
     if not entries: return None
-    for a in range(5):  # transient/flaky 422 retry with growing backoff
+    for a in range(6):  # 422/timeout backoff
         try:
             sha = api("POST", "/git/trees", {"tree": entries})["sha"]
-            time.sleep(0.5)  # keep tree-creation rate gentle
+            time.sleep(0.5)
             return sha
         except RuntimeError as e:
-            if "422" in str(e) and a < 4:
+            if "422" in str(e) and a < 5:
                 wait = 15 * (2 ** a)
                 print(f"[tree] 422 on {d!r}, backoff {wait}s (try {a+1})", flush=True)
                 time.sleep(wait); continue
@@ -141,7 +165,7 @@ def build_tree(d):
     raise RuntimeError("tree build failed after retries")
 
 root = build_tree("")
-print(f"[push] root tree {root}", flush=True)
+print(f"[push] root tree {root} (reused {n_reused} subtrees, rebuilt {n_rebuilt})", flush=True)
 
 # 6. commit + move ref
 commit = api("POST", "/git/commits", {"message": COMMIT_MSG, "tree": root, "parents": [parent],

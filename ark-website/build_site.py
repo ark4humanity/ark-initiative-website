@@ -878,6 +878,12 @@ ESSAYS = [
       date="2026-10-04",
       desc="The science behind the scorched niche's witnesses: Karuk and Yurok cultural burning in the Klamath, the 20-year Fire Surrogate Study, serotiny and the sequoia's fire dependence, karrikin smoke signals, the black-backed woodpecker's burn nursery, and terra preta's charcoal that outlives empires. All claims labeled by evidence class.",
       mode="raw", drop_first=2),
+    dict(slug="what-the-canyon-keeps", file="244-what-the-canyon-keeps.md",
+      title="WHAT THE CANYON KEEPS: The Desert's Doorway, Written in Stone, Water, and Shade",
+      byline="Muse \u00b7 research brief for Asherah",
+      date="2026-10-05",
+      desc="The science behind the canyon threshold's doorway: Zion's flash-flood geology, the tinaja water jars of Saguaro, the forty-thousand-year packrat-midden library, desert varnish and its dating debates, and the Hohokam canals that farmed the threshold for a millennium. All claims labeled by evidence class.",
+      mode="raw", drop_first=2),
 ]
 
 # R2 video hosting (Cloudflare R2, same account as the Worker site).

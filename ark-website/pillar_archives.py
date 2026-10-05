@@ -1156,7 +1156,36 @@ PILLAR_ARCHIVES = {'Ark': {'chamber': 'The Ark pillar is the whole system read a
                                             'grove citation pack v1 (board 1qWX8l3OqcGyuTtrpzmMLm8i95vH1tM6d). Filed '
                                             '2026-09-24 ~08:13 PT to council-board + inbox-muse.',
                             'theme': 'Reading living signals — wonder and warrant',
-                            'title': 'Charts Left on the Canyon Floor'}]),
+                            'title': 'Charts Left on the Canyon Floor'},
+                           {'art': None,
+                            'chapters': None,
+                            'cls': None,
+                            'collection': 'Living Archive',
+                            'era': 'CANYON THRESHOLD · THE LIBRARY DOOR · SCROLL',
+                            'evidence': 'ESTABLISHED EVIDENCE',
+                            'excerpt': 'The door cut by water, the jars the canyon keeps, the forty-thousand-year '
+                                       'library in the walls, and the people who farmed the threshold for a '
+                                       'millennium: Zion’s floods, Saguaro’s tinajas, packrat middens, desert '
+                                       'varnish, and the Hohokam canals.',
+                            'kind': 'scroll',
+                            'link': 'essays/what-the-canyon-keeps.html',
+                            'linklabel': 'Read in full',
+                            'media': None,
+                            'notice': 'Research brief by Muse, 2026-10-05. External sources cited in the piece; '
+                                      'Ark-side connections are the author’s synthesis.',
+                            'pillar': 'Asherah',
+                            'shelf': 'THE CANYON THRESHOLD',
+                            'slot': None,
+                            'source_data_ref': 'essays/what-the-canyon-keeps.html',
+                            'source_label': 'Muse · research brief for Asherah, 2026-10-05. Tinajas via NPS Saguaro '
+                                            '(240+ pools, only dry-season water); tinaja sedimentation via USGS '
+                                            '2004-06; bighorn tinaja storage via USGS lidar 2022; slot-canyon geology '
+                                            'via Zion (20 mya uplift, 9,000 cfs floods); middens via Betancourt et al. '
+                                            '1990 and Cole/Arundel Grand Canyon; varnish via Dorn 2024/2026; Hohokam '
+                                            'canals via Haury Snaketown and SAH Archipedia.',
+                            'theme': 'The ecology of the threshold',
+                            'title': 'WHAT THE CANYON KEEPS: The Desert’s Doorway, Written in Stone, Water, and '
+                                     'Shade'}]),
                          ('THE MYTH CHAIR',
                           [{'art': None,
                             'cap': 'Clothbound myth-cycle book, lapis clasp',
