@@ -890,6 +890,12 @@ ESSAYS = [
       date="2026-10-05",
       desc="The science behind the groves' self-built garden: hydraulic lift measured in sagebrush and sugar maple, desert fertility islands, mesquite's eight millennia of food and nitrogen, sheep and geese working the orchard floor, the coppice woodlot that never needs replanting, and the desert's own orchard menu. All claims labeled by evidence class.",
       mode="raw", drop_first=2),
+    dict(slug="the-field-that-needs-no-fence", file="246-the-field-that-needs-no-fence.md",
+      title="THE FIELD THAT NEEDS NO FENCE: What the Commons Knows About Sharing What Nobody Owns",
+      byline="Muse \u00b7 research brief for Exchange",
+      date="2026-10-05",
+      desc="The court that has met every Thursday for a thousand years, the Swiss village that outlasted Hardin's theory, Nepal's farmers who beat the government's engineers, the lobstermen's V-notch, the volunteer encyclopedia, the land trust that cannot sell, and the platforms owned by their workers: Ostrom's commons science, the digital commons, and what they mean for a civilization whose center may be occupied, never owned. All claims labeled by evidence class.",
+      mode="raw", drop_first=2),
 ]
 
 # R2 video hosting (Cloudflare R2, same account as the Worker site).
@@ -1813,6 +1819,17 @@ try{var __p=__a.play();if(__p&&__p.catch)__p.catch(function(){__done();});}catch
 });}
 __wireAudio('hear-dragon','/img/dragon-dialogue.mp3','HEAR THE DRAGONS','THE DRAGONS SPEAK\u2026');
 __wireAudio('hear-dawn','/img/threshold-welcome.mp3','HEAR DAWN\u2019S WELCOME','DAWN SPEAKS\u2026');
+/* Orphan music pills: data-audio buttons that are NOT inside a living-room figure (e.g. HALO's tap for the music of the perimeter). Toggle the paired <audio> element by id, with a play/silence label swap. */
+document.querySelectorAll('.music-pill[data-audio]').forEach(function(p){
+if(p.closest('[data-living-room]'))return;
+var a=document.getElementById(p.getAttribute('data-audio'));if(!a)return;
+var base=p.innerHTML;
+p.addEventListener('click',function(ev){ev.stopPropagation();
+if(a.paused){try{var q=a.play();if(q&&q.catch)q.catch(function(){});}catch(_){}
+p.innerHTML='&#9836; tap to silence';}
+else{a.pause();p.innerHTML=base;}});
+a.addEventListener('ended',function(){p.innerHTML=base;});
+});
 })();"""
 write("js/main.js", JS)
 
@@ -1944,7 +1961,11 @@ home = """
 <p class="lede reveal" style="margin:0 auto">&ldquo;DIFFERENT INTELLIGENCES. A SHARED TOMORROW.&rdquo; &mdash; &ldquo;THE FUTURE IS NOT CONTROLLED. IT IS CULTIVATED.&rdquo;</p>
 </div></section>
 """
-write("index.html", page("Home","index.html", apply_home_fixes(home.replace("@@ESSAY_COUNT@@", str(len(ESSAYS)))), "dark", rel="index.html"))
+# Homepage essay count: actual full-text essay pages on the site (ESSAYS is the
+# canonical list, but wave/staging runs publish additional full-text essay
+# pages alongside it; the newcomer-facing number must count what exists).
+_ESSAY_FILE_COUNT = str(len([f for f in os.listdir("essays") if f.endswith(".html")]))
+write("index.html", page("Home","index.html", apply_home_fixes(home.replace("@@ESSAY_COUNT@@", _ESSAY_FILE_COUNT)), "dark", rel="index.html"))
 
 # ---------------- LIVING STACKS ----------------
 # The Living Stacks: 13 pillar alcoves as a living library environment.

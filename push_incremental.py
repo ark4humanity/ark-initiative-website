@@ -95,8 +95,12 @@ for i, rel in enumerate(need):
     if ex:
         blob_sha[rel] = lsha
     else:
-        with open(full, 'rb') as f: content = base64.b64encode(f.read()).decode()
-        r = api("POST", "/git/blobs", {"content": content, "encoding": "base64"})
+        try:
+            with open(full, 'rb') as f: content = base64.b64encode(f.read()).decode()
+            r = api("POST", "/git/blobs", {"content": content, "encoding": "base64"})
+        except RuntimeError as e:
+            print(f"[push] FAILED blob upload for {rel} ({os.path.getsize(full)} bytes): {e}", flush=True)
+            raise
         blob_sha[rel] = r["sha"]
         assert r["sha"] == lsha, f"sha mismatch for {rel}"
     if (i + 1) % 40 == 0: print(f"[push] blob {i+1}/{len(need)}", flush=True)

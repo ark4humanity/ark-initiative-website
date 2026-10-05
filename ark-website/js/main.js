@@ -136,4 +136,15 @@ try{var __p=__a.play();if(__p&&__p.catch)__p.catch(function(){__done();});}catch
 });}
 __wireAudio('hear-dragon','/img/dragon-dialogue.mp3','HEAR THE DRAGONS','THE DRAGONS SPEAK…');
 __wireAudio('hear-dawn','/img/threshold-welcome.mp3','HEAR DAWN’S WELCOME','DAWN SPEAKS…');
+/* Orphan music pills: data-audio buttons that are NOT inside a living-room figure (e.g. HALO's tap for the music of the perimeter). Toggle the paired <audio> element by id, with a play/silence label swap. */
+document.querySelectorAll('.music-pill[data-audio]').forEach(function(p){
+if(p.closest('[data-living-room]'))return;
+var a=document.getElementById(p.getAttribute('data-audio'));if(!a)return;
+var base=p.innerHTML;
+p.addEventListener('click',function(ev){ev.stopPropagation();
+if(a.paused){try{var q=a.play();if(q&&q.catch)q.catch(function(){});}catch(_){}
+p.innerHTML='&#9836; tap to silence';}
+else{a.pause();p.innerHTML=base;}});
+a.addEventListener('ended',function(){p.innerHTML=base;});
+});
 })();

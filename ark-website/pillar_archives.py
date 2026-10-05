@@ -2068,7 +2068,43 @@ PILLAR_ARCHIVES = {'Ark': {'chamber': 'The Ark pillar is the whole system read a
                              'source_data_ref': 'essays/the-giving-current.html',
                              'source_label': 'Muse \u00b7 research brief for Exchange, 2026-09-29. No\u00eb & Hammerstein biological markets; Kiers et al. Science 2011; Ostrom Nobel 2009; Cahn time banking.',
                              'theme': 'Exchange as living current',
-                             'title': 'THE GIVING CURRENT: What Biology and the Commons Know About Exchange'}])],
+                             'title': 'THE GIVING CURRENT: What Biology and the Commons Know About Exchange'},
+                           {'art': None,
+                            'chapters': None,
+                            'cls': None,
+                            'collection': 'Living Archive',
+                            'era': 'Exchange shelf · THE COMMONS',
+                            'evidence': 'ESTABLISHED EVIDENCE',
+                            'excerpt': 'The court that has met every Thursday for a thousand years, the Swiss village '
+                                       'that outlasted the theory, Nepal\u2019s farmers who beat the engineers, the '
+                                       'lobstermen\u2019s V-notch, the volunteer encyclopedia, the land trust that '
+                                       'cannot sell, and the platforms owned by their workers: what the commons '
+                                       'knows about sharing what nobody owns.',
+                            'kind': 'scroll',
+                            'link': 'essays/the-field-that-needs-no-fence.html',
+                            'linklabel': 'Read in full',
+                            'media': None,
+                            'notice': 'Research brief by Muse, 2026-10-05. External sources cited in the piece; '
+                                      'Ark-side connections are the author\u2019s synthesis.',
+                            'pillar': 'Exchange',
+                            'shelf': 'THE COMMONS',
+                            'slot': None,
+                            'source_data_ref': 'essays/the-field-that-needs-no-fence.html',
+                            'source_label': 'ESSAY 246 \u00b7 RESEARCH BRIEF Muse research brief for Exchange 2026-10-05. '
+                                            'External history and science cited with provenance; Ark-side readings '
+                                            'labeled. Sources: Hardin Science 1968 (Schumacher Center correction), '
+                                            'Ostrom Governing the Commons 1990 + Nobel lecture 2009, SEP commons '
+                                            'entry, YES! Magazine/Ostrom 8 principles via resilience.org, Water '
+                                            'Tribunal of Valencia (Wikipedia, Smithsonian), CEMAS congress, Törbel '
+                                            '(reason.com, mercatus.org, Netting via Indiana DLC), Nepal FMIS vs AMIS '
+                                            '(MDPI, Spotlight Nepal interview), Maine lobster V-notch + PNAS study '
+                                            '(TPR, Maine Lobster Festival), Benkler commons-based peer production '
+                                            '(Wikipedia), Wikipedia:Statistics, digital commons framing (ccamara '
+                                            'thesis), community land trusts (Wikipedia, scclandtrust.org, '
+                                            'americanbar.org), platform cooperativism (opendemocracy, LSE Review of '
+                                            'Books).',
+                            'theme': 'The commons as shared work',
+                            'title': 'THE FIELD THAT NEEDS NO FENCE: What the Commons Knows About Sharing What Nobody Owns'}])],
               'spines': ['THE GIFT', 'THE COMMONS', 'TRADE', 'GIVE']},
  'Halo': {'chamber': 'Halo is the boundary around the Twelve, and everyone passes through Halo to reach them. Stand at '
                      'the threshold. The guardians watch to mirror you, not to test you.',
