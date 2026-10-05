@@ -866,6 +866,12 @@ ESSAYS = [
       date="2026-10-04",
       desc="The human half of this shelf's reciprocity pair: Mauss's 1925 Gift and the hau, Malinowski's kula ring, Wiessner's hxaro partnerships in the Kalahari, Lee's insulted meat and Boehm's reverse dominance hierarchy, the 67-year potlatch ban, Andean ayni and minka, and Dunn, Aknin & Norton on the giver's own happiness. All claims labeled by evidence class.",
       mode="raw", drop_first=2),
+    dict(slug="the-ground-that-is-alive", file="242-the-ground-that-is-alive.md",
+      title="THE GROUND THAT IS ALIVE: What the Desert's Living Skin Knows About Holding the Land Together",
+      byline="Muse \u00b7 research brief for Terra",
+      date="2026-10-04",
+      desc="The living half of this shelf's pair: biological soil crusts that hold the desert together, the microbial loop that feeds plants from below, and the 1997 experiment that proved carbon can cross between trees through shared fungi, with the famous 'wood wide web' cover line and the mother-tree claims labeled honestly. All claims by evidence class.",
+      mode="raw", drop_first=2),
 ]
 
 # R2 video hosting (Cloudflare R2, same account as the Worker site).

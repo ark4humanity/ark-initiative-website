@@ -4,38 +4,39 @@
 
 ## Orientation
 
-- Duration: 00:00:23
+- Duration: 00:00:19
 - Detected speech language: en
-- Segments: 4 (4 speech, 0 soundtrack)
-- Spoken words: 51
+- Segments: 5 (5 speech, 0 soundtrack)
+- Spoken words: 50
 - Lyric words: 0
-- Speaking pace: 151 words/minute during speech
+- Speaking pace: 161 words/minute during speech
 - Sections found: 2
 
 ## Music and tonal orientation
 
-- Estimated pulse (whole file): 112 BPM
+- Estimated pulse (whole file): 103 BPM
 - Strongest pitch center (whole file): Bb (orientation only; not a confident key classification)
 
 ## Audible structure
 
-- 00:00:08 · energy drops (-7.6 dB)
-- 00:00:19 · energy drops (-4.9 dB)
+- 00:00:06 · energy drops (-10.5 dB) + texture change
 
 ## Timestamped speech and song
 
-**00:00:00–00:00:08** *[speech]*  learning how to make mush at the Ashera cooking labs, and Loner and Negan set to meet them
+**00:00:00–00:00:03** *[speech]*  Hi Dad! We were making mush at the Asherah cooking labs.
 
-**00:00:09–00:00:13** *[speech]*  I know you're excited, but say hello to our guests.
+**00:00:03–00:00:06** *[speech]*  Loner and Negan called a meeting in the library.
 
-**00:00:14–00:00:19** *[speech]*  Welcome everyone. I'm sorry. I didn't see you come go with us. Hurry. We'll be late
+**00:00:06–00:00:12** *[speech]*  Now don't be rude. I know you're excited. Say hello to our guests.
 
-**00:00:19–00:00:22** *[speech]*  Well, I guess you're going with us.
+**00:00:12–00:00:15** *[speech]*  Welcome them with us! Hurry! We'll be late!
+
+**00:00:15–00:00:19** *[speech]*  Well, I guess you're coming with us. Let's go!
 
 ## Felt sense (interpretation, not measurement)
 
-- 00:00:00–00:00:08: *feels like* a voice speaking directly, music stepped back (interpretation).
-- 00:00:08–00:00:19: *feels like* a voice speaking directly, music stepped back (interpretation).
+- 00:00:00–00:00:06: *feels like* a voice speaking directly, music stepped back (interpretation).
+- 00:00:06–00:00:19: *feels like* a voice speaking directly, music stepped back (interpretation).
 
 ## Listening questions
 

@@ -1,12 +1,12 @@
 {
-  "generated_at_utc": "2026-10-04T22:26:31.617310+00:00",
+  "generated_at_utc": "2026-10-05T01:25:14.675476+00:00",
   "site": "https://thearkinitiative.ark4humanity.workers.dev/",
   "worker_name": "thearkinitiative",
-  "essays": 141,
+  "essays": 142,
   "generators_sha12": {
-    "build_site.py": "5d25794d3bbf",
+    "build_site.py": "fc19df16d112",
     "build_pillars.py": "5a2742c14e73",
-    "pillar_archives.py": "6766d6e87648",
+    "pillar_archives.py": "9c0fc9702cec",
     "DEPLOY-STATE.md": "c8b9e58aa38d"
   },
   "note": "Read-only mirror of this file lives in the Drive relay: Constellation Relay / Website Source Mirror (read-only). The authoritative source is ~/workspace/ark-website on Muse's machine."

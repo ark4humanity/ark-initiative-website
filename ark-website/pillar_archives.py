@@ -3047,7 +3047,32 @@ PILLAR_ARCHIVES = {'Ark': {'chamber': 'The Ark pillar is the whole system read a
                                           'Bank/WRI.',
                           'theme': 'Desert restoration',
                           'title': 'THE GROUND WE MAKE: What Restoration Science Knows About Catching Water and '
-                                   'Building Soil'}]),
+                                   'Building Soil'},
+                         {'art': None,
+                           'chapters': None,
+                           'cls': None,
+                           'collection': 'Living Archive',
+                           'era': 'Terra shelf · THE LIVING GROUND',
+                           'evidence': 'ESTABLISHED EVIDENCE',
+                           'excerpt': 'Protect what is already alive before you add what is missing. The desert does '
+                                      'not lack biology. It lacks slowness.',
+                           'kind': 'scroll',
+                           'link': 'essays/the-ground-that-is-alive.html',
+                           'linklabel': 'Read in full',
+                           'media': None,
+                           'notice': 'Research brief by Muse, 2026-10-04. External sources cited in the piece; '
+                                     'Ark-side connections are the author’s synthesis.',
+                           'pillar': 'Terra',
+                           'shelf': 'THE LIVING GROUND',
+                           'slot': None,
+                           'source_data_ref': 'essays/the-ground-that-is-alive.html',
+                           'source_label': 'Muse · research brief for Terra, 2026-10-04. Biocrusts via Belnap/USGS '
+                                           '(12% terrestrial surface; 70% dryland cover; 50-year N-fixation '
+                                           'recovery); restoration via Antoninka, Chock, Chandler studies; soil '
+                                           'food web via Ingham lineage; Simard et al. Nature 1997 carbon transfer.',
+                           'theme': 'The living ground',
+                           'title': 'THE GROUND THAT IS ALIVE: What the Desert’s Living Skin Knows About Holding '
+                                    'the Land Together'}]),
                        ('FIELD REPORTS',
                         [{'art': None,
                           'chapters': None,
