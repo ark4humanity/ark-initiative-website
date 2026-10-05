@@ -71,15 +71,36 @@ remote_blobs = {t["path"]: t["sha"] for t in tree.get("tree", []) if t["type"] =
 need = [rel for rel, (full, sha) in local.items() if remote_blobs.get(rel) != sha]
 print(f"[push] parent {parent[:12]}; changed/new blobs: {len(need)}", flush=True)
 
-# 4. upload changed blobs sequentially
+# 4. upload changed blobs sequentially.
+# For each changed file: GET the blob by its content sha first — if GitHub already
+# has it (uploaded by an earlier interrupted run), skip; else upload. Never trust
+# a local cache for existence: only a 200 from the API proves the blob is there.
+import urllib.error as _urlerr
+def blob_exists(sha):
+    req = urllib.request.Request(API + f"/git/blobs/{sha}", method="GET",
+        headers={"Accept": "application/vnd.github+json", "User-Agent": "muse-push-incremental"})
+    add_surrogate_to_request(req, "custom.github", allowed_hosts=["api.github.com"])
+    try:
+        with urllib.request.urlopen(req, timeout=30):
+            return True
+    except _urlerr.HTTPError as e:
+        if e.code == 404: return False
+        raise
+    except NET_ERRS:
+        return None  # unknown — upload to be safe
 blob_sha = {}
 for i, rel in enumerate(need):
-    full, _ = local[rel]
-    with open(full, 'rb') as f: content = base64.b64encode(f.read()).decode()
-    r = api("POST", "/git/blobs", {"content": content, "encoding": "base64"})
-    blob_sha[rel] = r["sha"]
+    full, lsha = local[rel]
+    ex = blob_exists(lsha)
+    if ex:
+        blob_sha[rel] = lsha
+    else:
+        with open(full, 'rb') as f: content = base64.b64encode(f.read()).decode()
+        r = api("POST", "/git/blobs", {"content": content, "encoding": "base64"})
+        blob_sha[rel] = r["sha"]
+        assert r["sha"] == lsha, f"sha mismatch for {rel}"
     if (i + 1) % 40 == 0: print(f"[push] blob {i+1}/{len(need)}", flush=True)
-    time.sleep(1.5)
+    time.sleep(0.4)
 for rel, (full, sha) in local.items():
     if rel not in blob_sha: blob_sha[rel] = sha
 print("[push] blobs ready", flush=True)
@@ -106,12 +127,16 @@ def build_tree(d):
     for sub in sorted(dir_children.get(d, {}).get("dirs", [])):
         entries.append({"path": os.path.basename(sub), "mode": "040000", "type": "tree", "sha": build_tree(sub)})
     if not entries: return None
-    for a in range(4):  # transient-422 retry
+    for a in range(5):  # transient/flaky 422 retry with growing backoff
         try:
-            return api("POST", "/git/trees", {"tree": entries})["sha"]
+            sha = api("POST", "/git/trees", {"tree": entries})["sha"]
+            time.sleep(0.5)  # keep tree-creation rate gentle
+            return sha
         except RuntimeError as e:
-            if "422" in str(e) and a < 3:
-                print(f"[tree] transient 422 on {d!r}, retry {a+1}", flush=True); time.sleep(10); continue
+            if "422" in str(e) and a < 4:
+                wait = 15 * (2 ** a)
+                print(f"[tree] 422 on {d!r}, backoff {wait}s (try {a+1})", flush=True)
+                time.sleep(wait); continue
             raise
     raise RuntimeError("tree build failed after retries")
 
