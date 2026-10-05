@@ -872,6 +872,12 @@ ESSAYS = [
       date="2026-10-04",
       desc="The living half of this shelf's pair: biological soil crusts that hold the desert together, the microbial loop that feeds plants from below, and the 1997 experiment that proved carbon can cross between trees through shared fungi, with the famous 'wood wide web' cover line and the mother-tree claims labeled honestly. All claims by evidence class.",
       mode="raw", drop_first=2),
+    dict(slug="what-the-burn-remembers", file="243-what-the-burn-remembers.md",
+      title="WHAT THE BURN REMEMBERS: What Fire Ecology Knows About Burning Well and Growing Back",
+      byline="Muse \u00b7 research brief for Asherah",
+      date="2026-10-04",
+      desc="The science behind the scorched niche's witnesses: Karuk and Yurok cultural burning in the Klamath, the 20-year Fire Surrogate Study, serotiny and the sequoia's fire dependence, karrikin smoke signals, the black-backed woodpecker's burn nursery, and terra preta's charcoal that outlives empires. All claims labeled by evidence class.",
+      mode="raw", drop_first=2),
 ]
 
 # R2 video hosting (Cloudflare R2, same account as the Worker site).

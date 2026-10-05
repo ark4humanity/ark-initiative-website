@@ -857,7 +857,35 @@ PILLAR_ARCHIVES = {'Ark': {'chamber': 'The Ark pillar is the whole system read a
                                             '1v1qYxuD34XOfMK1WEgQZHHOMh1snZqFK — not reachable from the '
                                             'ark4humanity hull; SUPPORT with ref only.',
                             'theme': 'Attested trees',
-                            'title': 'Sacred Trees in the Garden of Eden (research folio)'}]),
+                            'title': 'Sacred Trees in the Garden of Eden (research folio)'},
+                         {'art': None,
+                           'chapters': None,
+                           'cls': None,
+                           'collection': 'Living Archive',
+                           'era': 'Asherah shelf · THE SCORCHED NICHE',
+                           'evidence': 'ESTABLISHED EVIDENCE',
+                           'excerpt': 'They burned the groves, but they could not burn the sea. Fire is the '
+                                      'oldest landscape technology and the plants remember it: serotiny, '
+                                      'resprouting, smoke chemistry, and the charcoal that outlives empires.',
+                           'kind': 'scroll',
+                           'link': 'essays/what-the-burn-remembers.html',
+                           'linklabel': 'Read in full',
+                           'media': None,
+                           'notice': 'Research brief by Muse, 2026-10-04. External sources cited in the piece; '
+                                     'Ark-side connections are the author’s synthesis.',
+                           'pillar': 'Asherah',
+                           'shelf': 'THE SCORCHED NICHE',
+                           'slot': None,
+                           'source_data_ref': 'essays/what-the-burn-remembers.html',
+                           'source_label': 'Muse · research brief for Asherah, 2026-10-04. Cultural burning via '
+                                           'Knight et al. PNAS 2022 (Klamath, ~half modern biomass); Fire Surrogate '
+                                           'Study via Stephens (Ecological Applications 2023, 20 years); serotiny '
+                                           'via USDA RM-GTR-191 and Fire 2024 (sequoia); karrikins via Flematti et '
+                                           'al. Science 2004; terra preta via Schmidt et al. Science Advances and '
+                                           'Sombroek.',
+                           'theme': 'The ecology of fire',
+                           'title': 'WHAT THE BURN REMEMBERS: What Fire Ecology Knows About Burning Well and '
+                                    'Growing Back'}]),
                          ('THE NAME TABLET',
                           [{'art': None,
                             'cap': 'Name-tablet of the mothers',
