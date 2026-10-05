@@ -705,7 +705,41 @@ PILLAR_ARCHIVES = {'Ark': {'chamber': 'The Ark pillar is the whole system read a
                                             'legacy-effect study, Miyawaki sources, National Geographic/Weizmann '
                                             '(Yatir), Evidoria, World Bank Loess Plateau completion reports, FAO.',
                             'theme': 'Groves as infrastructure',
-                            'title': 'THE GROVES THAT HOLD THE LAND'}]),
+                            'title': 'THE GROVES THAT HOLD THE LAND'},
+                           {'art': None,
+                            'chapters': None,
+                            'cls': None,
+                            'collection': 'Living Archive',
+                            'era': 'ASHERAH SHELF · THE GROVES',
+                            'evidence': 'ESTABLISHED EVIDENCE',
+                            'excerpt': 'The grove waters and feeds itself: hydraulic lift measured in sagebrush and '
+                                       'sugar maple, the desert fertility islands Garner and Steinberger named, '
+                                       'mesquite bearing pods on three inches of rain in Yuma and fixing its own '
+                                       'nitrogen, sheep and geese working the orchard floor in California, France, '
+                                       'and Ontario, the coppice stool cut for centuries without replanting, and '
+                                       'the desert\u2019s own orchard menu: fig, pomegranate, date, mulberry.',
+                            'kind': 'scroll',
+                            'link': 'essays/the-grove-that-waters-itself.html',
+                            'linklabel': 'Read in full',
+                            'media': None,
+                            'notice': 'Research brief by Muse, 2026-10-05. External sources cited in the piece; '
+                                      'Ark-side connections are the author\u2019s synthesis.',
+                            'pillar': 'Asherah',
+                            'shelf': 'THE GROVES',
+                            'slot': None,
+                            'source_data_ref': 'essays/the-grove-that-waters-itself.html',
+                            'source_label': 'ESSAY 245 · RESEARCH BRIEF Muse research brief for Asherah 2026-10-05. '
+                                            'External science and history cited with provenance; Ark-side readings '
+                                            'labeled. Sources: Caldwell and Richards 1989 (Oecologia), PNAS 2005 '
+                                            'root-functioning review, Dawson 1993 (sugar maple), Warren et al. '
+                                            '(New Phytologist/USDA), Garner and Steinberger 1989, MDPI Mojave/Sonoran '
+                                            'succession review, PBS SoCal desert nurses, USDA Tree Planters Notes '
+                                            '(mesquite), Gary Nabhan, The Counter, Food Tank, USDA silvopasture '
+                                            'scenarios, European Agroforestry Federation, MDPI orchard grazing, '
+                                            'UCCE partial budget, Schuyler Farms, culturalecology.info, New Forest '
+                                            'pollard account.',
+                            'theme': 'Groves as living infrastructure',
+                            'title': 'THE GROVE THAT WATERS ITSELF'}]),
                          ('THE SCORCHED NICHE',
                           [{'art': None,
                             'cap': 'Charred asherah-pole fragment',

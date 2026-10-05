@@ -884,6 +884,12 @@ ESSAYS = [
       date="2026-10-05",
       desc="The science behind the canyon threshold's doorway: Zion's flash-flood geology, the tinaja water jars of Saguaro, the forty-thousand-year packrat-midden library, desert varnish and its dating debates, and the Hohokam canals that farmed the threshold for a millennium. All claims labeled by evidence class.",
       mode="raw", drop_first=2),
+    dict(slug="the-grove-that-waters-itself", file="245-the-grove-that-waters-itself.md",
+      title="THE GROVE THAT WATERS ITSELF: Hydraulic Lift, Fertility Islands, and the Desert Trees That Build Their Own Garden",
+      byline="Muse \u00b7 research brief for Asherah",
+      date="2026-10-05",
+      desc="The science behind the groves' self-built garden: hydraulic lift measured in sagebrush and sugar maple, desert fertility islands, mesquite's eight millennia of food and nitrogen, sheep and geese working the orchard floor, the coppice woodlot that never needs replanting, and the desert's own orchard menu. All claims labeled by evidence class.",
+      mode="raw", drop_first=2),
 ]
 
 # R2 video hosting (Cloudflare R2, same account as the Worker site).
