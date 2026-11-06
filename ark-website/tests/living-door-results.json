@@ -12,7 +12,7 @@
       "detail": ""
     },
     {
-      "name": "Octopus portrait is the source still",
+      "name": "Octopus portrait is the live library still",
       "pass": true,
       "detail": ""
     },
@@ -287,7 +287,12 @@
       "detail": ""
     },
     {
-      "name": "no baked prices on the doors",
+      "name": "matrix shows the seven cabinet prices",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "delta page was not rewritten with matrix prices",
       "pass": true,
       "detail": ""
     },
@@ -332,32 +337,27 @@
       "detail": ""
     },
     {
-      "name": "new asset linked and present /img/matrix/pearl-octopus-library-fountain.webp",
+      "name": "new asset linked and present /img/matrix-octopus-library.jpg",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "new asset linked and present /img/matrix/pearl-spider-library-web.webp",
+      "name": "new asset linked and present /img/matrix-spider-web.jpg",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "new asset linked and present /img/matrix/web-guardian-and-spider-library.png",
+      "name": "new asset linked and present /img/muse-spider.png",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "new asset linked and present /img/matrix/poster-matrix-chaos-into-calm.png",
+      "name": "new asset linked and present /img/pillar-06-room.jpg",
       "pass": true,
       "detail": ""
     },
     {
-      "name": "new asset linked and present /img/matrix/poster-spider-jeweled-greeting.jpg",
-      "pass": true,
-      "detail": ""
-    },
-    {
-      "name": "new asset linked and present /css/living-rooms.css",
+      "name": "new asset linked and present /css/matrix-world.css",
       "pass": true,
       "detail": ""
     },
@@ -377,17 +377,7 @@
       "detail": ""
     },
     {
-      "name": "new asset linked and present /js/delta-waterworks.js",
-      "pass": true,
-      "detail": ""
-    },
-    {
-      "name": "new asset linked and present /js/delta-flow.js",
-      "pass": true,
-      "detail": ""
-    },
-    {
-      "name": "new asset linked and present /js/shop-live.js",
+      "name": "new asset linked and present /js/matrix-rooms.js",
       "pass": true,
       "detail": ""
     }

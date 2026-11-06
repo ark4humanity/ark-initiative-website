@@ -21,7 +21,7 @@ function check(name, cond, detail = '') {
 
 check('Matrika has no portrait', CAST.matrika.stagePortrait == null);
 check('Dragonfly has no portrait', CAST.dragonfly.stagePortrait == null);
-check('Octopus portrait is the source still', (CAST.octopus.stagePortrait || '').includes('pearl-octopus'));
+check('Octopus portrait is the live library still', (CAST.octopus.stagePortrait || '').includes('matrix-octopus-library'));
 check('Stage spider name is Great-Web Weaver', CAST.skein.displayName === 'Great-Web Weaver');
 check('Proposed personal name stays off the display name', CAST.skein.proposedName === 'Skein' && CAST.skein.displayName !== 'Skein');
 
@@ -108,11 +108,12 @@ for (const block of introBlocks) {
 }
 check('archive, essays, and opening film remain', matrixPage.includes('id="living-archive"') && matrixPage.includes('matrix-opening-scene.mp4') && matrixPage.includes('Preventing Cascade Failure'));
 check('matrix page has the stage anchor', matrixPage.includes('id="the-web-interactive"'));
-check('matrix cabinet and lessons anchors', matrixPage.includes('id="network-cabinet"') && matrixPage.includes('id="web-lessons"'));
+check('matrix cabinet and lessons anchors', matrixPage.includes('id="network-cabinet"') && matrixPage.includes('id="web-lessons"') && matrixPage.includes('id="orientation-node"') && matrixPage.includes('id="kinetic-studio"') && matrixPage.includes('id="living-door"'));
 check('delta cabinet and lesson anchors', deltaPage.includes('id="water-cabinet"') && deltaPage.includes('id="watershed-lessons"') && deltaPage.includes('id="circulation-hall"'));
 check('matrix keeps the archive and films', matrixPage.includes('id="living-archive"') && matrixPage.includes('matrix-opening-scene.mp4') && matrixPage.includes('Eight arms. Four wings. Zero blind spots.'));
 check('delta keeps Neris, beaver, osprey, and film', /Neris/.test(deltaPage) && /[Bb]eaver/.test(deltaPage) && /[Oo]sprey/.test(deltaPage) && deltaPage.includes('delta-opening-scene.mp4'));
-check('no baked prices on the doors', !price.test(matrixPage) && !price.test(deltaPage));
+check('matrix shows the seven cabinet prices', ['$14.49','$39.90','$74.90','from $19.99','$13.99','from $36.00'].every((p) => matrixPage.includes(p)));
+check('delta page was not rewritten with matrix prices', !matrixPage.includes('id="water-cabinet"') && !/from \$19\.99/.test(deltaPage));
 check('stage does not print the proposed personal name', !/Skein/.test(matrixPage));
 check('no on-stage form-unknown label', !/form unknown/i.test(matrixPage));
 check('brass compass id is the verified product', matrixPage.includes('9052140404759') || matrixPage.includes('store-indya-brass-compass'));
@@ -131,18 +132,15 @@ const linkedSource = [
   fs.readFileSync(path.join(root, 'living_doors.py'), 'utf8'),
 ].join('\n');
 const newAssets = [
-  '/img/matrix/pearl-octopus-library-fountain.webp',
-  '/img/matrix/pearl-spider-library-web.webp',
-  '/img/matrix/web-guardian-and-spider-library.png',
-  '/img/matrix/poster-matrix-chaos-into-calm.png',
-  '/img/matrix/poster-spider-jeweled-greeting.jpg',
-  '/css/living-rooms.css',
+  '/img/matrix-octopus-library.jpg',
+  '/img/matrix-spider-web.jpg',
+  '/img/muse-spider.png',
+  '/img/pillar-06-room.jpg',
+  '/css/matrix-world.css',
   '/js/matrix-stage.js',
   '/js/matrix-ensemble.js',
   '/js/matrix-web.js',
-  '/js/delta-waterworks.js',
-  '/js/delta-flow.js',
-  '/js/shop-live.js',
+  '/js/matrix-rooms.js',
 ];
 for (const asset of newAssets) {
   const file = path.join(root, asset.slice(1));

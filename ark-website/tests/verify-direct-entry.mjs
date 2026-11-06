@@ -150,6 +150,10 @@ for (const variant of [
   const opened = await openFresh('/pillar-06-matrix#the-web-interactive');
   const page = opened.page;
   expect('matrix hash opens the web', opened.state.hash === '#the-web-interactive' && opened.state.gate === 0);
+  for (const id of ['orientation-node','continuity-gallery','kinetic-studio','cosmic-web','reading-hall','living-door']) {
+    const there = await page.$('#' + id);
+    expect('room anchor ' + id, !!there);
+  }
   await page.waitForSelector('#mx-continue');
   async function untilChoices() {
     for (let i = 0; i < 8; i++) {

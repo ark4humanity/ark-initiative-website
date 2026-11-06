@@ -143,10 +143,12 @@ if (root) {
   function applyReduce(on) {
     root.classList.toggle('reduce-motion', on);
   }
-  reduce.addEventListener('change', () => applyReduce(reduce.checked));
-  if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    reduce.checked = true;
-    applyReduce(true);
+  if (reduce) {
+    reduce.addEventListener('change', () => applyReduce(reduce.checked));
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      reduce.checked = true;
+      applyReduce(true);
+    }
   }
 
   const first = ens.snapshot();

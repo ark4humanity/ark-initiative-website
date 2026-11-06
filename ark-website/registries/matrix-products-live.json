@@ -1,0 +1,70 @@
+{
+  "checked": "2026-11-06",
+  "collection": "https://thearkinitiative.myshopify.com/collections/matrix-the-network-cabinet",
+  "page": "https://thearkinitiative.myshopify.com/pages/matrix-the-habitable-web",
+  "products": [
+    {
+      "registry_id": "MATRIX-OBJ-01",
+      "title": "STORE INDYA Brass Compass with Magnetic Needle - Vintage Nautical Directional Compass with Scripture Engraving & Leather Case - High-Quality Gift for Men, Son, Father",
+      "handle": "store-indya-brass-compass-with-magnetic-needle-vintage-nautical-directional-compass-with-scripture-engraving-leather-case-high-quality-gift-for-men-son-father",
+      "image": "https://cdn.shopify.com/s/files/1/0817/6857/9095/files/1_5bc800e8-2be9-4fb3-8efc-9e69e0ba7802.jpg?v=1793934369",
+      "alt": "Brass compass with a leather case",
+      "price": "$14.49",
+      "room": "orientation-node"
+    },
+    {
+      "registry_id": "MATRIX-OBJ-06",
+      "title": "Kids Science Toy Day Night Globe | DIY Physics Learning Kit",
+      "handle": "kids-science-toy-day-night-globe-diy-physics-learning-kit",
+      "image": "https://cdn.shopify.com/s/files/1/0817/6857/9095/files/S38d7722e69ea4c2ea1c1c100d4e5bff7N.webp?v=1793889270",
+      "alt": "Day and night globe science kit",
+      "price": "$13.99",
+      "room": "orientation-node"
+    },
+    {
+      "registry_id": "MATRIX-OBJ-04",
+      "title": "Atlantica Continuity Map Rolled Poster",
+      "handle": "atlantica-continuity-map-rolled-poster",
+      "image": "https://cdn.shopify.com/s/files/1/0817/6857/9095/files/6494005677689680010_2048.jpg?v=1793919931",
+      "alt": "Atlantica Continuity Map poster",
+      "price": "from $19.99",
+      "room": "continuity-gallery"
+    },
+    {
+      "registry_id": "MATRIX-OBJ-05",
+      "title": "The Ark Initiative Educational Rolled Poster",
+      "handle": "the-ark-initiative-educational-rolled-poster",
+      "image": "https://cdn.shopify.com/s/files/1/0817/6857/9095/files/16616251137706708922_2048.jpg?v=1793919877",
+      "alt": "The Ark Initiative educational poster",
+      "price": "from $19.99",
+      "room": "continuity-gallery"
+    },
+    {
+      "registry_id": "MATRIX-OBJ-02",
+      "title": "Kinetic Globe — Mechanical Wooden Model, 205 Pieces",
+      "handle": "kinetic-globe-mechanical-wooden-model-205-pieces",
+      "image": "https://cdn.shopify.com/s/files/1/0817/6857/9095/files/1-22-2.jpg?v=1793889407",
+      "alt": "Kinetic wooden globe model, 205 pieces",
+      "price": "$39.90",
+      "room": "kinetic-studio"
+    },
+    {
+      "registry_id": "MATRIX-OBJ-03",
+      "title": "The Globe (Blue) — Mechanical Wooden Model, 393 Pieces",
+      "handle": "the-globe-blue-mechanical-wooden-model-393-pieces",
+      "image": "https://cdn.shopify.com/s/files/1/0817/6857/9095/files/THEGLOBE_blue_1_17c70fa5-173b-4fec-8982-7bfa489e83c1.jpg?v=1793889178",
+      "alt": "Blue mechanical wooden globe, 393 pieces",
+      "price": "$74.90",
+      "room": "kinetic-studio"
+    },
+    {
+      "registry_id": "MATRIX-OBJ-07",
+      "title": "Interchangeable JWST First Images Necklace",
+      "handle": "interchangeable-jwst-first-images-necklace",
+      "image": "https://cdn.shopify.com/s/files/1/0817/6857/9095/files/IMG-0182.jpg?v=1793889259",
+      "alt": "Interchangeable necklace of JWST first images",
+      "price": "from $36.00",
+      "room": "cosmic-web"
+    }
+  ]
+}

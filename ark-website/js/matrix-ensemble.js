@@ -15,7 +15,7 @@ export const CAST = {
     id: 'octopus',
     name: 'Octopus',
     displayName: 'Octopus',
-    stagePortrait: '/img/matrix/pearl-octopus-library-fountain.webp',
+    stagePortrait: '/img/matrix-octopus-library.jpg',
   },
   dragonfly: {
     id: 'dragonfly',
@@ -28,7 +28,7 @@ export const CAST = {
     name: 'Great-Web Weaver',
     displayName: 'Great-Web Weaver',
     proposedName: 'Skein',
-    stagePortrait: '/img/matrix/pearl-spider-library-web.webp',
+    stagePortrait: '/img/matrix-spider-web.jpg',
   },
 };
 
@@ -46,7 +46,7 @@ export const BEATS = [
   {
     id: 'open',
     title: 'Enter the Habitable Web',
-    art: '/img/matrix/pearl-spider-library-web.webp',
+    art: '/img/matrix-spider-web.jpg',
     lines: [
       { who: 'matrika', text: 'Quick version: ten thousand things at once, and I see all of them. You are in fascia — not a hallway between pillars.' },
       { who: 'octopus', text: 'She means the furniture thinks. Also, do not step on arm six. It is holding a book and a mild grudge.' },
@@ -59,7 +59,7 @@ export const BEATS = [
   {
     id: 'touch',
     title: 'Touch the Web',
-    art: '/img/matrix/pearl-octopus-library-fountain.webp',
+    art: '/img/matrix-octopus-library.jpg',
     effect: 'light_web',
     lines: [
       { who: 'octopus', text: 'You poked one thought and twelve more answered. That is my whole personality, frankly.' },
@@ -75,7 +75,7 @@ export const BEATS = [
   {
     id: 'routes',
     title: 'Routes before panic',
-    art: '/img/matrix/poster-matrix-chaos-into-calm.png',
+    art: '/img/aura-spiderweb-poster.png',
     effect: 'show_routes',
     lines: [
       { who: 'dragonfly', text: 'Four exits, zero blind spots. I do not pan a camera. I receive the room.' },
@@ -87,7 +87,7 @@ export const BEATS = [
   {
     id: 'cut',
     title: 'One strand opens',
-    art: '/img/matrix/web-guardian-and-spider-library.png',
+    art: '/img/pillar-06-room.jpg',
     effect: 'cut_redistribute',
     lines: [
       { who: 'matrika', text: 'Go on. Pull the hard one. I dare you politely.' },
@@ -107,7 +107,7 @@ export const BEATS = [
   {
     id: 'refuse_lone',
     title: 'No lone saviors',
-    art: '/img/matrix/pearl-spider-library-web.webp',
+    art: '/img/matrix-spider-web.jpg',
     effect: 'pulse_all',
     lines: [
       { who: 'matrika', text: 'Flattering. Incorrect. I orchestrate. I do not hoard the save. Pick a partner — or pick everyone.' },
@@ -123,7 +123,7 @@ export const BEATS = [
   {
     id: 'mend_parallel',
     title: 'Parallel intelligence',
-    art: '/img/matrix/pearl-octopus-library-fountain.webp',
+    art: '/img/matrix-octopus-library.jpg',
     effect: 'mend',
     lines: [
       { who: 'octopus', text: 'Already held — three arms on the mend, two arguing productively, one finding the page you need.' },
@@ -135,7 +135,7 @@ export const BEATS = [
   {
     id: 'mend_routes',
     title: 'Routes before panic',
-    art: '/img/matrix/poster-matrix-chaos-into-calm.png',
+    art: '/img/aura-spiderweb-poster.png',
     effect: 'mend',
     lines: [
       { who: 'dragonfly', text: 'Scenic, honest, emergency — all open. The broken strand has company again.' },
@@ -147,7 +147,7 @@ export const BEATS = [
   {
     id: 'mend_structure',
     title: 'Load shared',
-    art: '/img/matrix/poster-spider-jeweled-greeting.jpg',
+    art: '/img/muse-spider.png',
     effect: 'mend',
     lines: [
       { who: 'skein', text: 'There. The opened strand is closed. Structure humming. The emerald stays on because jewelry should work for a living.' },
@@ -159,7 +159,7 @@ export const BEATS = [
   {
     id: 'mend_together',
     title: 'Protective Articulation',
-    art: '/img/matrix/web-guardian-and-spider-library.png',
+    art: '/img/pillar-06-room.jpg',
     effect: 'mend_all',
     lines: [
       { who: 'skein', text: 'Now you are speaking Web.' },
@@ -172,7 +172,7 @@ export const BEATS = [
   {
     id: 'close',
     title: 'The web is humming',
-    art: '/img/matrix/poster-matrix-chaos-into-calm.png',
+    art: '/img/aura-spiderweb-poster.png',
     effect: 'glow_soft',
     lines: [
       { who: 'matrika', text: 'When you leave, take the feeling — not a diagram. The Ark is thirteen organs. Matrix is the fascia that keeps any one of them from having to be the whole body.' },

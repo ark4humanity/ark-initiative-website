@@ -1568,8 +1568,12 @@ def main():
         n = d["num"]
         fn = f"pillar-{n}-{d['slug']}.html"
         html = _tidy_labels(_unify_nav(build_page(n)))
-        with open(os.path.join(outdir, fn), "w", encoding="utf-8") as f:
+        out_path = os.path.join(outdir, fn)
+        with open(out_path, "w", encoding="utf-8") as f:
             f.write(html)
+        if n == "06":
+            from matrix_world import apply_page
+            apply_page(out_path)
         print("wrote", fn, len(html))
 
 if __name__ == "__main__":
