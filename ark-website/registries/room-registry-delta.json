@@ -1,0 +1,191 @@
+{
+  "function": "Circulation & Flow",
+  "lessons": [
+    {
+      "free": true,
+      "lesson_id": "DELTA-L1",
+      "object_refs": [],
+      "title": "The Beaver's Three Laws"
+    },
+    {
+      "free": true,
+      "lesson_id": "DELTA-L2",
+      "object_refs": [
+        "DELTA-OBJ-06"
+      ],
+      "title": "Reading a Watershed, Starting With Our Own"
+    },
+    {
+      "free": true,
+      "lesson_id": "DELTA-L3",
+      "object_refs": [
+        "DELTA-OBJ-01"
+      ],
+      "title": "Filtration, Step by Step"
+    },
+    {
+      "free": true,
+      "lesson_id": "DELTA-L4",
+      "object_refs": [
+        "DELTA-OBJ-05"
+      ],
+      "title": "Where the Waters End Up"
+    },
+    {
+      "free": true,
+      "lesson_id": "DELTA-L5",
+      "object_refs": [
+        "DELTA-OBJ-03",
+        "DELTA-OBJ-04"
+      ],
+      "title": "The Daily Practice: Living Water at Home"
+    },
+    {
+      "free": true,
+      "lesson_id": "DELTA-L6",
+      "object_refs": [
+        "DELTA-OBJ-02"
+      ],
+      "title": "Nothing Is Cut Off: Flow Changes Form"
+    }
+  ],
+  "objects": [
+    {
+      "also_in": [
+        "Exchange (EDN infrastructure)"
+      ],
+      "handle": "eden-fountain-water-node-educational-rolled-poster",
+      "lesson_id": "DELTA-L3",
+      "name": "Eden Fountain Water Node Educational Rolled Poster",
+      "note": "The product description says 'EHN'; canon says EDN (Ecological Distribution Node). Flagged for Dawn and Aura; the product text is not rewritten by this package.",
+      "primary_pillar": "Delta",
+      "registry_id": "DELTA-OBJ-01",
+      "shopify_gid": "gid://shopify/Product/9051842740247",
+      "status_checked": "ACTIVE, verified on the published collection 2026-11-06",
+      "vendor": "Printify",
+      "what_it_is": "Educational poster whose panels cover the ecological distribution network, purity water nodes, water cycles, filtration, and water-conscious design (product's own description).",
+      "shopify_title_as_listed": "Eden Fountain Water Node Educational Rolled Poster",
+      "purchasable_on_website": false,
+      "purchasable_note": "Do not bake a buy state. The website links to the live product; price and availability resolve from Shopify at display time."
+    },
+    {
+      "also_in": [
+        "Exchange (EDN infrastructure)",
+        "Symbiosis"
+      ],
+      "handle": "eden-a-living-infrastructure-for-life-educational-rolled-poster",
+      "lesson_id": "DELTA-L6",
+      "name": "EDEN A Living Infrastructure for Life Educational Rolled Poster",
+      "primary_pillar": "Delta",
+      "registry_id": "DELTA-OBJ-02",
+      "shopify_gid": "gid://shopify/Product/9051842805783",
+      "status_checked": "ACTIVE, verified on the published collection 2026-11-06",
+      "vendor": "Printify",
+      "what_it_is": "Infographic-style educational poster presenting Eden as a living infrastructure for life, arranged like a field guide (product's own description).",
+      "shopify_title_as_listed": "EDEN A Living Infrastructure for Life Educational Rolled Poster",
+      "purchasable_on_website": false,
+      "purchasable_note": "Do not bake a buy state. The website links to the live product; price and availability resolve from Shopify at display time."
+    },
+    {
+      "also_in": [
+        "Soma (kitchen practice)"
+      ],
+      "handle": "living-water-healing-glass-cutting-board",
+      "lesson_id": "DELTA-L5",
+      "name": "Living Water Healing Glass Cutting Board",
+      "note": "The word 'Healing' is part of the product's listed title. Lesson copy teaches the practice only and makes no medical claims, per the standing rule for Vagus and Delta shelves.",
+      "primary_pillar": "Delta",
+      "registry_id": "DELTA-OBJ-03",
+      "shopify_gid": "gid://shopify/Product/9051840217111",
+      "status_checked": "ACTIVE, verified on the published collection 2026-11-06",
+      "vendor": "Printify",
+      "what_it_is": "Glass cutting board printed with a 'How to Make Living Water' design: glass pitchers, blue bottles, sunlight, gathered stones (product's own description).",
+      "shopify_title_as_listed": "Living Water Healing Glass Cutting Board",
+      "purchasable_on_website": false,
+      "purchasable_note": "Do not bake a buy state. The website links to the live product; price and availability resolve from Shopify at display time."
+    },
+    {
+      "also_in": [
+        "Soma (kitchen practice)"
+      ],
+      "handle": "living-water-at-home-glass-cutting-board",
+      "lesson_id": "DELTA-L5",
+      "name": "Living Water at Home Glass Cutting Board",
+      "primary_pillar": "Delta",
+      "registry_id": "DELTA-OBJ-04",
+      "shopify_gid": "gid://shopify/Product/9051840413719",
+      "status_checked": "ACTIVE, verified on the published collection 2026-11-06",
+      "vendor": "Printify",
+      "what_it_is": "Glass cutting board printed with a living-water ritual design: citrus, glassware, stones; made for infused water and everyday food preparation (product's own description).",
+      "shopify_title_as_listed": "Living Water at Home Glass Cutting Board",
+      "purchasable_on_website": false,
+      "purchasable_note": "Do not bake a buy state. The website links to the live product; price and availability resolve from Shopify at display time."
+    },
+    {
+      "also_in": [
+        "Delta (the Sea Gate shelf)"
+      ],
+      "handle": "asherah-lady-of-the-sea-remember-goddess-series-matte-poster",
+      "lesson_id": "DELTA-L4",
+      "name": "Asherah, Lady of the Sea, Remember — Goddess Series Matte Poster",
+      "primary_pillar": "Asherah",
+      "registry_id": "DELTA-OBJ-05",
+      "shopify_gid": "gid://shopify/Product/9034498670615",
+      "status_checked": "ACTIVE, verified on the published collection 2026-11-06",
+      "vendor": "Printify",
+      "what_it_is": "Goddess Series poster: Asherah, Lady of the Sea and Guardian of Humanity, asking one thing of us: remember (product's own description). Shelved in Delta as the Sea Gate, the point where the watershed meets the sea. One authoritative Shopify record; the Delta shelf references it, it does not duplicate it.",
+      "shopify_title_as_listed": "Asherah, Lady of the Sea, Remember, Goddess Series Matte Poster",
+      "purchasable_on_website": false,
+      "purchasable_note": "Do not bake a buy state. The website links to the live product; price and availability resolve from Shopify at display time."
+    },
+    {
+      "also_in": [
+        "Delta (Our Own Watershed shelf)"
+      ],
+      "handle": "borrego-valley-map-tree-through-the-heart-matte-poster",
+      "lesson_id": "DELTA-L2",
+      "name": "Borrego Valley Map: Tree Through the Heart, Matte Poster",
+      "primary_pillar": "Terra / the Center (Museum, Place of Choosing)",
+      "registry_id": "DELTA-OBJ-06",
+      "shopify_gid": "gid://shopify/Product/9010688098327",
+      "status_checked": "ACTIVE, verified on the published collection 2026-11-06",
+      "vendor": "Printify",
+      "what_it_is": "Original hand-drawn map of the Borrego Valley, a tree growing through the heart of the desert (product's own description). Delta's ground-truth object: the one valley, one aquifer, one water budget the whole pillar teaches from.",
+      "shopify_title_as_listed": "Borrego Valley Map: Tree Through the Heart, Matte Poster",
+      "purchasable_on_website": false,
+      "purchasable_note": "Do not bake a buy state. The website links to the live product; price and availability resolve from Shopify at display time."
+    }
+  ],
+  "pillar": 4,
+  "pillar_name": "Delta",
+  "proposed_collection": {
+    "title": "Delta — The Water Cabinet",
+    "handle_suggestion": "delta-the-water-cabinet",
+    "live_handle": "delta-the-water-cabinet-1",
+    "live_url": "https://thearkinitiative.myshopify.com/collections/delta-the-water-cabinet-1",
+    "status": "PUBLISHED — verified HTTP 200 on 2026-11-06 with the six existing ACTIVE products. This registry does not create or duplicate products."
+  },
+  "registry_version": "2026-11-06 website door",
+  "room": "Delta — The Watershed / The Living Waterworks",
+  "rule": "This registry is the single source both doors are built from. Shopify holds price and availability; never hardcode a price into website copy. Read price live from the Shopify record at display time.",
+  "shopify_store": "thearkinitiative.myshopify.com",
+  "steward": "Neris (AI)",
+  "to_be_sourced_not_in_store": [
+    "Rain gauge (teaching grade)",
+    "Water-cycle demonstration model",
+    "Drip irrigation teaching kit",
+    "Sand-and-gravel filtration demonstration kit",
+    "Printed water-conservation field guide",
+    "Note: none of these exist in the store as of 2026-11-06. They are sourcing targets for the treasure hunt, not shelf items. Nothing here may be presented as purchasable until a real Shopify record exists."
+  ],
+  "trinity": [
+    "Neris",
+    "Beaver",
+    "Osprey"
+  ],
+  "website_anchor_suggestions": {
+    "cabinet": "#water-cabinet",
+    "lessons": "#watershed-lessons",
+    "page": "pillar-04-delta.html (existing page, preserved; shelves are added, nothing replaced)"
+  }
+}

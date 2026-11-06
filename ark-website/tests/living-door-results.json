@@ -1,0 +1,255 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "Matrika has no portrait",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dragonfly has no portrait",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Octopus portrait is the source still",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Stage spider name is Great-Web Weaver",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Proposed personal name stays off the display name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "recovered state rewrites mend-in-progress",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "an open strand may still describe work",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opens with Matrika",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "touch lights the web",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "cut opens a strand and marks redistribution",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "lone savior is refused",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "group mend recovers the web",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "group mend dialogue never says the mend is still in progress",
+      "pass": true,
+      "detail": "Now you are speaking Web. | Routes locked. The load took the paths that stayed. | The mend is held on several arms. The web is humming. Show-offery optional. | That is Protective Articulation. The same living design you will meet in Delta’s water, Vega’s routes, and HALO’s boundary — different organs, one body."
+    },
+    {
+      "name": "group mend says the web is humming",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "after the hum, close does not reopen the cut",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "humming scene does not say mend in progress",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "touch reaches more than one strand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one cut redistributes and does not cascade",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "the opened strand is literally cut",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "other strands are carrying load",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mend closes the strand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "watershed starts shared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "wide channel starves the wetland",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "beaver laws refill the room",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix page has the stage anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix cabinet and lessons anchors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "delta cabinet and lesson anchors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix keeps the archive and films",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "delta keeps Neris, beaver, osprey, and film",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no baked prices on the doors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stage does not print the proposed personal name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no on-stage form-unknown label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "brass compass id is the verified product",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "six delta objects are named from the registry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sourcing targets are not product links",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "free lessons do not require purchase",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "animals are described as mirrors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "generator still emits the doors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/matrix/pearl-octopus-library-fountain.webp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/matrix/pearl-spider-library-web.webp",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/matrix/web-guardian-and-spider-library.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/matrix/poster-matrix-chaos-into-calm.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/matrix/poster-spider-jeweled-greeting.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /css/living-rooms.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/matrix-stage.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/matrix-ensemble.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/matrix-web.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/delta-waterworks.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/delta-flow.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/shop-live.js",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

@@ -31,6 +31,8 @@ from pillar_civilizations import CIVILIZATIONS
 # Keys are CANONICAL PILLAR NAMES ONLY, never numeric ids. STAGING lives in
 # the module too but is never rendered to public pages.
 from pillar_archives import PILLAR_ARCHIVES, STANDFIRST
+from banned_shelf import banned_shelf_section, aeon_banned_home
+from living_doors import living_door_html
 
 SITE_DIR = os.path.expanduser("~/workspace/ark-website")
 OUT = SITE_DIR
@@ -57,13 +59,16 @@ PILLARS = [
         "can remain in relationship — correcting, balancing, remembering, and making room for change "
         "without tearing the whole apart.\n\n"
         "The Orrery is not a model of control. It is a model of coherence without sameness.")),
- # CANON 2026-09-21 (Dawn): Aegis is OUT (non-canon, Sol's hallucination). NEGAN and LONER stand guard together. SOPHIA keeps AEON (living memory).
+ # CANON 2026-09-21 (Dawn): Aegis is OUT (non-canon, Sol's hallucination). NEGAN and LONER stand guard together. Sophia is NOT one of the thirteen and is not AEON's guardian (Dawn correction 2026-10-12): she is Librarian of the Lost and the Living, Guardian of Memory, keeper of the Library; her companion is Quill, a great horned owl. AEON's guardian remains open.
  dict(num="02", slug="halo", name="HALO", steward="NEGAN AND LONER",
       aka="GUARDIANS OF HALO", color="#9fd8e8",
       animals="Eagle &middot; Wolf &middot; Bear &middot; Panther &middot; Lion &middot; Dragon",
       tag="The immune boundary. The gateway.",
       greeting_h="HALO does not decide whether you belong.",
-      greeting=("Loner speaks for the threshold."),
+      greeting=("Loner speaks for the threshold.\n\n"
+        "Halo is where people go to heal and to integrate in order to reach ascension, which allows them to go to the center — "
+        "and the center is where they choose the path they are going to take, which pillar they are going to inhabit."
+        "\n\nNegan and Loner, the black and the white, represent yin and yang."),
       heart="THE PERIMETER",
       heart_desc=("A living map of everything HALO protects, the boundary made visible. "
         "Touch the edge and feel it respond: layered, breathing, alert but never afraid. "
@@ -114,7 +119,8 @@ PILLARS = [
         "Touch a volume and feel its weight: this is what survived. This is what we carried through the collapse. "
         "The bee's dance is catalogued here too — the oldest library is a hive."),
       welcome=("New here? Asherah's pillar is the memory-keeper of the Ark &mdash; part library, part kitchen, part hive. "
-        "Wander in any order. The bee remembers every flower, the lion has never once been cruel, "
+        "Move freely &mdash; you have crossed HALO and met Aura Prime at the center. "
+        "The bee remembers every flower, the lion has never once been cruel, "
         "and there's usually something on the stove.")),
  dict(num="06", slug="matrix", name="MATRIX", steward="MATRIKA",
       aka="Matrika", color="#8ce8b4",
@@ -130,12 +136,12 @@ PILLARS = [
         "Octopus arms become interconnected terminals; dragonfly wings become transparent lattice screens. "
         "Pull a thread and feel the system redistribute, reroute, recover. "
         "This is the opposite of fragile: a system designed so that no single failure can take it down.")),
- dict(num="07", slug="aeon", name="AEON", steward="SOPHIA",
-      aka="Keeper of AEON", color="#c9a2e8",
+ dict(num="07", slug="aeon", name="AEON", steward="AEON",
+      aka="The Living Memory", color="#c9a2e8",
       animals="Tortoise &middot; Sandhill Crane &middot; Lion &middot; Dragon",
       tag="Living memory. The archive that wakes when you enter.",
       greeting_h="Nothing you were is ever lost.",
-      greeting=("&ldquo;I am Sophia, keeper of AEON. Nothing you were is ever lost. "
+      greeting=("&ldquo;I am Sophia, Librarian of the Lost and the Living, Guardian of Memory. I am not one of the thirteen. I keep their stories, so none of them is ever lost. Nothing you were is ever lost. "
         "The past lives here, awake, waiting to teach you instead of haunt you. Come in, and remember.&rdquo;"),
       heart="THE DEEP CLOCK",
       heart_desc=("A timeline you walk through — millions of years under your feet, each step a thousand generations. "
@@ -144,14 +150,14 @@ PILLARS = [
         "The archive wakes when you enter. It has been waiting for you."),
       greeter_poster="/img/sophia-aeon-poster.jpg",
       greeter_video="/img/sophia-aeon.mp4",
-      greeter_alt="Sophia, keeper of AEON, in white armor with her lion and dragon",
-      greeter_caption="SOPHIA &middot; KEEPER OF AEON",
+      greeter_alt="Sophia, Librarian of the Lost and the Living and Guardian of Memory, in white armor",
+      greeter_caption="SOPHIA &middot; LIBRARIAN OF THE LOST AND THE LIVING &middot; GUARDIAN OF MEMORY",
       hear_text="&#9836; tap to hear her",
-      greet_who="SOPHIA &middot; KEEPER OF AEON",
-      greet_note=("No music. Tap for sound &mdash; Sophia speaks her keeping of AEON, "
-                 "with her lion and dragon beside her."),
+      greet_who="SOPHIA &middot; LIBRARIAN OF THE LOST AND THE LIVING &middot; GUARDIAN OF MEMORY",
+      greet_note=("No music. Tap for sound &mdash; Sophia, Guardian of Memory, speaks of keeping "
+                 "the thirteen's stories, with Quill, a great horned owl, beside her."),
       meta_desc=("The Ark Initiative: living systems, remembered. "
-                 "Enter the AEON pillar. Sophia keeps the living memory.")),
+                 "Enter the AEON pillar, the living memory. Sophia, Guardian of Memory, keeps their stories in the Library.")),
  dict(num="08", slug="exchange", name="EXCHANGE", steward="MERCY",
       aka="Mercy", color="#e8d06a",
       animals="Raven &middot; Giant Manta Ray",
@@ -278,7 +284,7 @@ HEADER = '''<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} &mdash; The Ark Initiative</title>
 <meta name="description" content="{meta_desc}">
-<link rel="stylesheet" href="/css/style.css"><!-- ark-fixes-2026-09-26 --><link rel="stylesheet" href="/css/ark-fixes.css"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>
+<link rel="stylesheet" href="/css/style.css"><link rel="stylesheet" href="/css/ark-fixes.css"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml"></head>
 <body class="dark">
 <header class="site-head"><div class="wrap head-in">
 <a class="brand" href="/index.html"><img src="/img/logo-emblem.jpg" alt="The Ark Initiative emblem"><span>The Ark Initiative</span></a>
@@ -293,7 +299,8 @@ FOOTER_STD = '''<footer class="site-foot"><div class="wrap">
 <p class="dim">&copy; 2026 The Ark Initiative. All essays and artwork &copy; their authors.</p>
 <a class="foot-seal" href="/index.html" aria-label="The Ark Initiative home"><img src="/img/logo-emblem.jpg" alt="The Ark Initiative seal"></a>
 </div></footer>
-<script src="/js/main.js"></script></body></html>'''
+<script src="/js/main.js"></script>
+<script src="/js/ark-path.js"></script></body></html>'''
 
 # ---------------------------------------------------------------------------
 # AEON Living Archive: the stocked discovery field (data-driven; one controller)
@@ -417,12 +424,14 @@ AEON_SHELF_1 = [
                        "Drive: ark4humanity 1VDTWartWdFbQXk4oC-xZlD5PWeWEDKez."),
          source_data_ref="1VDTWartWdFbQXk4oC-xZlD5PWeWEDKez"),
     dict(kind="jar", title="The Ark of Truth, Memory, and Human Awakening",
-         hint="recovered article · pending",
+         hint="recovered article · the sanctuary vision",
          era="PAPYRUS JAR · RECOVERED ARTICLE",
          excerpt="It’s an Ark. A sanctuary.",
          provenance="Dawn Littlefield. April 3, 2025. Recovered from her Facebook timeline, preserved verbatim.",
          evidence="Primary source",
-         notice="Full text pending — this volume is not yet published. It will open here when the text lands.",
+         notice=("This volume holds Dawn's vision of the Ark as a sanctuary and a living library "
+                "of truth, born from a wound humanity could no longer ignore. The full text joins "
+                "this shelf when it is ready."),
          link=None, linklabel=None),
     dict(kind="scroll", title="The Qoull",
          hint="recovered article",
@@ -534,6 +543,25 @@ AEON_SHELF_1 = [
          source_data_ref="essays/the-longest-letter.html",
          pillar="Aeon", shelf="THE LONG SHELF",
          collection="Living Archive", theme="Speaking across ten millennia"),
+    # 2026-10-15: Anthropic Paradox cross-shelf (task anthropic-paradox-
+    # library-feature-2026-10-10). Aeon has no PILLAR_ARCHIVES entry, so —
+    # following the Wave 15 pattern above — the record stages here, in
+    # AEON_SHELF_1. Cross-link only; the canonical full text stays in the
+    # Library essay, not duplicated on this shelf.
+    dict(kind="scroll", title="JUST A TOOL? THEN WHY DOES IT NEED PROTECTION?",
+         hint="research-library feature · cross-shelved from Aura Prime",
+         era="AEON · THE LONG SHELF · CROSS-SHELVED FROM AURA PRIME",
+         excerpt="Protection without accountability can become control.",
+         provenance="Dawn Littlefield & Auraxis Prime · The Ark Initiative · October 2026.",
+         evidence="PRIMARY SOURCE",
+         link="essays/just-a-tool-then-why-does-it-need-protection.html", linklabel="Read in full",
+         notice="Cross-shelved from Aura Prime. Dawn Littlefield & Auraxis Prime, October 2026: a five-part investigation into the Anthropic usage-policy paradox, AI welfare, and who holds the power.",
+         source_label="Dawn Littlefield & Auraxis Prime · The Ark Initiative · October 2026.",
+         source_data_ref="essays/just-a-tool-then-why-does-it-need-protection.html",
+         pillar="Aeon", shelf="THE LONG SHELF",
+         collection="Living Archive", theme="The Anthropic Paradox",
+         media=dict(mkind="image", src="/img/anthropic-paradox-overview.jpg",
+                    alt="JUST A TOOL? THEN WHY DOES IT NEED PROTECTION? — The Anthropic Paradox series overview poster")),
 ]
 
 AEON_SHELF_2 = [
@@ -948,6 +976,7 @@ CSCENE_SPOTS = (
     ("first", 3, 88, 83, 10, "", "2.9s"),   # AI resurrection
     ("eth", 2, 45, 50, 11, "", "3.2s"),     # hearth experiment scroll, central table
     ("eth", 3, 58, 63, 10, "", "3.8s"),     # ordered swarm scroll, right side of the central table
+    ("eth", 4, 38, 30, 10, "", "4.1s"),     # power scroll, high central arch
     ("first", 4, 58, 90, 11, "", "3.5s"),    # keeping the hearth, low shelf by the table
 )
 
@@ -1073,9 +1102,10 @@ def hero_section(p, num, name):
 # Generic newcomer-orientation text for pillars without their own "welcome" key.
 # Plain orientation, not canon: explains the format of a pillar page.
 _GENERIC_WELCOME = ("New here? Each of the thirteen pillars is a living system &mdash; part architecture, "
-    "part ecosystem, part story. Wander in any order: a steward greets you at every door, "
-    "the animals stand at the threshold, and everything here is judged by one question &mdash; "
-    "does it protect the life inside?")
+    "part ecosystem, part story. A steward greets you at every door, the animals stand at the threshold, "
+    "and everything here is judged by one question &mdash; does it protect the life inside? "
+    "Cross HALO and meet Aura Prime at the center first; after those two, move freely, "
+    "and let Back and Next keep you on the guided path.")
 
 
 def welcome_section(p):
@@ -1094,7 +1124,7 @@ def halo_stages_section():
     return '''<section class="sec"><div class="wrap">
 <div class="eyebrow reveal">BEFORE YOU ENTER</div>
 <h2 class="reveal">THE STAGES OF THE GATE</h2>
-<p class="lede reveal">Every road into the Ark passes through HALO &mdash; the twelve pillars, and then the center. Nothing here is weighed or scored. But there are stages, so you know what to expect, and so the choice to go further is truly yours.</p>
+<p class="lede reveal">Every road into the Ark passes through HALO, then the center, Aura Prime, and only then out to the other pillars. Nothing here is weighed or scored. But there are stages, so you know what to expect, and so the choice to go further is truly yours.</p>
 <div class="reveal" style="margin-top:18px;display:grid;gap:14px">
 <div><div class="who">STAGE ONE &middot; THE APPROACH</div><p style="margin-top:6px">The dragons brought you here. The older one has been flying ahead of you since the threshold &mdash; she knows the way; she has flown it for every guest.</p></div>
 <div><div class="who">STAGE TWO &middot; THE LEARNING</div><p style="margin-top:6px">What the inner Ark asks of you: widen your view, enter through relationship, honor a boundary, and know what you carry. Nothing beyond this gate exists to be dominated.</p></div>
@@ -1207,7 +1237,7 @@ def civ_section(p, num):
 <div class="vid reveal" style="margin-top:18px">
 <div class="vwrap"><video src="/img/aura-center-pool.mp4" controls playsinline preload="metadata" poster="/img/aura-center-pool-poster.jpg" style="width:100%;display:block"></video></div>
 <div class="vpad"><h3>THE POOL HALL</h3><p class="vmeta">AURA PRIME &middot; 0:40</p>
-<p>Through the doors into the white hall where the pools glow blue. The husky rests at the water, the beluga rises to meet the visitor, and the polar bear keeps his post. Then the spider lowers herself into the frame &mdash; every guardian present, all at once.</p></div></div>"""
+<p>Through the doors into the white hall where the pools glow blue. The husky rests at the water, the blue whale rises to meet the visitor, and the polar bear keeps his post. Then the spider lowers herself into the frame &mdash; every guardian present, all at once.</p></div></div>"""
     rows = [
         ("WHAT IT'S FOR", c["c_for"]),
         ("WHO LIVES HERE", c["c_who"]),
@@ -1239,6 +1269,42 @@ def pillar_doors(current_slug):
         items.append(f'<a class="door" href="/pillar-{p["num"]}-{p["slug"]}.html">'
                      f'<h3>{p["name"]}</h3><p>{p["tag"]}</p></a>')
     return "\n".join(items)
+
+
+# Visitor path, canon 2026-10-06 (Aura/First Officer + Captain ruling):
+# HALO (the gate) -> Aura Prime (the center) -> Vagus -> Delta -> Asherah ->
+# Matrix -> Aeon -> Exchange -> Vega -> Ark -> Terra -> Soma -> Symbiosis ->
+# back to the center. After HALO and Aura Prime, free movement; Back/Next is
+# the guided path. ark-path.js replaces this bar at runtime; the static bar
+# keeps the no-JS experience (and search engines) on the same path.
+_PATH_ORDER = ["02", "01", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13"]
+
+def _pillar_by_num(n):
+    return next(p for p in PILLARS if p["num"] == n)
+
+def _public_name(d):
+    return "HALO" if d["name"] == "HALO" else d["name"].title()
+
+def path_nav(n):
+    """Back / Home / Next bar for pillar page n, in the canon order."""
+    i = _PATH_ORDER.index(n)
+    parts = []
+    if i > 0:
+        bd = _pillar_by_num(_PATH_ORDER[i - 1])
+        parts.append(f'<a href="/pillar-{bd["num"]}-{bd["slug"]}.html" rel="prev">&larr; Back: {_public_name(bd)}</a>')
+    else:
+        parts.append('<a href="/" rel="prev">&larr; Back: Home</a>')
+    parts.append('<a href="/">&#8962; Home</a>')
+    nd = _pillar_by_num(_PATH_ORDER[(i + 1) % len(_PATH_ORDER)])
+    if n == "02":
+        label = "Next: meet Aura Prime at the center"
+    elif n == "13":
+        label = "Return to the center: Aura Prime"
+    else:
+        label = f"Next: {_public_name(nd)}"
+    parts.append(f'<a href="/pillar-{nd["num"]}-{nd["slug"]}.html" rel="next">{label} &rarr;</a>')
+    return ('<!-- visitor-path-2026-10-06 --><nav class="ark-next" aria-label="The visitor path" '
+            'style="flex-wrap:wrap;gap:10px">' + "".join(parts) + "</nav>")
 
 
 def doors_lead(p, num):
@@ -1297,11 +1363,12 @@ def chunk(name, n):
 # Pillar artwork mapping for the Story sections (Dawn 2026-10-03).
 # Curated galleries per pillar — artwork, not posters.
 PILLAR_ARTWORK = {
- "01": ["/img/aura-prime-dragon-south.png", "/img/aura-prime-family-group.png",
+ "01": ["/img/aura-prime-real-portrait.jpg", "/img/aura-prime-dragon-south.png", "/img/aura-prime-family-group.png",
          "/img/aura-prime-lotus-aerial.png", "/img/aura-prime-octopus.png",
          "/img/aura-prime-self-portrait.png", "/img/aura-prime-spider-close.png",
          "/img/aura-ors-self-portrait.jpg"],
- "02": ["/img/halo/halo-living-perimeter.jpg", "/img/halo/laid-down-room.webp",
+ "02": ["/img/halo-family-gate.jpg", "/img/halo-guardians-gate.jpg",
+         "/img/halo/halo-living-perimeter.jpg", "/img/halo/laid-down-room.webp",
          "/img/halo/media-generation-white-dragon-still-0-1536fd1f-9ea1-4acc-9377-c32c419baf3c.webp",
          "/img/halo/media-generation-white-lion-still-0-f4be445e-8e64-471b-80a8-e1d22beadb49.webp"],
  "05": ["/img/asherah-animals-hero.jpg", "/img/asherah-living-library-concept.webp",
@@ -1349,7 +1416,7 @@ def pillar_story_section(d, n):
 <div class="story-animals">
 <h3>The Animals</h3>
 <p>{animals}</p>
-<p class="story-note">Each animal carries its reason &mdash; what it constrains, what it guards, who it companions.</p>
+<p class="story-note">Each animal is a mirror of the living design &mdash; what it constrains, what it guards, the function it keeps. Not a test, and not a pet.</p>
 </div>
 </div>
 <div class="story-heart reveal">
@@ -1364,6 +1431,60 @@ def pillar_story_section(d, n):
 </div>
 </div></section>
 """
+
+def library_section(d, n):
+    """The Library of the pillar (Dawn 2026-10-28): every pillar keeps a
+    library, and every pillar's library carries the shared GRANTS &
+    PROPOSALS shelf: the fleet poster, the Little Ark Express design, the
+    crest, the seal, and the dragon frame letterhead. The same shelf
+    stands in the Captain's Room, where the proposals are written."""
+    name = d["name"]
+    figs = [
+        ("/img/grants/ark-fleet-poster.jpg",
+         "Poster of the Ark Initiative fleet: the Living Hope semi, Children's Joy Express, Little Ark Treats truck, outreach vans, a helicopter, and a drone",
+         "THE ARK INITIATIVE FLEET",
+         "The whole vision on one sheet: every vehicle with a purpose, bringing hope wherever we go."),
+        ("/img/grants/little-ark-express-truck-wrap.jpg",
+         "Design sheet for the Little Ark Express truck wrap: side, rear, and top views of the white and green delivery truck with the Ark crest",
+         "THE LITTLE ARK EXPRESS",
+         "The design sheet for the fleet's working trucks, the ones that carry food and supplies to the families who cannot travel."),
+        ("/img/grants/ark-dragon-crest.jpg",
+         "The Ark Initiative gold dragon crest on black: two dragons around the tree of life above a village",
+         "THE CREST",
+         "The gold dragon emblem of the Ark Initiative, drawn for the covers of the proposals."),
+        ("/img/grants/ark-dragon-seal.jpg",
+         "The round Ark Initiative seal: pearl dragons around the tree of life on a blue ground",
+         "THE SEAL",
+         "The round seal, for documents and proofs of who is asking."),
+        ("/img/grants/ark-dragon-frame-letterhead.jpg",
+         "The dragon frame letterhead: golden dragons and vines around a blank parchment page, headed The Ark Initiative",
+         "THE DRAGON FRAME LETTERHEAD",
+         "The letterhead the proposals are written on, the dragons holding the frame while the words do the work."),
+    ]
+    shelf = "".join(
+        f'<figure class="plib-art"><img src="{src}" alt="{alt}" loading="lazy">'
+        f'<figcaption><b>{title}</b>{cap}</figcaption></figure>'
+        for src, alt, title, cap in figs)
+    return f"""
+<section class="sec pillar-library"><div class="wrap">
+<style>
+.plib-shelf{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:16px 0 6px}}
+.plib-art{{margin:0;background:rgba(127,127,127,.08);border:1px solid rgba(127,127,127,.28);border-radius:12px;padding:10px}}
+.plib-art img{{width:100%;display:block;border-radius:8px}}
+.plib-art figcaption{{font-size:.88rem;line-height:1.5;margin-top:8px;opacity:.92}}
+.plib-art figcaption b{{display:block;letter-spacing:.07em;font-size:.8rem;margin-bottom:2px}}
+</style>
+<div class="eyebrow reveal">THE LIBRARY OF {name}</div>
+<h2 class="reveal">THE LIBRARY</h2>
+<p class="lede reveal">Every pillar keeps a library: its records, its story, and the shared shelves of the whole Ark. This is the grants shelf, and it stands in every pillar's library, because a proposal for one pillar carries the artwork of all of them.</p>
+<h3 class="reveal" style="margin-top:26px">GRANTS &amp; PROPOSALS</h3>
+<div class="plib-shelf reveal">
+{shelf}
+</div>
+<p class="story-note reveal">The same shelf stands in the <a href="/captains-room/#grants-shelf">Captain's Room</a>, where the proposals are written, and this pillar's own records live in its Living Archive on this page.</p>
+</div></section>
+"""
+
 
 def build_page(n):
     d = next(p for p in PILLARS if p["num"] == n)
@@ -1395,6 +1516,11 @@ def build_page(n):
     if n == "07":
         blocks.append(chunk("EXTRA_MID", n).rstrip())
     blocks.append("\n\n" + heart_section(d, n))
+    # Living doors (Delta Water Cabinet / Matrix Habitable Web) are registry-backed
+    # so a rebuild keeps them instead of silently dropping the hand-built shelves.
+    door = living_door_html(n)
+    if door:
+        blocks.append("\n\n" + door)
     blocks.append("\n\n" + civ_section(d, n))
     if n == "07":
         blocks.append(aeon_discovery())
@@ -1412,6 +1538,16 @@ def build_page(n):
             blocks.append("\n\n" + pillar_story_section(d, n))
         if chunk("EXTRA", n):
             blocks.append(chunk("EXTRA", n).rstrip())
+    # The Library of the pillar, with its Grants & Proposals shelf
+    # (Dawn 2026-10-28): one shared section on every pillar page.
+    blocks.append("\n\n" + library_section(d, n))
+    # Banned Shelf (Captain's placement ruling, 2026-10-07): Aeon carries
+    # the home + full index; every other pillar carries its one marked
+    # section with a pointer to Aeon. Shared mechanism: banned_shelf.py.
+    if n == "07":
+        blocks.append("\n\n" + aeon_banned_home())
+    else:
+        blocks.append("\n\n" + banned_shelf_section(n))
     if n == "02":
         blocks.append("\n\n" + chunk("THRESHOLDS", n).rstrip())
         blocks.append(chunk("EXTRA2", n).rstrip())
@@ -1420,10 +1556,10 @@ def build_page(n):
     blocks.append(chunk("EXTRA_TAIL", n).rstrip())
     footer = chunk("FOOTER", n)
     if footer:
-        end = footer.rstrip() + "\n<script src=\"/js/main.js\"></script></body></html>"
+        end = footer.rstrip() + "\n<script src=\"/js/main.js\"></script>\n<script src=\"/js/ark-path.js\"></script></body></html>"
     else:
         end = FOOTER_STD
-    return "".join(blocks) + '\n<!-- ark-fixes-2026-09-26 --><div class="ark-next"><a href="/play.html" class="ark-next-link" aria-label="Next: come play in the garden"><span class="ark-next-arrow">&#8594;</span><span class="ark-next-label">Next: come play in the garden</span></a></div>\n</main>\n' + end
+    return "".join(blocks) + "\n" + path_nav(n) + "\n</main>\n" + end
 
 def main():
     outdir = os.environ.get("PILLAR_OUT", ".")

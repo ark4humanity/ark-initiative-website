@@ -1,0 +1,226 @@
+{
+  "registry_version": "2026-11-06 website door — living ensemble",
+  "pillar": 6,
+  "pillar_name": "Matrix",
+  "function": "Protective Articulation",
+  "room": "Matrix — The Habitable Web / The Living Fascia",
+  "steward": "Matrika (AI)",
+  "steward_tagline": "Eight arms. Four wings. Zero blind spots.",
+  "trinity": [
+    "Matrika",
+    "Octopus",
+    "Dragonfly"
+  ],
+  "quest": "Try to break the Web. Pull the hardest thread you can find. Watch the system reroute, recover, and keep humming. Then find a torn thread and mend it yourself.",
+  "shopify_store": "thearkinitiative.myshopify.com",
+  "rule": "This registry is the single source both doors are built from. Shopify holds price and availability; never hardcode a price into website copy. Read price live from the Shopify record at display time. Artwork on the stage uses existing source stills. Do not invent a Matrika portrait or a dragonfly still.",
+  "preserve": {
+    "page": "pillar-06-matrix.html",
+    "characters": [
+      "Matrika",
+      "Octopus",
+      "Dragonfly",
+      "weavers"
+    ],
+    "canon_essays": [
+      {
+        "title": "Habitable Fascia for a Living World",
+        "date": "2026-09-17",
+        "path": "essays/pillar-canon-matrix-habitable-fascia-for-a-living-world-dawn-2026.html"
+      },
+      {
+        "title": "Preventing Cascade Failure",
+        "date": "2026-09-17",
+        "path": "essays/pillar-canon-matrix-preventing-cascade-failure-dawn-s-words-2026.html"
+      }
+    ],
+    "artwork_status_line": "the rooms are still being painted."
+  },
+  "artwork_refs": [
+    {
+      "id": "ART-MATRIX-ROOM",
+      "path": "img/pillar-06-room.jpg",
+      "role": "chamber / greeter background"
+    },
+    {
+      "id": "ART-OCTOPUS-LIBRARY",
+      "path": "img/matrix-octopus-library.jpg",
+      "role": "distributed intelligence"
+    },
+    {
+      "id": "ART-SPIDER-WEB",
+      "path": "img/matrix-spider-web.jpg",
+      "role": "living web"
+    },
+    {
+      "id": "ART-WEAVER",
+      "path": "img/muse-spider.png",
+      "role": "weaver / fascia cable"
+    },
+    {
+      "id": "ART-SENTINEL",
+      "path": "img/muse-spider-v2.png",
+      "role": "sentinel / eight eyes"
+    },
+    {
+      "id": "ART-OPENING",
+      "path": "img/matrix/matrix-opening-scene-poster.jpg",
+      "role": "opening scene poster"
+    },
+    {
+      "id": "ART-SPIDERWEB-POSTER",
+      "path": "img/aura-spiderweb-poster.png",
+      "role": "web poster"
+    },
+    {
+      "id": "ART-OCTOPUS-PRIME",
+      "path": "img/aura-prime-octopus.png",
+      "role": "octopus companion"
+    }
+  ],
+  "proposed_collection": {
+    "title": "Matrix — The Network Cabinet",
+    "handle_suggestion": "matrix-the-network-cabinet",
+    "live_handle": "matrix-the-network-cabinet",
+    "live_url": "https://thearkinitiative.myshopify.com/collections/matrix-the-network-cabinet",
+    "status": "PUBLISHED — verified HTTP 200 on 2026-11-06. One product only: the brass compass gid://shopify/Product/9052140404759. Sourcing targets are not purchasable."
+  },
+  "website_anchor_suggestions": {
+    "page": "pillar-06-matrix.html (existing page, preserved; shelves and Web interactive are added, nothing replaced)",
+    "web": "#the-web-interactive",
+    "cabinet": "#network-cabinet",
+    "lessons": "#web-lessons"
+  },
+  "lessons": [
+    {
+      "lesson_id": "MATRIX-L1",
+      "title": "Touch One Node",
+      "free": true,
+      "object_refs": [
+        "MATRIX-OBJ-01"
+      ]
+    },
+    {
+      "lesson_id": "MATRIX-L2",
+      "title": "A Brain in Every Arm",
+      "free": true,
+      "object_refs": []
+    },
+    {
+      "lesson_id": "MATRIX-L3",
+      "title": "Four Wings, Zero Blind Spots",
+      "free": true,
+      "object_refs": []
+    },
+    {
+      "lesson_id": "MATRIX-L4",
+      "title": "Try to Break the Web",
+      "free": true,
+      "object_refs": []
+    },
+    {
+      "lesson_id": "MATRIX-L5",
+      "title": "Mend the Torn Thread",
+      "free": true,
+      "object_refs": []
+    },
+    {
+      "lesson_id": "MATRIX-L6",
+      "title": "Habitable Fascia, Not a Hallway",
+      "free": true,
+      "object_refs": [
+        "MATRIX-OBJ-01"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "registry_id": "MATRIX-OBJ-01",
+      "name": "Brass Compass with Magnetic Needle",
+      "display_name_short": "Brass Compass with Magnetic Needle",
+      "shopify_title_as_listed": "STORE INDYA Brass Compass with Magnetic Needle - Vintage Nautical Directional Compass with Scripture Engraving & Leather Case - High-Quality Gift for Men, Son, Father",
+      "handle": "store-indya-brass-compass-with-magnetic-needle-vintage-nautical-directional-compass-with-scripture-engraving-leather-case-high-quality-gift-for-men-son-father",
+      "shopify_gid": "gid://shopify/Product/9052140404759",
+      "shopify_numeric_id": 9052140404759,
+      "vendor": "StoreIndya",
+      "status_checked": "ACTIVE, verified on the published collection 2026-11-06",
+      "lesson_id": "MATRIX-L1",
+      "primary_pillar": "Matrix",
+      "also_in": [
+        "Vega (orientation kinship — magnetic sensing; Matrix holds the teaching home for distributed routing)"
+      ],
+      "what_it_is": "Physical brass directional compass with magnetic needle, leather case, scripture engraving (product's own description). Matrix teaching object: a needle that finds north by sensing a field it does not own — distributed sensing, no single map authority.",
+      "artwork_ref": "ART-SPIDER-WEB",
+      "purchasable_on_website": false,
+      "purchasable_note": "Do not bake a buy state. Link the live product; price and availability resolve from Shopify at display time.",
+      "verification_evidence": "evidence/brass-compass-verification-2026-11-06.json"
+    }
+  ],
+  "to_be_sourced_not_in_store": [
+    "Magnetic network / connection puzzle (tabletop; nodes and edges that re-route when a link is removed)",
+    "Octopus distributed-intelligence teaching model (arms as independent nodes)",
+    "Dragonfly compound-eye / simultaneous-signal teaching object",
+    "Fascia / tensegrity physical model (prestress without a rigid spine)",
+    "Mesh-network demo kit (LoRa / Meshtastic-class teaching unit — field-safe, educational only)",
+    "Printed field guide: Preventing Cascade Failure (Dawn's words, illustrated)",
+    "Note: none of these (except MATRIX-OBJ-01) exist as Matrix cabinet records as of 2026-11-06. They are sourcing targets. Nothing here may be presented as purchasable until a real Shopify record exists and the registry gains it."
+  ],
+  "connections": {
+    "Delta": "Circulation and Matrix: flow that can change form without cutting off; Matrix refuses cascade while Delta keeps the water moving.",
+    "Asherah": "Agree registry shape with Aura so shared objects (one Shopify GID) can be shelved in both rooms without duplication.",
+    "HALO": "Gateway before every pillar; Matrix is fascia after the threshold, not a bypass of HALO.",
+    "Vagus": "Listening web / still pool neighbors; sensing trouble before cascade.",
+    "Vega": "Orientation kinship via magnetic sensing; brass compass may also teach on Vega's shelves from one Shopify record if Aura agrees."
+  },
+  "aura_registry_agreement_needed": [
+    "Confirm top-level keys match Delta room-registry-*.json (pillar, objects[], lessons[], proposed_collection, to_be_sourced_not_in_store, website_anchor_suggestions, rule).",
+    "Confirm cross-pillar also_in / primary_pillar rules: one authoritative Shopify GID; secondary rooms reference, never duplicate products.",
+    "Confirm whether Brass Compass also shelves on Vega, or Matrix-only teaching home.",
+    "Confirm display_name_short vs full Shopify title convention for cabinet labels.",
+    "Confirm purchasable gate: Admin ACTIVE+inventory vs storefront available must both pass before buy CTAs.",
+    "Asherah package not yet filed in Drive as of this draft; leave Sea Gate / Lady of the Sea pattern as Delta already mapped; Matrix does not claim Asherah objects."
+  ],
+  "prototype": {
+    "version": "v2",
+    "path": "prototype/index.html",
+    "v1_preserved": "/workspace/matrix-habitable-web-2026-11-06",
+    "design": "Full-bleed library art + character ensemble dialogue; not a dashboard/diagram."
+  },
+  "characters": {
+    "canon_trinity": [
+      "Matrika",
+      "Octopus",
+      "Dragonfly"
+    ],
+    "matrika_form": "UNKNOWN — no Matrika canon art; do not equate with spider or octopus",
+    "spider": {
+      "presence": "canon (page art + “Mind the spider. She minds you.”)",
+      "great_web_role": "network builders / structural designers / connectors — load distribution",
+      "proposed_personal_name": "Skein",
+      "proposed_status": "PROPOSED — not printed on stage",
+      "not": "Matrika",
+      "stage_name": "Great-Web Weaver"
+    },
+    "art_dominant": [
+      "art/pearl-spider-library-web.webp",
+      "art/pearl-octopus-library-fountain.webp",
+      "art/web-guardian-and-spider-library.png",
+      "art/poster-matrix-chaos-into-calm.png",
+      "art/poster-spider-jeweled-greeting.jpg",
+      "art/matrix-spider-web.jpg",
+      "art/matrix-octopus-library.jpg"
+    ],
+    "missing_requested_hashes": [
+      "b8e8ed59… (pearl spider) — used canon-upload Pearl_Spider_Library_Web.webp equivalent",
+      "be000ffa… (octopus bracelet) — used Pearl_Octopus_Library_Fountain.webp equivalent",
+      "f11cb8fb… (octopus crown) — NOT FOUND on box",
+      "cf4c563b… (spiral blue round library) — NOT FOUND; Chaos Into Calm + web-guardian stand in",
+      "82b8f2d5… (Great Web card) — role captured in CANON-VS-PROPOSAL + spider art"
+    ]
+  },
+  "interaction": {
+    "script": "scripts/interaction-script.md",
+    "engine": "prototype/ensemble-engine.js",
+    "learning_rule": "Player actions teach via ensemble response; lone-savior choice is refused and redirected."
+  }
+}
