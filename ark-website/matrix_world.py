@@ -23,13 +23,13 @@ SHOP_PAGE = "https://thearkinitiative.myshopify.com/pages/matrix-the-habitable-w
 SHOP_COLLECTION = "https://thearkinitiative.myshopify.com/collections/matrix-the-network-cabinet"
 
 ROOMS = [
-    ("orientation-node", "Orientation Node"),
-    ("continuity-gallery", "Continuity Gallery"),
-    ("kinetic-studio", "Kinetic Studio"),
-    ("cosmic-web", "Cosmic Web"),
-    ("reading-hall", "Reading Hall"),
-    ("living-door", "Living Door"),
-    ("network-cabinet", "Network Cabinet"),
+    ("orientation-node", "Orientation Node", "/img/matrix-octopus-library.jpg", "Octopus in the library"),
+    ("continuity-gallery", "Continuity Gallery", "/img/matrix-spider-web.jpg", "The web in the library"),
+    ("kinetic-studio", "Kinetic Studio", "/img/muse-spider.png", "The weaver"),
+    ("cosmic-web", "Cosmic Web", "/img/muse-spider-v2.png", "The sentinel on the web"),
+    ("reading-hall", "Reading Hall", "/img/pillar-06-room.jpg", "The Matrix library"),
+    ("living-door", "Living Door", "/img/pillar-06-room.jpg", "The Matrix library"),
+    ("network-cabinet", "Network Cabinet", "/img/matrix/matrix-opening-scene-poster.jpg", "The opening of the Matrix room"),
 ]
 
 
@@ -60,13 +60,14 @@ def introduction():
 
 def hall():
     links = "\n".join(
-        f'<a class="mw-door" href="#{rid}">{esc(name)}</a>' for rid, name in ROOMS
+        f'<a class="mw-portal" href="#{rid}"><img src="{esc(image)}" alt="{esc(alt)}"><span>{esc(name)}</span></a>'
+        for rid, name, image, alt in ROOMS
     )
     return f"""<nav class="mw-hall" id="the-hall" aria-label="Rooms of Matrix">
 <p class="mw-kicker">The hall</p>
 <h2>Walk the library</h2>
 <p>Six rooms, then the door where the web answers your hands. Each animal here is a mirror of the living design: many minds, one web. The cabinet is the same collection as the shop. The reading is free. No purchase required.</p>
-<div class="mw-doors">{links}</div>
+<div class="mw-portals">{links}</div>
 <p class="mw-exits"><a href="{SHOP_PAGE}">Shopify room</a> · <a href="{SHOP_COLLECTION}">Network Cabinet</a> · <a href="/pillar-04-delta.html">Delta, next door</a> · <a href="/pillar-02-halo.html">HALO, when you want the perimeter</a></p>
 <label class="mw-reduce"><input type="checkbox" id="mw-reduce"> Reduce motion</label>
 </nav>"""
@@ -75,8 +76,8 @@ def hall():
 def exits(current):
     ids = [r[0] for r in ROOMS]
     i = ids.index(current)
-    prev_id, prev_name = ROOMS[(i - 1) % len(ROOMS)]
-    next_id, next_name = ROOMS[(i + 1) % len(ROOMS)]
+    prev_id, prev_name = ROOMS[(i - 1) % len(ROOMS)][0], ROOMS[(i - 1) % len(ROOMS)][1]
+    next_id, next_name = ROOMS[(i + 1) % len(ROOMS)][0], ROOMS[(i + 1) % len(ROOMS)][1]
     return (
         f'<p class="mw-exits"><a href="#the-hall">The hall</a> · '
         f'<a href="#{prev_id}">← {esc(prev_name)}</a> · '
@@ -253,8 +254,12 @@ def reading():
 </ol>
 <p>Close the hour with one sentence: “A healthy connection leaves room for ______.” The blank is yours. The library did not charge you for it.</p>
 </div>"""
-    return f"""<section class="mw-room mw-reading" id="reading-hall" aria-labelledby="reading-hall-title">
-<a id="web-lessons"></a>
+    return f"""<section class="mw-shelf" id="reading-hall" aria-labelledby="reading-hall-title">
+<figure class="mw-banner">
+<img src="/img/pillar-06-room.jpg" alt="The Matrix library">
+<img src="/img/matrix-octopus-library.jpg" alt="Octopus in the library">
+<img src="/img/matrix-spider-web.jpg" alt="The web in the library">
+</figure>
 <div class="mw-read">
 <h2 id="reading-hall-title">Reading Hall</h2>
 <p>These shelves are free. Natural history and research are other people's works, named and linked so you can read them yourself. The Ark essays are Dawn's Matrix teaching. They are not the same shelf, and they do not pretend to be.</p>

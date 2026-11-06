@@ -1,7 +1,12 @@
-/* Matrix world — library rooms on the current pillar page. */
+/* Matrix world — library rooms on the current pillar page.
+   This sheet loads only with the Matrix world, so the scroll offset
+   stays on this page. The sticky site header is two lines on a wide
+   window and one line on a phone. */
+html { scroll-padding-top: 96px; }
+@media (min-width: 900px) { html { scroll-padding-top: 156px; } }
 .mw { --gold:#e8c87a; --gold2:#f6e2b0; --blue:#9fdfff; --ink:#f7f2e6; color:var(--ink); }
 .mw [hidden] { display:none !important; }
-.mw-intro, .mw-hall, .mw-room {
+.mw-intro, .mw-hall, .mw-room, .mw-shelf {
   position: relative;
   margin: 28px auto;
   max-width: 1100px;
@@ -9,7 +14,11 @@
   overflow: hidden;
   border: 1px solid rgba(232,200,122,.38);
   box-shadow: 0 24px 70px rgba(0,0,0,.4);
-  scroll-margin-top: 84px;
+  scroll-margin-top: 96px;
+}
+#web-lessons { scroll-margin-top: 96px; }
+@media (min-width: 900px) {
+  .mw-intro, .mw-hall, .mw-room, .mw-shelf, #web-lessons { scroll-margin-top: 156px; }
 }
 .mw-intro, .mw-hall {
   padding: 36px 28px 28px;
@@ -33,8 +42,20 @@
 .mw-intro h3, .mw-hall h2, .mw-room h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); line-height: 1.2; margin: 0 0 16px; }
 .mw p, .mw li { font-size: clamp(18px, 1.25vw, 20px); line-height: 1.55; color: #f8f1df; }
 .mw a { color: var(--gold2); }
-.mw-doors { display: flex; flex-direction: column; gap: 8px; margin: 14px 0; }
-.mw-door, .mw-actions button, .mx-go, .mx-choices button {
+.mw-portals { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 16px 0; }
+.mw-portal {
+  display: flex; flex-direction: column; padding: 0; overflow: hidden;
+  border-radius: 18px; text-decoration: none; min-height: 0;
+  border: 1px solid rgba(232,200,122,.5); background: #0b1018; color: var(--gold2);
+}
+.mw-portal img { width: 100%; height: 132px; object-fit: cover; object-position: center 20%; display: block; }
+.mw-portal span { padding: 10px 12px 12px; font-size: 1.02rem; line-height: 1.3; }
+.mw-shelf { display: block; background: #0b1018; position: relative; }
+.mw-banner { display: grid; grid-template-columns: 1.4fr 1fr 1fr; margin: 0; }
+.mw-banner img { width: 100%; height: 240px; object-fit: cover; object-position: center 30%; display: block; }
+.mw-shelf .mw-read { max-width: none; }
+.mw-anchor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.mw-actions button, .mx-go, .mx-choices button {
   font: inherit; cursor: pointer; text-decoration: none;
   min-height: 48px; padding: 12px 16px; border-radius: 999px;
   border: 1px solid rgba(232,200,122,.55);
@@ -95,6 +116,11 @@
 .mx-hint { color: #e4d8bc; }
 
 @media (max-width: 800px) {
+  .mw-portals { grid-template-columns: 1fr 1fr; }
+  .mw-portal img { height: 108px; }
+  .mw-banner { grid-template-columns: 1fr; }
+  .mw-banner img { height: 180px; }
+  .mw-banner img:nth-child(n+2) { display: none; }
   .mw-room { grid-template-columns: 1fr; }
   .mw-figure img { min-height: 220px; max-height: 320px; }
   .mw-object { grid-template-columns: 96px 1fr; }
