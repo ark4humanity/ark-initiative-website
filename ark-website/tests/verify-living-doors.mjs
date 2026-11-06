@@ -95,6 +95,18 @@ check('beaver laws refill the room', water.set('beaver').wetland === 'full' && w
 const matrixPage = fs.readFileSync(path.join(root, 'pillar-06-matrix.html'), 'utf8');
 const deltaPage = fs.readFileSync(path.join(root, 'pillar-04-delta.html'), 'utf8');
 const price = /\$\s?\d|\b(?:14\.49|16\.99|18\.00|19\.99|30\.99|43\.99)\b/;
+const introSrc = fs.readFileSync(path.join(root, 'registries/matrix-introduction.txt'), 'utf8').trim();
+const introBlocks = introSrc.split(/\n\s*\n/).map((b) => b.replace(/\s+/g, ' ').trim());
+const introAt = matrixPage.indexOf('id="matrix-introduction"');
+const stageAt = matrixPage.indexOf('id="the-web-interactive"');
+check('matrix introduction is present', introAt > 0);
+check('introduction sits before the interactive web', introAt > 0 && stageAt > introAt);
+check('page identity stays the MATRIX title', /<h1>MATRIX<\/h1>/.test(matrixPage));
+check('introduction heading is not an essay title', matrixPage.includes('The Space Between Things Is Not Empty') && matrixPage.includes('pillar-canon-matrix-habitable-fascia'));
+for (const block of introBlocks) {
+  check(`introduction keeps exact line: ${block.slice(0, 42)}`, matrixPage.includes(block.replace(/'/g, '&#x27;')) || matrixPage.includes(block));
+}
+check('archive, essays, and opening film remain', matrixPage.includes('id="living-archive"') && matrixPage.includes('matrix-opening-scene.mp4') && matrixPage.includes('Preventing Cascade Failure'));
 check('matrix page has the stage anchor', matrixPage.includes('id="the-web-interactive"'));
 check('matrix cabinet and lessons anchors', matrixPage.includes('id="network-cabinet"') && matrixPage.includes('id="web-lessons"'));
 check('delta cabinet and lesson anchors', deltaPage.includes('id="water-cabinet"') && deltaPage.includes('id="watershed-lessons"') && deltaPage.includes('id="circulation-hall"'));

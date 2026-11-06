@@ -122,6 +122,146 @@
       "detail": ""
     },
     {
+      "name": "matrix introduction is present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction sits before the interactive web",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "page identity stays the MATRIX title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction heading is not an essay title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: MATRIX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: The Space Between Things Is Not Empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: What holds a forest together?",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Not a single tree.",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Not the roots of one ancient giant, nor th",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: It is the extraordinary world between them",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: The living soil. The fungal networks. The ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Welcome to Matrix, the Sixth Pillar of the",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Here, connection is an art, and separation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Imagine an enormous, luminous web stretchi",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Nothing is required to remain rigidly atta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Nothing must surrender its identity to bel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Matrix is inspired by the intelligence of ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: But Matrix teaches us something deeper tha",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: A healthy relationship needs room to breat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: A strong community needs boundaries that p",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: And a resilient civilization needs the fre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Within the Ark's proposed living architect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Its strength is not measured by how tightl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Its strength is measured by how much life ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Come explore the living web.",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Discover how nature shares burdens, protec",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Welcome to Matrix. Where connection does n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archive, essays, and opening film remain",
+      "pass": true,
+      "detail": ""
+    },
+    {
       "name": "matrix page has the stage anchor",
       "pass": true,
       "detail": ""

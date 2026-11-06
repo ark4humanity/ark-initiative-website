@@ -199,6 +199,27 @@ def delta_html():
     return _reject_prices(fragment, "delta")
 
 
+def matrix_introduction_html():
+    """Dawn's Matrix introduction, verbatim. Headings stay inside this
+    section. They do not replace the page's MATRIX title or any essay title."""
+    path = os.path.join(REG, "matrix-introduction.txt")
+    with open(path, encoding="utf-8") as f:
+        raw = f.read().strip()
+    blocks = [re.sub(r"\s*\n\s*", " ", b).strip() for b in re.split(r"\n\s*\n", raw) if b.strip()]
+    if len(blocks) < 3 or blocks[0] != "MATRIX":
+        raise SystemExit("matrix introduction source is missing its headings")
+    name, subtitle, paragraphs = blocks[0], blocks[1], blocks[2:]
+    body = "\n".join(f"<p>{_esc(p)}</p>" for p in paragraphs)
+    return (
+        '<section class="mx-intro" id="matrix-introduction" aria-labelledby="matrix-intro-title">'
+        '<div class="mx-intro-inner">'
+        f'<h2 class="mx-intro-name">{_esc(name)}</h2>'
+        f'<h3 id="matrix-intro-title">{_esc(subtitle)}</h3>'
+        f'<div class="mx-intro-body">{body}</div>'
+        '</div></section>'
+    )
+
+
 def matrix_html():
     reg = _load("room-registry-matrix.json")
     lessons = _lessons_by_id("matrix-lessons.json")
@@ -256,6 +277,7 @@ def matrix_html():
     )
     fragment = "\n".join([
         '<link rel="stylesheet" href="/css/living-rooms.css">',
+        matrix_introduction_html(),
         stage, cabinet, lessons_html,
         '<script type="module" src="/js/matrix-stage.js"></script>',
         '<script src="/js/shop-live.js"></script>',
