@@ -1,0 +1,385 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "Matrika has no portrait",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Dragonfly has no portrait",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Octopus portrait is the live library still",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Stage spider name is Great-Web Weaver",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "Proposed personal name stays off the display name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "recovered state rewrites mend-in-progress",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "an open strand may still describe work",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "opens with Matrika",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "touch lights the web",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "cut opens a strand and marks redistribution",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "lone savior is refused",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "group mend recovers the web",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "group mend dialogue never says the mend is still in progress",
+      "pass": true,
+      "detail": "Now you are speaking Web. | Routes locked. The load took the paths that stayed. | The mend is held on several arms. The web is humming. Show-offery optional. | That is Protective Articulation. The same living design you will meet in Delta’s water, Vega’s routes, and HALO’s boundary — different organs, one body."
+    },
+    {
+      "name": "group mend says the web is humming",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "after the hum, close does not reopen the cut",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "humming scene does not say mend in progress",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "touch reaches more than one strand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "one cut redistributes and does not cascade",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "the opened strand is literally cut",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "other strands are carrying load",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "mend closes the strand",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "watershed starts shared",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "wide channel starves the wetland",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "beaver laws refill the room",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix introduction is present",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction sits before the interactive web",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "page identity stays the MATRIX title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction heading is not an essay title",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: MATRIX",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: The Space Between Things Is Not Empty",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: What holds a forest together?",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Not a single tree.",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Not the roots of one ancient giant, nor th",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: It is the extraordinary world between them",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: The living soil. The fungal networks. The ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Welcome to Matrix, the Sixth Pillar of the",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Here, connection is an art, and separation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Imagine an enormous, luminous web stretchi",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Nothing is required to remain rigidly atta",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Nothing must surrender its identity to bel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Matrix is inspired by the intelligence of ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: But Matrix teaches us something deeper tha",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: A healthy relationship needs room to breat",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: A strong community needs boundaries that p",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: And a resilient civilization needs the fre",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Within the Ark's proposed living architect",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Its strength is not measured by how tightl",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Its strength is measured by how much life ",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Come explore the living web.",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Discover how nature shares burdens, protec",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "introduction keeps exact line: Welcome to Matrix. Where connection does n",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "archive, essays, and opening film remain",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix page has the stage anchor",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix cabinet and lessons anchors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "delta cabinet and lesson anchors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix keeps the archive and films",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "delta keeps Neris, beaver, osprey, and film",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "matrix shows the seven cabinet prices",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "delta page was not rewritten with matrix prices",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "stage does not print the proposed personal name",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "no on-stage form-unknown label",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "brass compass id is the verified product",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "six delta objects are named from the registry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "sourcing targets are not product links",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "free lessons do not require purchase",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "animals are described as mirrors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "generator still emits the doors",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/matrix-octopus-library.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/matrix-spider-web.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/muse-spider.png",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /img/pillar-06-room.jpg",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /css/matrix-world.css",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/matrix-stage.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/matrix-ensemble.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/matrix-web.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "new asset linked and present /js/matrix-rooms.js",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

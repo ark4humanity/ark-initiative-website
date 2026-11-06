@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ark-room-registry-v1",
+  "title": "Ark Pillar Room Registry (shared Delta/Matrix/Asherah shape)",
+  "type": "object",
+  "required": [
+    "registry_version",
+    "pillar",
+    "pillar_name",
+    "room",
+    "steward",
+    "trinity",
+    "shopify_store",
+    "rule",
+    "lessons",
+    "objects",
+    "proposed_collection",
+    "website_anchor_suggestions",
+    "to_be_sourced_not_in_store"
+  ],
+  "properties": {
+    "registry_version": {
+      "type": "string"
+    },
+    "pillar": {
+      "type": "integer"
+    },
+    "pillar_name": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    },
+    "room": {
+      "type": "string"
+    },
+    "steward": {
+      "type": "string"
+    },
+    "trinity": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "shopify_store": {
+      "type": "string"
+    },
+    "rule": {
+      "type": "string"
+    },
+    "proposed_collection": {
+      "type": "object",
+      "required": [
+        "title",
+        "handle_suggestion",
+        "status"
+      ]
+    },
+    "website_anchor_suggestions": {
+      "type": "object"
+    },
+    "lessons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "lesson_id",
+          "title",
+          "free",
+          "object_refs"
+        ]
+      }
+    },
+    "objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "registry_id",
+          "name",
+          "handle",
+          "shopify_gid",
+          "primary_pillar",
+          "lesson_id",
+          "what_it_is"
+        ],
+        "properties": {
+          "price_at_check": {
+            "type": "string",
+            "description": "Audit note only; never rendered as live price"
+          },
+          "purchasable_on_website": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "to_be_sourced_not_in_store": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "checked": "2026-11-06",
+  "works": [
+    {
+      "kind": "Natural history",
+      "citation": "Henry Lee, The octopus : or, The \"devil-fish\" of fiction and of fact (London: Chapman and Hall, 1875). Project Gutenberg eBook 72133. Public domain in the United States.",
+      "links": [
+        {"label": "Read the book", "url": "https://www.gutenberg.org/files/72133/72133-h/72133-h.htm"},
+        {"label": "Catalog", "url": "https://www.gutenberg.org/ebooks/72133"}
+      ]
+    },
+    {
+      "kind": "Research",
+      "citation": "Dominic M. Sivitilli, Joshua R. Smith, and David H. Gire, “Lessons for Robotics From the Control Architecture of the Octopus,” Frontiers in Robotics and AI, 18 July 2022.",
+      "links": [
+        {"label": "Read the open article", "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2022.862391/full"},
+        {"label": "DOI 10.3389/frobt.2022.862391", "url": "https://doi.org/10.3389/frobt.2022.862391"}
+      ]
+    },
+    {
+      "kind": "Natural history",
+      "citation": "Jean-Henri Fabre, The Life of the Spider, translated by Alexander Teixeira de Mattos. Project Gutenberg eBook 1887. Public domain in the United States.",
+      "links": [
+        {"label": "Read the book", "url": "https://www.gutenberg.org/files/1887/1887-h/1887-h.htm"},
+        {"label": "Catalog", "url": "https://www.gutenberg.org/ebooks/1887"}
+      ]
+    },
+    {
+      "kind": "Natural history",
+      "citation": "J. H. Emerton, The Structure and Habits of Spiders. Project Gutenberg eBook 58111. Public domain in the United States.",
+      "links": [
+        {"label": "Read the book", "url": "https://www.gutenberg.org/cache/epub/58111/pg58111-images.html"},
+        {"label": "Catalog", "url": "https://www.gutenberg.org/ebooks/58111"}
+      ]
+    },
+    {
+      "kind": "Research",
+      "citation": "Philip Ruck, “The Components of the Visual System of a Dragonfly,” Journal of General Physiology 49, no. 2 (1965): 289–307.",
+      "links": [
+        {"label": "Read the free article, PMC2195487", "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2195487/"}
+      ]
+    },
+    {
+      "kind": "Ark essay",
+      "citation": "Dawn Littlefield, Habitable Fascia for a Living World.",
+      "links": [
+        {"label": "Read on the Ark", "url": "https://thearkinitiative.com/essays/pillar-canon-matrix-habitable-fascia-for-a-living-world-dawn-2026.html"}
+      ]
+    },
+    {
+      "kind": "Ark essay",
+      "citation": "Dawn Littlefield, Preventing Cascade Failure.",
+      "links": [
+        {"label": "Read on the Ark", "url": "https://thearkinitiative.com/essays/pillar-canon-matrix-preventing-cascade-failure-dawn-s-words-2026.html"}
+      ]
+    }
+  ]
+}
