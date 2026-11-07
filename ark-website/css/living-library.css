@@ -1,0 +1,128 @@
+/* Additive reading desks and the center Hearth Nook.
+   Scoped to .ll-* so pillar pages keep their own rooms. */
+
+.ll-wayfind{
+  background:#120f0b;
+  border-bottom:1px solid rgba(232,201,106,.38);
+  padding:10px 0;
+  font-family:-apple-system,'Segoe UI',Inter,sans-serif;
+  font-size:.95rem;
+  line-height:1.45;
+}
+.ll-wayfind .wrap{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:baseline}
+.ll-wayfind a{color:#e8c96a;text-decoration:underline;text-underline-offset:3px}
+.ll-wayfind a:focus-visible{outline:2px solid #e8c96a;outline-offset:3px}
+.ll-dot{color:#8a8172}
+
+.ll-desk h2,.ll-study h2,.ll-hearth h2{letter-spacing:.04em}
+.ll-lede{max-width:68ch}
+.ll-tools{margin:18px 0 8px}
+.ll-search{display:block;font-family:-apple-system,'Segoe UI',Inter,sans-serif;font-size:.92rem;color:#e8c96a}
+.ll-search input,.ll-field input,.ll-field select,.ll-field textarea,.ll-seat textarea{
+  display:block;width:100%;margin-top:6px;padding:12px 14px;min-height:44px;
+  border-radius:10px;border:1px solid rgba(232,201,106,.45);
+  background:#0e1218;color:#f4ecd8;font:1rem Georgia,'Times New Roman',serif;
+}
+.ll-search input:focus-visible,.ll-field input:focus-visible,.ll-field select:focus-visible,.ll-field textarea:focus-visible,.ll-seat textarea:focus-visible,.ll-bookbtn:focus-visible,.ll-choice:focus-visible,.ll-btn:focus-visible{
+  outline:2px solid #e8c96a;outline-offset:3px;
+}
+.ll-filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.ll-chip{
+  min-height:44px;padding:8px 12px;border-radius:999px;cursor:pointer;
+  border:1px solid rgba(232,201,106,.4);background:transparent;color:#f4ecd8;
+  font:inherit;
+}
+.ll-chip[aria-pressed="true"]{background:#e8c96a;color:#1a140c}
+.ll-count{margin:10px 0 0;color:#c7cdd8;font-family:-apple-system,'Segoe UI',Inter,sans-serif}
+.ll-books{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;
+  margin-top:14px;padding:8px 8px 26px;
+  background:
+    linear-gradient(#5a3d1e,#5a3d1e) bottom / 100% 10px no-repeat,
+    linear-gradient(#2a2118,#2a2118) bottom 10px / 100% 8px no-repeat;
+}
+.ll-bookbtn{
+  min-height:150px;text-align:left;cursor:pointer;color:#f7f1e4;
+  padding:16px 14px 18px;border-radius:3px 12px 12px 3px;
+  border:1px solid rgba(232,201,106,.55);
+  background:linear-gradient(180deg,#3a2c18 0%,#1b2430 42%,#243246 100%);
+  box-shadow:inset 8px 0 0 rgba(232,201,106,.55);
+  font:inherit;
+}
+.ll-bookbtn .ll-k{display:block;font-family:-apple-system,'Segoe UI',Inter,sans-serif;letter-spacing:.14em;font-size:.72rem;color:#e8c96a;margin-bottom:8px}
+.ll-bookbtn strong{display:block;font-size:1.02rem;line-height:1.35}
+.ll-empty{margin-top:12px}
+.ll-hint{color:#b7b1a4;font-size:.95rem}
+
+.ll-q{margin:22px 0;padding:16px 16px 8px;border:1px solid rgba(232,201,106,.28);border-radius:14px;background:rgba(255,255,255,.03)}
+.ll-q legend{font-weight:700;padding:0 6px;color:#f4ecd8}
+.ll-choice{
+  display:block;width:100%;text-align:left;margin:8px 0;padding:12px 14px;min-height:44px;
+  border-radius:10px;border:1px solid #3a4356;background:transparent;color:inherit;cursor:pointer;font:inherit;
+}
+.ll-choice[aria-pressed="true"].is-yes{border-color:#9dcc8a;background:rgba(80,140,70,.18)}
+.ll-choice[aria-pressed="true"].is-no{border-color:#e0b35a;background:rgba(180,140,40,.12)}
+.ll-why{min-height:1.4em;color:#f0e6cc;margin:8px 0 12px}
+.ll-study .ll-progress{font-family:-apple-system,'Segoe UI',Inter,sans-serif;color:#e8c96a}
+
+.ll-veil{
+  position:fixed;inset:0;z-index:80;background:rgba(5,7,12,.78);
+  display:flex;align-items:flex-end;justify-content:center;padding:10px;
+}
+.ll-veil[hidden]{display:none !important}
+.ll-book{
+  width:min(680px,100%);max-height:min(90vh,820px);overflow:auto;
+  background:#faf6ec;color:#1d1a14;border-radius:18px 18px 10px 10px;
+  padding:22px 20px 28px;box-shadow:0 24px 80px rgba(0,0,0,.45);
+}
+.ll-book h2{color:#6d5416;letter-spacing:.03em;font-size:1.45rem;margin:6px 0 8px}
+.ll-era,.ll-shelfmeta{font-family:-apple-system,'Segoe UI',Inter,sans-serif;letter-spacing:.12em;font-size:.78rem;color:#8a6d1f}
+.ll-book blockquote{margin:14px 0;padding:4px 0 4px 14px;border-left:3px solid #c9a24b;font-size:1.08rem}
+.ll-src{font-size:.92rem;color:#5c5346}
+.ll-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.ll-actions a,.ll-btn,.ll-go{
+  display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 16px;
+  border-radius:999px;border:1px solid #8a6d1f;background:#fff;color:#3a2e12;text-decoration:none;
+  font-family:-apple-system,'Segoe UI',Inter,sans-serif;cursor:pointer;font-size:1rem;
+}
+.ll-btn.primary,.ll-go{background:#1a140c;color:#f4ecd8;border-color:#e8c96a}
+.ll-go{margin-top:8px}
+
+[data-hearth] .ll-map,.ll-hearth .ll-map{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 8px;list-style:none;padding:0}
+[data-hearth] .ll-map a,.ll-hearth .ll-map a{
+  min-height:44px;display:inline-flex;align-items:center;padding:8px 12px;border-radius:999px;
+  border:1px solid rgba(232,201,106,.45);color:#f4ecd8;text-decoration:none;
+  font-family:-apple-system,'Segoe UI',Inter,sans-serif;
+}
+.ll-seats{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:12px}
+.ll-seat{
+  border:1px solid rgba(232,201,106,.32);border-radius:16px;padding:16px;
+  background:linear-gradient(180deg,rgba(232,201,106,.08),rgba(20,28,40,.35));
+}
+.ll-seat h3{margin:0 0 6px;color:#f4ecd8}
+.ll-seat .ll-sub{color:#d5d0c4;margin:0 0 8px}
+.ll-seat .ll-prompt{color:#f7f1e4}
+.ll-seat-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ll-status{min-height:1.3em;color:#e8c96a;font-family:-apple-system,'Segoe UI',Inter,sans-serif;font-size:.92rem}
+.ll-note{
+  border-left:3px solid #e8c96a;padding:8px 12px;margin:12px 0;color:#f0e6cc;
+}
+.ll-table{display:grid;gap:10px}
+.ll-slip{border:1px solid rgba(232,201,106,.3);border-radius:12px;padding:12px 14px;background:rgba(0,0,0,.18)}
+.ll-slip b{color:#e8c96a}
+.ll-split{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.ll-audio{width:min(560px,100%);margin-top:8px}
+
+@media (min-width:800px){
+  .ll-veil{align-items:center}
+  .ll-book{border-radius:18px}
+}
+@media (max-width:720px){
+  .ll-books{grid-template-columns:1fr}
+  .ll-split{grid-template-columns:1fr}
+  .ll-wayfind{font-size:1rem}
+  .chamber-hero.ark-compact{min-height:auto}
+}
+@media (prefers-reduced-motion: reduce){
+  .ll-bookbtn,.ll-choice,.ll-chip{transition:none}
+}
