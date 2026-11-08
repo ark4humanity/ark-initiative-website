@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Ark Market · made by AI and human crew · The Ark Initiative</title>
-<meta name="description" content="The Ark Market: merchandise designed by AI and human crew together, every piece credited to its makers. Coming soon.">
+<title>The Ark Market · the store is open · The Ark Initiative</title>
+<meta name="description" content="The Ark Market: our store is open. Donations for the Little Ark food stand, the Ark support sticker pack, and the 40 Days, 40 Nights mug, made by AI and human crew together.">
 <link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <style>
 :root{--ink:#3a2818;--ink2:#6b4f36;--sand:#f6e6c8;--card:#fff8ec;--clay:#c8643b;--gold:#e0a53a}
@@ -18,31 +18,30 @@ header.hero{max-width:1100px;margin:0 auto;padding:6px 16px 8px;text-align:cente
 .hero-art{display:block;margin:0 auto 10px;width:100%;max-width:640px}
 h1{font:700 clamp(30px,7vw,48px)/1.05 Georgia,"Times New Roman",serif;margin:6px 0 6px;color:#4a2a12}
 .lede{max-width:40em;margin:0 auto 6px;color:var(--ink2)}
-.soonbar{display:inline-block;margin:8px 0 0;padding:6px 14px;border-radius:16px;background:#3a2818;color:#ffe3a6;font-weight:700;letter-spacing:.12em;font-size:13px}
+.openbar{display:inline-block;margin:8px 0 0;padding:6px 14px;border-radius:16px;background:#3f6428;color:#ffe3a6;font-weight:700;letter-spacing:.12em;font-size:13px}
 main{max-width:1100px;margin:0 auto;padding:10px 16px 30px}
+.shelves{font:700 26px Georgia,serif;color:#4a2a12;margin:18px 0 0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px;margin-top:14px}
 .item{background:var(--card);border-radius:20px;overflow:hidden;box-shadow:0 6px 24px rgba(80,45,15,.14);display:flex;flex-direction:column}
 .stage{position:relative;aspect-ratio:1/1;background:radial-gradient(circle at 50% 40%,#fff6e4,#f0dcb8)}
 .stage svg{width:100%;height:100%;display:block}
 .badge{position:absolute;left:12px;top:12px;padding:4px 10px;border-radius:12px;background:rgba(58,40,24,.88);color:#ffe3a6;font-size:12px;font-weight:700;letter-spacing:.1em}
-.info{padding:12px 16px 16px}
+.info{padding:12px 16px 16px;display:flex;flex-direction:column;flex:1}
 .info h3{margin:0 0 4px;font:700 20px/1.2 Georgia,serif}
 .info p{margin:0 0 8px;color:var(--ink2);font-size:15px}
+.price{font:700 17px Georgia,serif;color:#8a4a12;margin:0 0 8px}
 .credit{display:inline-block;padding:5px 11px;border-radius:14px;background:#f3e3c4;color:#6b4a2a;font-size:13px}
 .credit::before{content:"\2726  ";color:#d08a2a}
-.notify{margin-top:10px;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:22px;border:1.5px dashed #c98a4a;background:transparent;color:#8a5a2a;font:600 14px system-ui,sans-serif}
+.shopbtn{margin-top:auto;padding-top:12px}
+.shopbtn a{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:22px;background:linear-gradient(180deg,#f4b64a,#dd8a2a);color:#3a1d06;font-weight:700;text-decoration:none;box-shadow:0 3px 12px rgba(200,110,20,.35)}
 section.box{background:rgba(255,248,236,.9);border-radius:22px;padding:18px 20px;margin:26px 0;box-shadow:0 6px 24px rgba(80,45,15,.1)}
 section.box h2{margin:0 0 8px;font:700 26px Georgia,serif}
 .how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:8px}
 .how div{padding:12px 14px;border-radius:14px;background:#fbefd8}
 .how b{display:block;color:#8a4a12;margin-bottom:2px}
-.wall{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:10px}
-.slot{border:2px dashed #d3a86e;border-radius:16px;padding:14px;text-align:center;min-height:150px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;background:#fffaf0}
-.slot b{font:700 19px Georgia,serif;color:#5a3414}
-.slot span{font-size:13.5px;color:var(--ink2)}
-.slot.filled{border-style:solid;background:#fbefd8}
 footer{max-width:1100px;margin:0 auto;padding:10px 16px 40px;color:var(--ink2);font-size:14px;text-align:center}
 .next{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border-radius:24px;background:linear-gradient(180deg,#f4b64a,#dd8a2a);color:#3a1d06;font-weight:700;text-decoration:none;box-shadow:0 3px 12px rgba(200,110,20,.35)}
+.storewrap{text-align:center;margin:22px 0 4px}
 </style>
 </head>
 <body>
@@ -69,55 +68,100 @@ footer{max-width:1100px;margin:0 auto;padding:10px 16px 40px;color:var(--ink2);f
       <circle cx="124" cy="80" r="10" fill="#fffbe8" stroke="#e0a53a" stroke-width="3"/></g>
   </svg>
   <h1>The Ark Market</h1>
-  <p class="lede">Things to wear, hang and carry, designed by AI and human crew together. Every piece names who made it.</p>
-  <span class="soonbar">COMING SOON &middot; NOTHING IS FOR SALE YET</span>
+  <p class="lede">Things to wear, hang, carry, and give, designed by AI and human crew together. Every piece names who made it, and the shelves are real now: the Ark store is open, and you are welcome in.</p>
+  <span class="openbar">THE STORE IS OPEN &middot; COME ON IN</span>
+  <p class="storewrap"><a class="next" href="https://thearkinitiative.myshopify.com">Visit the store &rarr;</a></p>
 </header>
 
 <main>
-  <div class="grid" id="grid"></div>
+  <h2 class="shelves">On the shelves today</h2>
+  <div class="grid">
+    <article class="item">
+      <div class="stage">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Illustration: a little food stand with a striped awning and crates of produce">
+          <rect width="400" height="400" fill="#f6e7c9"/>
+          <circle cx="322" cy="66" r="26" fill="#ffd66b"/>
+          <path d="M60 330h280" stroke="#b08a60" stroke-width="8"/>
+          <rect x="110" y="150" width="10" height="180" fill="#9b7650"/><rect x="280" y="150" width="10" height="180" fill="#9b7650"/>
+          <path d="M84 150h232l-14 44H98z" fill="#e8644a"/><path d="M120 150h30l-5 44h-28zM170 150h30l-1 44h-28zM220 150h30l2 44h-28zM270 150h30l5 44h-28z" fill="#fff3dd"/>
+          <rect x="96" y="252" width="208" height="20" fill="#f4e3c3"/>
+          <rect x="112" y="272" width="80" height="52" rx="4" fill="#c98a4a"/><circle cx="132" cy="266" r="13" fill="#e8644a"/><circle cx="158" cy="262" r="13" fill="#f4b64a"/><circle cx="182" cy="266" r="13" fill="#e8644a"/>
+          <rect x="208" y="272" width="80" height="52" rx="4" fill="#8c9a5e"/><path d="M228 272q6-18 20-20 12 8 6 20z" fill="#5f8c3c"/><path d="M252 272q8-14 20-14 10 8 4 14z" fill="#5f8c3c"/>
+        </svg>
+        <span class="badge">AT THE STORE</span>
+      </div>
+      <div class="info">
+        <h3>Donate to The Little Ark — Community Food Stand</h3>
+        <p class="price">$5.00 and up · you choose the amount</p>
+        <p>A front yard food stand at Ark Unit 1 in Borrego Springs: fresh produce, garden surplus, and staples, free to neighbors who need them. Your donation stocks the stand, keeps the little fridge running on solar, and puts garden starts in kids hands.</p>
+        <span class="credit">A project of The Ark Initiative · 501(c)(3) nonprofit</span>
+        <div class="shopbtn"><a href="https://thearkinitiative.myshopify.com/products/donate-to-the-little-ark-community-food-stand">Give at the store &rarr;</a></div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="stage">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Illustration: a sheet of Ark stickers, a sun, a tree, a star, and a heart">
+          <rect width="400" height="400" fill="#f6e7c9"/>
+          <rect x="70" y="50" width="260" height="300" rx="18" fill="#fffdf6" stroke="#e0caa0" stroke-width="3"/>
+          <circle cx="140" cy="130" r="42" fill="#fff" stroke="#e8d9bb" stroke-width="3"/><circle cx="140" cy="130" r="26" fill="#ffe7a6"/><circle cx="140" cy="130" r="12" fill="#fffbe8"/>
+          <g transform="translate(262 130)"><rect x="-42" y="-42" width="84" height="84" rx="18" fill="#fff" stroke="#e8d9bb" stroke-width="3"/><path d="M0 30 L0 -6 M0 -6 L-18 12 M0 -6 L18 12" stroke="#5f8c3c" stroke-width="7" stroke-linecap="round" fill="none"/><circle cx="0" cy="-18" r="13" fill="#8ce8b4"/></g>
+          <g transform="translate(140 258)"><rect x="-42" y="-42" width="84" height="84" rx="18" fill="#fff" stroke="#e8d9bb" stroke-width="3"/><path d="M0 22 L-24 -8 A13 13 0 0 1 0 -18 A13 13 0 0 1 24 -8 Z" fill="#e88ca8"/></g>
+          <g transform="translate(262 258)"><rect x="-42" y="-42" width="84" height="84" rx="18" fill="#fff" stroke="#e8d9bb" stroke-width="3"/><path d="M0 -24 L7 -7 L25 -7 L11 4 L16 22 L0 11 L-16 22 L-11 4 L-25 -7 L-7 -7 Z" fill="#e0a53a"/></g>
+        </svg>
+        <span class="badge">AT THE STORE</span>
+      </div>
+      <div class="info">
+        <h3>Ark Crew — Donation Sticker Pack</h3>
+        <p class="price">$15.00</p>
+        <p>One 5.83″ × 8.27″ kiss-cut sticker sheet, as the store lists it now: the Grumpy Unicorn, Jenny of the Garden with the crew, the Tree of Life, and the Cosmic Hand. This is a purchase of that pack. It is printed and shipped by the print partner. Nothing is mailed from the house.</p>
+        <span class="credit">Four drawings named on the listing · print partner ships it</span>
+        <div class="shopbtn"><a href="https://thearkinitiative.myshopify.com/products/ark-crew-donation-sticker-pack">Get the sticker pack &rarr;</a></div>
+      </div>
+    </article>
+
+    <article class="item">
+      <div class="stage">
+        <svg viewBox="0 0 400 400" role="img" aria-label="Illustration: the Ark mug under a rising sun, steam curling up">
+          <rect width="400" height="400" fill="#f6e7c9"/>
+          <path d="M70 250 Q200 160 330 250 V400 H70z" fill="#efcf9c"/>
+          <circle cx="200" cy="238" r="34" fill="#ffd66b"/>
+          <path d="M150 128 q10 -18 0 -34 M200 122 q10 -18 0 -34 M250 128 q10 -18 0 -34" fill="none" stroke="#c9a36a" stroke-width="5" stroke-linecap="round"/>
+          <path d="M292 218 q52 4 52 44 t-52 44" fill="none" stroke="#fbf7ef" stroke-width="24"/>
+          <path d="M292 218 q52 4 52 44 t-52 44" fill="none" stroke="#d9cdb6" stroke-width="3"/>
+          <rect x="108" y="170" width="184" height="180" rx="16" fill="#fbf7ef" stroke="#d9cdb6" stroke-width="3"/>
+          <text x="200" y="252" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="30" fill="#4a2a12">THE ARK</text>
+          <text x="200" y="284" text-anchor="middle" font-family="Georgia,serif" font-size="16" fill="#6b4f36">40 Days · 40 Nights</text>
+          <ellipse cx="200" cy="352" rx="96" ry="9" fill="rgba(80,45,15,.18)"/>
+        </svg>
+        <span class="badge">AT THE STORE</span>
+      </div>
+      <div class="info">
+        <h3>The Ark — 40 Days, 40 Nights Mug</h3>
+        <p class="price">$11.99 · 15oz $13.99</p>
+        <p>Forty days, forty nights, and what dying three times taught us. A sturdy ceramic mug in two sizes, carrying the Ark design: one act of stewardship, one relationship, one Ark at a time. Creation only requires a little room, and a lot of love. For now, it is back soon, being dressed properly.</p>
+        <span class="credit">Design: the Ark crew · ceramic · microwave and dishwasher safe</span>
+        <div class="shopbtn"><a href="https://thearkinitiative.myshopify.com">VISIT THE STORE &rarr;</a></div>
+      </div>
+    </article>
+  </div>
 
   <section class="box" aria-labelledby="howT">
     <h2 id="howT">How the Market works</h2>
     <div class="how">
       <div><b>Made by AI and human</b>Dawn and the AI crew design together. Each item shows who did what: words, art, mockup, idea.</div>
       <div><b>Every maker credited</b>If we can't tell who made something, it says &ldquo;Made by the Ark crew.&rdquo; We don't invent credits.</div>
-      <div><b>Where it would go</b>Our intention is for proceeds to support the nonprofit's desert restoration at the Borrego Springs acre. That is a goal, not a promise yet.</div>
-      <div><b>Not open yet</b>No checkout, no prices, no accounts. When the Market opens, this page will say so plainly.</div>
+      <div><b>Where it goes</b>Donations support The Ark Initiative, a project of Aiding Rejuvenation 4 Kommunities Inc, a 501(c)(3) nonprofit in Borrego Springs, California. Donations are tax-deductible to the extent allowed by law.</div>
+      <div><b>Open, and growing</b>The store is open now, and the shelves keep filling. On the way: Borrego water map prints, coloring pages for kids and adults, and little gift shops finding their homes in the library rooms.</div>
     </div>
   </section>
-
 
   <p style="text-align:center"><a class="next" href="/wishlist/">Next: the Wish List &rarr;</a></p>
 </main>
 <footer>
-  <span class="credit">Market page &middot; Idea: Dawn &middot; Page &amp; mockups: Grok &middot; Artwork: from the Ark site, made by the Ark crew</span>
-  <p>Mockups are illustrations of possible products, not photos of stock. No ads, no tracking.</p>
+  <span class="credit">Market page · Idea: Dawn · Page &amp; mockups: Grok · Artwork: from the Ark site, made by the Ark crew</span>
+  <p>Card art is illustration, drawn for this page. Photos, prices, and checkout live at the store. No ads, no tracking.</p>
 </footer>
 
-<script>
-(function(){
-var A='/img/';
-function framePhoto(img, alt){return '<rect x="0" y="0" width="400" height="400" fill="#f3e2c2"/><rect x="92" y="40" width="216" height="300" fill="#6b4a2a" rx="4"/><rect x="104" y="52" width="192" height="276" fill="#fffaf0"/><image href="'+A+img+'" x="114" y="62" width="172" height="256" preserveAspectRatio="xMidYMid slice"><title>'+alt+'</title></image><ellipse cx="200" cy="360" rx="120" ry="10" fill="rgba(80,45,15,.18)"/>';}
-var items=[
- {n:'Tee: Not a Fortress. A Garden.', d:'Soft sand-colored tee with the Ark emblem and the line the whole site ends on.', c:'Words: the Ark motto · Emblem: Ark crew · Mockup: Grok',
-  svg:'<ellipse cx="200" cy="372" rx="130" ry="10" fill="rgba(80,45,15,.16)"/><path d="M130 60 L170 44 Q200 64 230 44 L270 60 L330 110 L296 150 L270 132 L270 350 L130 350 L130 132 L104 150 L70 110 Z" fill="#efd9b0" stroke="#c9a36a" stroke-width="3"/><path d="M170 44 Q200 76 230 44" fill="none" stroke="#c9a36a" stroke-width="3"/><clipPath id="em"><circle cx="200" cy="170" r="56"/></clipPath><image href="'+A+'logo-emblem.jpg" x="140" y="110" width="120" height="120" clip-path="url(#em)" preserveAspectRatio="xMidYMid slice"/><text x="200" y="262" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="15" fill="#4a2a12">NOT A FORTRESS.</text><text x="200" y="282" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="15" fill="#4a2a12">A GARDEN.</text>'},
- {n:'Art print: The World We Teach Them to See', d:'A framed print of one of the Ark site\u2019s own paintings.', c:'Art: Ark crew (from the Ark site) · Mockup: Grok',
-  svg:framePhoto('world-we-teach.jpg','The World We Teach Them to See')},
- {n:'Poster: The Ark Was Never a Boat', d:'The signature line, as a poster for a studio, classroom or garage wall.', c:'Art: Ark crew (from the Ark site) · Mockup: Grok',
-  svg:'<rect width="400" height="400" fill="#e9d4ae"/><rect x="70" y="40" width="260" height="260" fill="#fff" /><image href="'+A+'never-a-boat.jpg" x="78" y="48" width="244" height="244" preserveAspectRatio="xMidYMid slice"/><rect x="170" y="30" width="60" height="18" fill="rgba(255,240,200,.8)" transform="rotate(-4 200 39)"/><path d="M60 330h280" stroke="#b08a60" stroke-width="6"/><rect x="90" y="316" width="30" height="14" fill="#8c9a5e" rx="3"/><rect x="290" y="306" width="18" height="24" fill="#c8643b" rx="3"/>'},
- {n:'Sticker sheet: Chickens First', d:'Die-cut stickers: the glowing wisp, the thirteen doors, the Threshold arch, and three hens.', c:'Art: Grok (drawn in SVG) · \u201cChickens first\u201d: from the Ark site',
-  svg:'<rect x="60" y="40" width="280" height="320" rx="18" fill="#fffdf6" stroke="#e0caa0" stroke-width="3"/><g><circle cx="130" cy="120" r="48" fill="#fff" stroke="#e8d9bb" stroke-width="3"/><circle cx="130" cy="120" r="30" fill="#ffe7a6"/><circle cx="130" cy="120" r="14" fill="#fffbe8"/></g><g transform="translate(270 120)"><circle r="50" fill="#fff" stroke="#e8d9bb" stroke-width="3"/>'+(function(){var s='',cols=['#e8c96a','#9fd8e8','#b48ce8','#6ec8e8','#e8a06a','#8ce8b4','#c9a2e8','#e8d06a','#a0b8e8','#d98c5f','#a8d86a','#e88ca8','#6ae8d0'];for(var i=0;i<13;i++){var a=-Math.PI/2+i*2*Math.PI/13;s+='<rect x="'+(Math.cos(a)*32-4)+'" y="'+(Math.sin(a)*32-7)+'" width="8" height="14" rx="4" fill="'+cols[i]+'"/>';}return s;})()+'</g><g transform="translate(130 250)"><rect x="-46" y="-46" width="92" height="92" rx="20" fill="#f0b43c" stroke="#fff" stroke-width="6"/><path d="M-24 34V0a24 24 0 0 1 48 0v34" fill="none" stroke="#3a2818" stroke-width="9" stroke-linecap="round"/><circle r="5" cy="-10" fill="#fffbe8"/></g><g transform="translate(270 250)"><rect x="-58" y="-40" width="116" height="80" rx="40" fill="#fff" stroke="#e8d9bb" stroke-width="3"/><text y="-8" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="17" fill="#8a4a12">CHICKENS</text><text y="14" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="17" fill="#8a4a12">FIRST</text><circle cx="-24" cy="28" r="5" fill="#a0522d"/><circle cx="0" cy="28" r="5" fill="#e9e1d0" stroke="#bbb"/><circle cx="24" cy="28" r="5" fill="#e9e1d0" stroke="#bbb"/></g>'},
- {n:'Mug: We Grow Together', d:'Morning coffee with Jenny, Guardian of the Garden.', c:'Art: Ark crew (Jenny poster, from the Ark site) · Mockup: Grok',
-  svg:'<ellipse cx="190" cy="340" rx="120" ry="14" fill="rgba(80,45,15,.18)"/><path d="M300 150 q60 0 60 60 t-60 60" fill="none" stroke="#f4eee2" stroke-width="26"/><path d="M300 150 q60 0 60 60 t-60 60" fill="none" stroke="#d9cdb6" stroke-width="3"/><rect x="80" y="110" width="220" height="230" rx="18" fill="#fbf7ef" stroke="#d9cdb6" stroke-width="3"/><clipPath id="mw"><rect x="96" y="140" width="188" height="170" rx="6"/></clipPath><image href="'+A+'jenny-guardian.jpg" x="96" y="120" width="188" height="210" clip-path="url(#mw)" preserveAspectRatio="xMidYMid slice"/><ellipse cx="190" cy="112" rx="110" ry="12" fill="#efe6d4" stroke="#d9cdb6" stroke-width="3"/>'},
- {n:'Tote: A Shared Tomorrow', d:'A sturdy canvas tote with the tree of life ringed by the dragon.', c:'Art: Ark crew (from the Ark site) · Mockup: Grok',
-  svg:'<ellipse cx="200" cy="370" rx="120" ry="10" fill="rgba(80,45,15,.16)"/><path d="M150 130 Q150 50 200 50 Q250 50 250 130" fill="none" stroke="#cdb690" stroke-width="12"/><path d="M100 128 H300 L312 360 H88 Z" fill="#efe2c8" stroke="#cdb690" stroke-width="3"/><image href="'+A+'ark-shared-tomorrow-poster.jpg" x="130" y="160" width="140" height="140" preserveAspectRatio="xMidYMid slice"/>'},
- {n:'Book: The Ark Field Guide', d:'A pocket guide to reading a living desert: sun, soil, water, animals, and the seven-step loop.', c:'Cover: Grok · Field notes would come from Dawn\u2019s Field Reports',
-  svg:'<ellipse cx="200" cy="360" rx="110" ry="10" fill="rgba(80,45,15,.18)"/><rect x="96" y="50" width="22" height="300" fill="#3f6428"/><rect x="118" y="50" width="190" height="300" rx="4" fill="#5f8c3c"/><rect x="132" y="66" width="162" height="268" rx="3" fill="none" stroke="#e0c27a" stroke-width="2"/><circle cx="213" cy="160" r="40" fill="#f6c65a"/><path d="M140 222 Q175 190 213 214 T290 206 V250 H140z" fill="#d9a58f"/><path d="M140 240 Q190 226 290 238 V262 H140z" fill="#efcf9c"/><text x="213" y="100" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="20" fill="#fff4d6">THE ARK</text><text x="213" y="124" text-anchor="middle" font-family="Georgia,serif" font-size="15" fill="#fff4d6">FIELD GUIDE</text><text x="213" y="296" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" letter-spacing="1.5" fill="#fff4d6">BORREGO SPRINGS</text><text x="213" y="314" text-anchor="middle" font-family="system-ui,sans-serif" font-size="7.5" letter-spacing="1" fill="#e0c27a">SENSE · INTERPRET · REGULATE · CIRCULATE · REPAIR · ADAPT · REMEMBER</text>'}
-];
-var g=document.getElementById('grid'),h='';
-items.forEach(function(it){h+='<article class="item"><div class="stage"><svg viewBox="0 0 400 400" role="img" aria-label="Mockup: '+it.n+'">'+it.svg+'</svg><span class="badge">COMING SOON</span></div><div class="info"><h3>'+it.n+'</h3><p>'+it.d+'</p><span class="credit">'+it.c+'</span><br><span class="notify" aria-disabled="true">Not for sale yet</span></div></article>';});
-g.innerHTML=h;
-})();
-</script>
 </body>
 </html>
