@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "mode": "disconnected",
+  "telemetryUrl": null,
+  "inventoryUrl": null,
+  "maxReadingAgeSeconds": 900,
+  "maxInventoryAgeSeconds": 300,
+  "requestTimeoutMs": 8000
+}

@@ -1,0 +1,8 @@
+{
+  "version": "1.1.0",
+  "date": "2026-11-10",
+  "appUrl": "https://ark-app.ark4humanity.workers.dev/#home",
+  "physicalSystemsStatus": "proposed-seeking-funding",
+  "services": "disconnected",
+  "sourceRepository": "https://github.com/ark4humanity/ark-initiative-website/tree/main/ark-app"
+}
