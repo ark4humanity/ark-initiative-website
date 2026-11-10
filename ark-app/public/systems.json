@@ -1,0 +1,258 @@
+{
+  "schemaVersion": "1.0",
+  "updated": "2026-11-10",
+  "records": [
+    {
+      "id": "unit1-orchard",
+      "type": "planting",
+      "name": "Existing orchard",
+      "status": "documented-existing",
+      "pillar": "Asherah",
+      "location": "Unit 1",
+      "description": "The existing orchard is shown in Unit 1 field photographs. Current varieties, counts, harvest and condition require a dated field inventory.",
+      "metrics": [],
+      "image": "assets/orchard.webp",
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-unit1-orchard",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "unit1-hens",
+      "type": "animal-care",
+      "name": "Resident hens",
+      "status": "documented-existing",
+      "pillar": "Symbiosis",
+      "location": "Unit 1",
+      "description": "The resident hens and current enclosure appear in field photographs. This is separate from the proposed Poultry Palace. Egg availability and flock counts are not connected.",
+      "metrics": [],
+      "image": "assets/hens.webp",
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-unit1-hens",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "unit1-palace",
+      "type": "habitat",
+      "name": "Poultry Palace",
+      "status": "proposed-seeking-funding",
+      "pillar": "Asherah",
+      "location": "Proposed Unit 1 sanctuary",
+      "description": "The documented lotus-inspired sanctuary design includes opening roof petals, protected hen spaces, forage gardens and a central local Tree hub. Construction has not begun.",
+      "metrics": [],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-unit1-palace",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "edn-tree-01",
+      "type": "water-node",
+      "name": "Poultry Palace Tree",
+      "status": "proposed-seeking-funding",
+      "pillar": "Delta",
+      "location": "Proposed Poultry Palace center",
+      "description": "Proposed local receiving, filtration, measurement and distribution hub. Drinking-water backup, circuit separation, service access and safe overflow require engineering and field validation.",
+      "metrics": [
+        "water-flow",
+        "reservoir-level",
+        "water-temperature"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-edn-tree-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "walkway-01",
+      "type": "connection",
+      "name": "Flowering walkway",
+      "status": "proposed-seeking-funding",
+      "pillar": "Matrix",
+      "location": "Proposed Palace to Little ARK corridor",
+      "description": "The existing design connects the sanctuary and sharing station with shade, planting, cooling and a fish-viewing feature. Two visible water columns are proposed; the hydraulics remain unresolved.",
+      "metrics": [
+        "air-temperature",
+        "relative-humidity"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-walkway-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "little-ark-01",
+      "type": "sharing-node",
+      "name": "Little ARK sharing station",
+      "status": "proposed-seeking-funding",
+      "pillar": "Exchange",
+      "location": "Proposed community welcome area",
+      "description": "A future welcoming screen, seating, books, produce, eggs and cold refreshments. No stock, dispensing, refrigeration or kiosk recognition is connected to this app. Help remains available without a phone or account.",
+      "metrics": [],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-little-ark-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "edn-cartridge-01",
+      "type": "service-interface",
+      "name": "Serviceable cartridges",
+      "status": "proposed-seeking-funding",
+      "pillar": "Soma",
+      "location": "Proposed EDN service points",
+      "description": "Modular filtration and specialized treatment interfaces need keyed fittings, isolation and cleaning access. Medication and additive dispensing remain unvalidated design concepts, with no controls in this app.",
+      "metrics": [],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-edn-cartridge-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "planting-food-01",
+      "type": "planting",
+      "name": "Food and productive shade",
+      "status": "proposed-seeking-funding",
+      "pillar": "Asherah",
+      "location": "Proposed growing beds and boundaries",
+      "description": "Candidate plans include grapevines, seasonal vegetables and food-bearing shade. Varieties, dates, seed inventory and actual planting are not confirmed here.",
+      "metrics": [
+        "soil-moisture",
+        "soil-temperature"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-planting-food-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "planting-flowers-01",
+      "type": "planting",
+      "name": "Flowering and cooling gardens",
+      "status": "proposed-seeking-funding",
+      "pillar": "Vagus",
+      "location": "Proposed shaded planting pockets",
+      "description": "Honeysuckle and jasmine are candidates subject to species suitability. Gardenias and blueberries are microclimate experiments, not proven desert crops.",
+      "metrics": [
+        "soil-moisture",
+        "air-temperature"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-planting-flowers-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "planting-native-01",
+      "type": "planting",
+      "name": "Native habitat and hen forage",
+      "status": "proposed-seeking-funding",
+      "pillar": "Symbiosis",
+      "location": "Proposed restoration and safe forage areas",
+      "description": "Colorado Desert natives, safe hen forage, pollinator habitat, mulch and protected planting are proposed. Species selection and establishment need field records.",
+      "metrics": [
+        "plant-survival",
+        "water-use"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-planting-native-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "trial-bed-01",
+      "type": "trial-bed",
+      "name": "Research plot 01",
+      "status": "proposed-seeking-funding",
+      "pillar": "Terra",
+      "location": "Proposed 5 × 5 foot plot; position unassigned",
+      "description": "Buried wood, replicate 1. Proposed comparison only; plots have no planting, measurement or results recorded in this app.",
+      "treatment": "buried-wood",
+      "replicate": 1,
+      "metrics": [
+        "soil-moisture",
+        "soil-temperature",
+        "plant-survival",
+        "water-use"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-trial-bed-01",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "trial-bed-02",
+      "type": "trial-bed",
+      "name": "Research plot 02",
+      "status": "proposed-seeking-funding",
+      "pillar": "Terra",
+      "location": "Proposed 5 × 5 foot plot; position unassigned",
+      "description": "Buried wood, replicate 2. Proposed comparison only; plots have no planting, measurement or results recorded in this app.",
+      "treatment": "buried-wood",
+      "replicate": 2,
+      "metrics": [
+        "soil-moisture",
+        "soil-temperature",
+        "plant-survival",
+        "water-use"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-trial-bed-02",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "trial-bed-03",
+      "type": "trial-bed",
+      "name": "Research plot 03",
+      "status": "proposed-seeking-funding",
+      "pillar": "Terra",
+      "location": "Proposed 5 × 5 foot plot; position unassigned",
+      "description": "Surface mulch, replicate 1. Proposed comparison only; plots have no planting, measurement or results recorded in this app.",
+      "treatment": "surface-mulch",
+      "replicate": 1,
+      "metrics": [
+        "soil-moisture",
+        "soil-temperature",
+        "plant-survival",
+        "water-use"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-trial-bed-03",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "trial-bed-04",
+      "type": "trial-bed",
+      "name": "Research plot 04",
+      "status": "proposed-seeking-funding",
+      "pillar": "Terra",
+      "location": "Proposed 5 × 5 foot plot; position unassigned",
+      "description": "Surface mulch, replicate 2. Proposed comparison only; plots have no planting, measurement or results recorded in this app.",
+      "treatment": "surface-mulch",
+      "replicate": 2,
+      "metrics": [
+        "soil-moisture",
+        "soil-temperature",
+        "plant-survival",
+        "water-use"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-trial-bed-04",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "trial-bed-05",
+      "type": "trial-bed",
+      "name": "Research plot 05",
+      "status": "proposed-seeking-funding",
+      "pillar": "Terra",
+      "location": "Proposed 5 × 5 foot plot; position unassigned",
+      "description": "Untreated control, replicate 1. Proposed comparison only; plots have no planting, measurement or results recorded in this app.",
+      "treatment": "untreated-control",
+      "replicate": 1,
+      "metrics": [
+        "soil-moisture",
+        "soil-temperature",
+        "plant-survival",
+        "water-use"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-trial-bed-05",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    },
+    {
+      "id": "trial-bed-06",
+      "type": "trial-bed",
+      "name": "Research plot 06",
+      "status": "proposed-seeking-funding",
+      "pillar": "Terra",
+      "location": "Proposed 5 × 5 foot plot; position unassigned",
+      "description": "Untreated control, replicate 2. Proposed comparison only; plots have no planting, measurement or results recorded in this app.",
+      "treatment": "untreated-control",
+      "replicate": 2,
+      "metrics": [
+        "soil-moisture",
+        "soil-temperature",
+        "plant-survival",
+        "water-use"
+      ],
+      "publicUrl": "https://ark-app.ark4humanity.workers.dev/#system-trial-bed-06",
+      "recordSource": "Dawn’s project handoff, November 10, 2026; current inventory and construction require separate dated evidence."
+    }
+  ]
+}

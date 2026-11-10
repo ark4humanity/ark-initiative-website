@@ -1,0 +1,190 @@
+[
+  {
+    "id": "pillar-01-aura-prime",
+    "name": "Aura Prime",
+    "number": 1,
+    "description": "Ethical coherence and the center",
+    "url": "https://thearkinitiative.com/pillar-01-aura-prime.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-01-aura-prime",
+      "title": "Begin with care",
+      "text": "Ask who benefits, who chooses, and what helps life continue. Ethical coherence gives each world room to differ.",
+      "prompt": "Notice a design that gives someone a choice."
+    },
+    "shopUrl": "https://thearkinitiative.myshopify.com/collections/aura-prime-the-orrery-cabinet"
+  },
+  {
+    "id": "pillar-02-halo",
+    "name": "HALO",
+    "number": 2,
+    "description": "A peaceful threshold and protective boundaries",
+    "url": "https://thearkinitiative.com/pillar-02-halo.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-02-halo",
+      "title": "A protective threshold",
+      "text": "Protection begins with observation, space, and a gentle response. HALO explores boundaries that protect without domination.",
+      "prompt": "Find a boundary that protects without trapping."
+    },
+    "shopUrl": "https://thearkinitiative.myshopify.com/collections/halo-the-threshold-cabinet"
+  },
+  {
+    "id": "pillar-03-vagus",
+    "name": "Vagus",
+    "number": 3,
+    "description": "Calm, regulation, and restorative rhythms",
+    "url": "https://thearkinitiative.com/pillar-03-vagus.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-03-vagus",
+      "title": "Room to settle",
+      "text": "Rest, shade, quiet and predictable paths can make a place easier to inhabit. Regulation begins with room to pause.",
+      "prompt": "Choose a quiet place to pause before exploring."
+    }
+  },
+  {
+    "id": "pillar-04-delta",
+    "name": "Delta",
+    "number": 4,
+    "description": "Water, air, energy, and circulation",
+    "url": "https://thearkinitiative.com/pillar-04-delta.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-04-delta",
+      "title": "Follow the water",
+      "text": "Supply, use, recovery and discharge are different stages. A circulating loop needs appropriate treatment; circulation alone does not make water safe.",
+      "prompt": "Trace a water path and identify where its uses must stay separate."
+    },
+    "shopUrl": "https://thearkinitiative.myshopify.com/collections/delta-the-water-cabinet"
+  },
+  {
+    "id": "pillar-05-asherah",
+    "name": "Asherah",
+    "number": 5,
+    "description": "Regenerative gardens and living ecologies",
+    "url": "https://thearkinitiative.com/pillar-05-asherah.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-05-asherah",
+      "title": "Grow a living garden",
+      "text": "Food plants, native habitat, pollinators, shade and soil belong in the same design. A proposed planting becomes evidence only after field observation.",
+      "prompt": "Observe one relationship between a plant and another living thing."
+    },
+    "shopUrl": "https://thearkinitiative.myshopify.com/collections/asherah"
+  },
+  {
+    "id": "pillar-06-matrix",
+    "name": "Matrix",
+    "number": 6,
+    "description": "Connection with room to move",
+    "url": "https://thearkinitiative.com/pillar-06-matrix.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-06-matrix",
+      "title": "Connections need room",
+      "text": "Paths and interfaces need clearance, access and the ability to move without damaging their neighbors. Matrix connects while buffering change.",
+      "prompt": "Find a connection that can flex rather than break."
+    },
+    "shopUrl": "https://thearkinitiative.myshopify.com/collections/matrix-the-network-cabinet"
+  },
+  {
+    "id": "pillar-07-aeon",
+    "name": "Aeon",
+    "number": 7,
+    "description": "Living memory and knowledge",
+    "url": "https://thearkinitiative.com/pillar-07-aeon.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-07-aeon",
+      "title": "Keep the record",
+      "text": "A living library preserves sources, changes, failures and discoveries. A photograph and its date can be more useful than an unsupported success story.",
+      "prompt": "Record what you observed separately from what you inferred."
+    }
+  },
+  {
+    "id": "pillar-08-exchange",
+    "name": "Exchange",
+    "number": 8,
+    "description": "Reciprocity and shared resources",
+    "url": "https://thearkinitiative.com/pillar-08-exchange.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-08-exchange",
+      "title": "Share with dignity",
+      "text": "Hospitality must remain available without a purchase, a smartphone or an account. Fair sharing begins with access and consent.",
+      "prompt": "Imagine a welcoming way to offer help without testing someone’s worth."
+    }
+  },
+  {
+    "id": "pillar-09-vega",
+    "name": "Vega",
+    "number": 9,
+    "description": "Orientation, sensing, and navigation",
+    "url": "https://thearkinitiative.com/pillar-09-vega.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-09-vega",
+      "title": "Know what a signal means",
+      "text": "Every useful reading needs a time, unit, location and source. An empty display is more honest than a number without a measurement.",
+      "prompt": "Ask when and where a reading was measured."
+    },
+    "shopUrl": "https://thearkinitiative.myshopify.com/collections/the-explorers-cabinet"
+  },
+  {
+    "id": "pillar-10-ark",
+    "name": "Ark",
+    "number": 10,
+    "description": "Adaptation, shelter, and continuity",
+    "url": "https://thearkinitiative.com/pillar-10-ark.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-10-ark",
+      "title": "Continue through change",
+      "text": "Adaptable systems preserve their purpose while their parts change. Manual operation and recoverable records help continuity.",
+      "prompt": "Identify what should still work during a power or network outage."
+    }
+  },
+  {
+    "id": "pillar-11-terra",
+    "name": "Terra",
+    "number": 11,
+    "description": "Ground, foundations, and soil",
+    "url": "https://thearkinitiative.com/pillar-11-terra.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-11-terra",
+      "title": "Start with the ground",
+      "text": "Soil, infiltration, mulch and plant establishment connect the design to its place. Compare treatments before making a claim.",
+      "prompt": "Compare two patches of ground without assuming what caused the difference."
+    }
+  },
+  {
+    "id": "pillar-12-soma",
+    "name": "Soma",
+    "number": 12,
+    "description": "Reserves, repair, and buffering",
+    "url": "https://thearkinitiative.com/pillar-12-soma.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-12-soma",
+      "title": "Leave a reserve",
+      "text": "Stored resources and protected buffers give living systems time to respond. A reserve matters most when the normal supply is interrupted.",
+      "prompt": "Look for a backup that can be checked and maintained."
+    }
+  },
+  {
+    "id": "pillar-13-symbiosis",
+    "name": "Symbiosis",
+    "number": 13,
+    "description": "Cooperation and ecological resilience",
+    "url": "https://thearkinitiative.com/pillar-13-symbiosis.html",
+    "library": "https://thearkinitiative.com/library.html",
+    "lesson": {
+      "id": "lesson-pillar-13-symbiosis",
+      "title": "Let relationships do work",
+      "text": "Diversity and cooperation can support resilience. Test which relationships help in this particular habitat rather than assuming all combinations succeed.",
+      "prompt": "Notice two organisms sharing a place and ask how they affect each other."
+    }
+  }
+]
